@@ -1,0 +1,25 @@
+name: Deploy a Hostinger
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Obtener código más reciente
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: 📂 Sincronizar archivos FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: 217.196.57.131  # IP sacada de tu imagen
+        username: u676347305.gustavogravagna.com  # Usuario sacado de tu imagen
+        password: ${{ secrets.FTP_PASSWORD }} # Lee la contraseña segura
+        # IMPORTANTE: Confirma que esta ruta exista en tu Hostinger o el deploy fallará
+        server-dir: ./dominioprueba/wp-content/themes/child-theme/
