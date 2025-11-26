@@ -41,3 +41,8 @@ body {
         background: rgba(30, 58, 138, 0.85);
     }
 }
+
+/* Gradiente radial para efecto de onda expansiva */
+.bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+}

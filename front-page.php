@@ -31,7 +31,7 @@ get_header();
         <div class="relative flex flex-col md:flex-row items-center justify-center md:justify-start">
             
             <!-- Contenedor unificado con fondo -->
-            <div class="relative flex flex-col md:flex-row items-center bg-gradient-to-r from-blue-500 via-indigo-600 to-blue-700 rounded-3xl shadow-2xl p-6 md:p-0 max-w-6xl">
+            <div class="relative flex flex-col md:flex-row items-center bg-[#849dfa] rounded-3xl shadow-2xl p-6 md:p-0 max-w-6xl">
                 
                 <!-- Card de texto a la izquierda -->
                 <div class="w-full md:w-auto md:max-w-md z-10 p-8 md:p-10">
@@ -127,47 +127,64 @@ get_header();
     </div>
 </section>
 
-<!-- Sección Creatblue Originals con imagen diagonal -->
-<section class="relative overflow-hidden bg-gradient-to-br from-[#2a2d5a] via-[#1e2847] to-[#1a1f3a]">
-    <div class="container mx-auto px-6 py-20">
-        <div class="grid md:grid-cols-2 gap-12 items-center relative z-10">
+<!-- Sección Creatblue Originals con corte diagonal y onda -->
+<section class="relative overflow-hidden" style="clip-path: polygon(0 8%, 100% 0%, 100% 100%, 0 100%);">
+    <!-- Fondo con degradado morado oscuro -->
+    <div class="absolute inset-0 bg-gradient-to-br from-[#2a2d5a] via-[#1e2847] to-[#0f1229]"></div>
+    
+    <!-- Onda expansiva de degradado morado -->
+    <div class="absolute inset-0 opacity-40">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-purple-600/30 via-indigo-700/20 to-transparent rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-blue-500/20 via-purple-600/10 to-transparent rounded-full blur-2xl"></div>
+    </div>
+    
+    <div class="container mx-auto px-6 py-24 md:py-32 relative z-10">
+        <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+            
             <!-- Lado izquierdo - Texto y logos -->
             <div class="space-y-8">
                 <div>
-                    <p class="text-blue-300 uppercase tracking-widest text-xs font-bold mb-4 letter-spacing-2">CREATBLUE ORIGINALS</p>
-                    <h2 class="text-white leading-tight mb-6">
-                        <span class="block text-4xl font-normal mb-2">WORKFORCE</span>
-                        <span class="block text-5xl md:text-6xl font-light italic">ready to go!</span>
+                    <p class="text-blue-300 uppercase tracking-[0.2em] text-xs font-bold mb-6">CREATBLUE ORIGINALS</p>
+                    <h2 class="text-white leading-tight mb-8">
+                        <span class="block text-3xl md:text-4xl font-bold mb-3 uppercase tracking-wide">WORKFORCE</span>
+                        <span class="block text-4xl md:text-5xl lg:text-6xl font-light italic">ready to go!</span>
                     </h2>
                 </div>
                 
                 <!-- Logo Creatmap -->
                 <div class="space-y-6">
                     <div class="inline-block">
-                        <div class="text-4xl font-bold tracking-wide text-white">
+                        <div class="text-3xl md:text-4xl font-bold tracking-wide text-white">
                             CREAT<span class="italic font-light">map</span>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <!-- Lado derecho - Espacio para imagen -->
-            <div class="relative h-[400px] md:h-[500px]">
-                <!-- La imagen se manejará con CSS para el corte diagonal -->
+            <!-- Lado derecho - Imagen del trabajador -->
+            <div class="relative h-[400px] md:h-[500px] lg:h-[600px]">
+                <div class="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl">
+                    <!-- Overlay sutil -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10"></div>
+                    
+                    <!-- Imagen -->
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070" 
+                         alt="Trabajador profesional con tablet" 
+                         class="w-full h-full object-cover">
+                </div>
+                
+                <!-- Efecto de resplandor -->
+                <div class="absolute -inset-4 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-2xl blur-2xl -z-10"></div>
             </div>
+            
         </div>
     </div>
     
-    <!-- Imagen de fondo con corte diagonal -->
-    <div class="absolute top-0 right-0 bottom-0 w-1/2 hidden md:block">
-        <div class="absolute inset-0 overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-[#1a1f3a] to-transparent z-10"></div>
-            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070" 
-                 alt="Trabajador profesional" 
-                 class="w-full h-full object-cover"
-                 style="clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);">
-        </div>
-    </div>
+    <!-- Efecto de partículas/puntos decorativos -->
+    <div class="absolute top-20 right-20 w-2 h-2 bg-blue-400 rounded-full opacity-50"></div>
+    <div class="absolute top-40 right-40 w-3 h-3 bg-purple-400 rounded-full opacity-40"></div>
+    <div class="absolute bottom-32 left-32 w-2 h-2 bg-indigo-400 rounded-full opacity-50"></div>
+    <div class="absolute bottom-20 left-20 w-3 h-3 bg-blue-400 rounded-full opacity-30"></div>
 </section>
 
 <!-- Sección Diferenciadores -->
