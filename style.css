@@ -2,3 +2,42 @@
  Theme Name:   child-theme
  Template:     twentytwentyfour
 */
+
+/* Efecto glassmorphism para la navbar */
+#main-header {
+    background: rgba(30, 58, 138, 0.3); /* bg-blue-900 con transparencia */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Ajuste para que el contenido no quede debajo del header sticky */
+body {
+    padding-top: 0;
+}
+
+/* Efecto hover mejorado para los links de navegación */
+#main-header a {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#main-header a:hover {
+    color: #93c5fd; /* blue-300 */
+}
+
+/* Animación suave al hacer scroll */
+@supports (backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px)) {
+    #main-header {
+        background: rgba(30, 58, 138, 0.3);
+    }
+}
+
+/* Fallback para navegadores que no soportan backdrop-filter */
+@supports not ((backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px))) {
+    #main-header {
+        background: rgba(30, 58, 138, 0.85);
+    }
+}

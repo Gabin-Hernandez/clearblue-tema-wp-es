@@ -8,9 +8,9 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<!-- Header/Nav transparente (se puede personalizar con clases según la página) -->
-<header class="absolute top-0 left-0 right-0 z-50" id="main-header">
-    <nav class="container mx-auto px-6 py-6">
+<!-- Header/Nav sticky con efecto glassmorphism -->
+<header class="sticky top-0 left-0 right-0 z-50 backdrop-blur-md bg-blue-900/30 border-b border-white/10 shadow-lg" id="main-header">
+    <nav class="container mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
             <!-- Logo -->
             <div class="flex items-center">
@@ -39,11 +39,11 @@
                     'items_wrap' => '%3$s',
                     'fallback_cb' => function() {
                         ?>
-                        <a href="#" class="text-white hover:text-blue-300 transition">Quienes somos</a>
+                        <a href="#" class="text-white hover:text-blue-300 transition">Quiénes somos</a>
                         <a href="#" class="text-white hover:text-blue-300 transition">Qué ofrecemos</a>
-                        <a href="#" class="text-white hover:text-blue-300 transition">Construcción basal</a>
-                        <a href="#" class="text-white hover:text-blue-300 transition">Conozcamos</a>
-                        <a href="#" class="text-white hover:text-blue-300 transition">Revis de trabajo</a>
+                        <a href="#" class="text-white hover:text-blue-300 transition">Camino zum talent</a>
+                        <a href="#" class="text-white hover:text-blue-300 transition">Contáctanos</a>
+                        <a href="#" class="text-white hover:text-blue-300 transition">Bolsa de trabajo</a>
                         <?php
                     },
                     'link_before' => '<span class="text-white hover:text-blue-300 transition">',
@@ -77,11 +77,11 @@
                 'fallback_cb' => function() {
                     ?>
                     <div class="space-y-3">
-                        <a href="#" class="block text-white hover:text-blue-300 transition py-2">Quienes somos</a>
+                        <a href="#" class="block text-white hover:text-blue-300 transition py-2">Quiénes somos</a>
                         <a href="#" class="block text-white hover:text-blue-300 transition py-2">Qué ofrecemos</a>
-                        <a href="#" class="block text-white hover:text-blue-300 transition py-2">Construcción basal</a>
-                        <a href="#" class="block text-white hover:text-blue-300 transition py-2">Conozcamos</a>
-                        <a href="#" class="block text-white hover:text-blue-300 transition py-2">Revis de trabajo</a>
+                        <a href="#" class="block text-white hover:text-blue-300 transition py-2">Camino zum talent</a>
+                        <a href="#" class="block text-white hover:text-blue-300 transition py-2">Contáctanos</a>
+                        <a href="#" class="block text-white hover:text-blue-300 transition py-2">Bolsa de trabajo</a>
                     </div>
                     <?php
                 },
