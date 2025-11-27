@@ -31,11 +31,11 @@ get_header();
         <div class="relative flex flex-col md:flex-row items-center justify-center md:justify-start">
             
             <!-- Contenedor unificado con fondo -->
-            <div class="relative flex flex-col md:flex-row items-center bg-[#849dfa] rounded-3xl shadow-2xl p-6 md:p-0 max-w-6xl">
+            <div class="relative flex flex-col md:flex-row items-center bg-secondary rounded-3xl shadow-2xl p-6 md:p-0 max-w-6xl">
                 
                 <!-- Card de texto a la izquierda -->
                 <div class="w-full md:w-auto md:max-w-md z-10 p-8 md:p-10">
-                    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-3 md:mb-4 leading-tight">
+                    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-3 md:mb-4 leading-tight">
                         Nuestras Soluciones
                     </h3>
                     <p class="text-white text-base md:text-lg leading-relaxed">
