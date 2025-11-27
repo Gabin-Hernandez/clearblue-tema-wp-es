@@ -8,9 +8,10 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<!-- Header/Nav sticky con efecto glassmorphism -->
-<header class="sticky top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-white/10 shadow-lg bg-primary/30" id="main-header">
-    <nav class="container mx-auto px-6 py-4">
+<!-- Header/Nav con efecto glassmorphism -->
+<div class="container mx-auto">
+    <header class="backdrop-blur-md border-b border-white/10 shadow-lg bg-primary/30" id="main-header">
+        <nav class="px-6 py-4">
         <div class="flex items-center justify-between">
             <!-- Logo -->
             <div class="flex items-center">
@@ -29,8 +30,10 @@
                 <?php endif; ?>
             </div>
             
-            <!-- Menú Central -->
-            <div class="hidden md:flex items-center space-x-8">
+            <!-- Menú Central y botón móvil -->
+            <div class="flex items-center space-x-8">
+                <!-- Menú Central -->
+                <div class="hidden md:flex items-center space-x-8">
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'primary',
@@ -52,17 +55,12 @@
                 ?>
             </div>
             
-            <!-- Botón contacto derecha --> 
-            <div class="flex items-center space-x-4">
-                <!--<a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md transition font-medium">
-                <i class="fa-brands fa-whatsapp"></i> Chat ahora
-                </a>-->
-                <!-- Menú móvil toggle  --> 
-                <button id="mobile-menu-toggle" class="md:hidden text-white focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
+            <!-- Menú móvil toggle  --> 
+            <button id="mobile-menu-toggle" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
             </div> 
         </div>
         
@@ -91,6 +89,7 @@
         </div>
     </nav>
 </header>
+</div>
 
 <script>
 // Toggle menú móvil
