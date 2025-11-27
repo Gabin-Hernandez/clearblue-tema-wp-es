@@ -95,7 +95,7 @@ get_header();
                     <div class="group bg-white border-2 border-gray-200 rounded-2xl p-4 md:p-5 flex items-center justify-between cursor-pointer hover:bg-[#1e3a8a] hover:border-[#1e3a8a] transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
                         <div class="flex items-center space-x-3 md:space-x-4">
                             <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-100 group-hover:bg-white rounded-xl flex items-center justify-center transition-colors duration-300">
-                                <svg class="w-5 h-5 md:w-6 md:h-6 text-blue-600 group-hover:text-[#1e3a8a] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 md:w-6 md:h-6 text-primary group-hover:text-[#1e3a8a] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                                 </svg>
                             </div>
@@ -110,7 +110,7 @@ get_header();
                     <div class="group bg-white border-2 border-gray-200 rounded-2xl p-4 md:p-5 flex items-center justify-between cursor-pointer hover:bg-[#1e3a8a] hover:border-[#1e3a8a] transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
                         <div class="flex items-center space-x-3 md:space-x-4">
                             <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-100 group-hover:bg-white rounded-xl flex items-center justify-center transition-colors duration-300">
-                                <svg class="w-5 h-5 md:w-6 md:h-6 text-blue-600 group-hover:text-[#1e3a8a] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 md:w-6 md:h-6 text-primary group-hover:text-[#1e3a8a] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                                 </svg>
                             </div>
