@@ -9,7 +9,7 @@
 <?php wp_body_open(); ?>
 
 <!-- Header/Nav sticky con efecto glassmorphism -->
-<header class="sticky top-0 left-0 right-0 z-50 backdrop-blur-md bg-primary/30 border-b border-white/10 shadow-lg" id="main-header">
+<header class="sticky top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-white/10 shadow-lg" id="main-header" style="background: rgba(28, 30, 51, 0.3);">
     <nav class="container mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
             <!-- Logo -->
@@ -18,7 +18,7 @@
                     <?php the_custom_logo(); ?>
                 <?php else : ?>
                     <a href="<?php echo esc_url(home_url('/')); ?>" class="flex items-center">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo.png" 
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/logo_light.png" 
                              alt="<?php bloginfo('name'); ?>" 
                              class="h-8" 
                              onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
@@ -52,18 +52,18 @@
                 ?>
             </div>
             
-            <!-- Botón derecha OCULTO-->
-            <!--div class="flex items-center space-x-4">
+            <!-- Botón derecha 
+            <div class="flex items-center space-x-4">
                 <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md transition font-medium">
                 <i class="fa-brands fa-whatsapp"></i> Chat ahora
                 </a>
-                Menú móvil toggle
+                 Menú móvil toggle 
                 <button id="mobile-menu-toggle" class="md:hidden text-white focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
-            </div-->
+            </div> -->
         </div>
         
         <!-- Menú móvil -->
