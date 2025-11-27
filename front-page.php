@@ -28,7 +28,7 @@ get_header();
 <!-- Sección Nuestras Soluciones -->
 <section class="py-20 bg-gray-50 relative overflow-hidden">
     <div class="container mx-auto px-6">
-        <div class="relative flex flex-col md:flex-row items-center justify-center md:justify-start">
+        <div class="relative flex flex-col md:flex-row items-center justify-center md:justify-center gap-4">
             
             <!-- Contenedor unificado con fondo -->
             <div class="relative flex flex-col md:flex-row items-center bg-secondary rounded-3xl shadow-2xl p-6 md:p-0 max-w-6xl">
@@ -51,7 +51,6 @@ get_header();
                              class="w-full h-full object-contain drop-shadow-2xl">
                     </div>
                 </div>
-                
             </div>
             
             <!-- Contenedor de las cards de servicios -->
@@ -63,10 +62,10 @@ get_header();
                 <!-- Lista de servicios -->
                 <div class="space-y-3 md:space-y-4 z-20">
                     <!-- Entrenamiento -->
-                    <div class="group bg-white border-2 border-gray-200 rounded-2xl p-4 md:p-5 flex items-center justify-between cursor-pointer hover:bg-[#1e3a8a] hover:border-[#1e3a8a] transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
+                    <div class="group bg-white border-2 border-gray-200 rounded-2xl p-4 md:p-5 flex items-center justify-between cursor-pointer hover:bg-primary hover:border-primary transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
                         <div class="flex items-center space-x-3 md:space-x-4">
                             <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-100 group-hover:bg-white rounded-xl flex items-center justify-center transition-colors duration-300 flex-shrink-0">
-                                <svg class="w-5 h-5 md:w-6 md:h-6 text-blue-600 group-hover:text-[#1e3a8a] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 md:w-6 md:h-6 text-primary group-hover:text-[#1e3a8a] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                                 </svg>
                             </div>
@@ -81,7 +80,7 @@ get_header();
                     <div class="group bg-white border-2 border-gray-200 rounded-2xl p-4 md:p-5 flex items-center justify-between cursor-pointer hover:bg-[#1e3a8a] hover:border-[#1e3a8a] transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
                         <div class="flex items-center space-x-3 md:space-x-4">
                             <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-100 group-hover:bg-white rounded-xl flex items-center justify-center transition-colors duration-300 flex-shrink-0">
-                                <svg class="w-5 h-5 md:w-6 md:h-6 text-blue-600 group-hover:text-[#1e3a8a] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 md:w-6 md:h-6 text-primary group-hover:text-[#1e3a8a] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                                 </svg>
                             </div>
