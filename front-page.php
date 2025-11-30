@@ -38,7 +38,7 @@ get_header();
                     <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-3 md:mb-4 leading-tight">
                         Nuestras Soluciones
                     </h3>
-                    <p class="text-white text-base md:text-lg leading-relaxed">
+                    <p class="text-white text-lg md:text-lg leading-relaxed">
                         Encuentra el camino correcto con nosotros.
                     </p>
                 </div>
@@ -69,7 +69,7 @@ get_header();
                                     <path d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .708A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z" />
                                 </svg>
                             </div>
-                            <span class="font-semibold text-gray-800 group-hover:text-white transition-colors duration-300 text-base md:text-lg">Entrenamiento</span>
+                            <span class="font-semibold text-gray-800 group-hover:text-white transition-colors duration-300 text-lg md:text-lg">Entrenamiento</span>
                         </div>
                         <svg class="w-5 h-5 md:w-6 md:h-6 text-gray-400 group-hover:text-white transition-colors duration-300 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
                             <path fillRule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clipRule="evenodd" />
@@ -84,7 +84,7 @@ get_header();
                                     <path d="M4.5 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM14.25 8.625a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0ZM1.5 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM17.25 19.128l-.001.144a2.25 2.25 0 0 1-.233.96 10.088 10.088 0 0 0 5.06-1.01.75.75 0 0 0 .42-.643 4.875 4.875 0 0 0-6.957-4.611 8.586 8.586 0 0 1 1.71 5.157l.001.003Z" />
                                 </svg>
                             </div>
-                            <span class="font-semibold text-gray-800 group-hover:text-white transition-colors duration-300 text-base md:text-lg">Reclutamiento + Selección</span>
+                            <span class="font-semibold text-gray-800 group-hover:text-white transition-colors duration-300 text-lg md:text-lg">Reclutamiento + Selección</span>
                         </div>
                         <svg class="w-5 h-5 md:w-6 md:h-6 text-gray-400 group-hover:text-white transition-colors duration-300 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
                             <path fillRule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clipRule="evenodd" />
@@ -100,7 +100,7 @@ get_header();
                                     <path d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279 9.768 9.768 0 0 0-6.963-6.963Z" />
                                 </svg>
                             </div>
-                            <span class="font-semibold text-gray-800 group-hover:text-white transition-colors duration-300 text-base md:text-lg">Capacitación</span>
+                            <span class="font-semibold text-gray-800 group-hover:text-white transition-colors duration-300 text-lg md:text-lg">Capacitación</span>
                         </div>
                         <svg class="w-5 h-5 md:w-6 md:h-6 text-gray-400 group-hover:text-white transition-colors duration-300" viewBox="0 0 24 24" fill="currentColor">
                             <path fillRule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clipRule="evenodd" />
@@ -115,7 +115,7 @@ get_header();
                                     <path fillRule="evenodd" d="M4.848 2.771A49.144 49.144 0 0 1 12 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 0 1-3.476.383.39.39 0 0 0-.297.17l-2.755 4.133a.75.75 0 0 1-1.248 0l-2.755-4.133a.39.39 0 0 0-.297-.17 48.9 48.9 0 0 1-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97Z" clipRule="evenodd" />
                                 </svg>
                             </div>
-                            <span class="font-semibold text-gray-800 group-hover:text-white transition-colors duration-300 text-base md:text-lg">Consultoría</span>
+                            <span class="font-semibold text-gray-800 group-hover:text-white transition-colors duration-300 text-lg md:text-lg">Consultoría</span>
                         </div>
                         <svg class="w-5 h-5 md:w-6 md:h-6 text-gray-400 group-hover:text-white transition-colors duration-300" viewBox="0 0 24 24" fill="currentColor">
                             <path fillRule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clipRule="evenodd" />
@@ -193,8 +193,8 @@ get_header();
     <div class="container mx-auto px-6">
         <!-- Título -->
         <div class="mb-16">
-            <p class="text-blue-600 uppercase tracking-widest text-xs font-bold mb-3">DIFERENCIADOR CREATBLUE</p>
-            <p class="text-gray-700 text-base max-w-3xl leading-relaxed">
+            <p class="text-primary uppercase tracking-wide text-2xl font-black mb-3">DIFERENCIADOR CREATBLUE</p>
+            <p class="text-gray-700 text-lg max-w-3xl leading-relaxed">
                 En Creatblue México nos caracterizamos por incrementar la productividad en todas las zonas que trabajamos, por medio de la capacitación y entrenamiento de los trabajadores y gerentes de los negocios.
             </p>
         </div>
@@ -260,7 +260,7 @@ get_header();
                     <h3 class="text-4xl md:text-5xl font-bold mb-3">
                         Camino<span class="italic font-light">zum</span> talent
                     </h3>
-                    <p class="text-blue-100 text-base">
+                    <p class="text-blue-100 text-lg">
                         No te pierdas de la mejor información dentro del sector
                     </p>
                 </div>
