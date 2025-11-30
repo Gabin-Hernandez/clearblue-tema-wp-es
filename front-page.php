@@ -143,20 +143,21 @@ get_header();
             
             <!-- Lado izquierdo - Texto y logos -->
             <div class="space-y-8">
-                <div>
-                    <p class="text-blue-300 uppercase tracking-[0.2em] text-xs font-bold mb-6">CREATBLUE ORIGINALS</p>
-                    <h2 class="text-white leading-tight mb-8">
-                        <span class="block text-3xl md:text-4xl font-bold mb-3 uppercase tracking-wide">WORKFORCE</span>
-                        <span class="block text-4xl md:text-5xl lg:text-6xl font-light italic">ready to go!</span>
-                    </h2>
+                <p class="text-blue-300 uppercase tracking-[0.2em] text-md font-black mb-6">CREATBLUE ORIGINALS</p>
+                 <!-- Logo WorkForce -->
+                  <div>
+                    <div>
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/workforce_asset.png" 
+                             alt="WORKFORCE" 
+                             class="block mb-3 max-w-xs md:max-w-sm lg:max-w-md">
+                    </div>
                 </div>
-                
                 <!-- Logo Creatmap -->
-                <div class="space-y-6">
-                    <div class="inline-block">
-                        <div class="text-3xl md:text-4xl font-bold tracking-wide text-white">
-                            CREAT<span class="italic font-light">map</span>
-                        </div>
+                <div>
+                    <div>
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/creatmap_asset.png" 
+                             alt="CREATmap" 
+                             class="max-w-xs md:max-w-sm lg:max-w-md">
                     </div>
                 </div>
             </div>
