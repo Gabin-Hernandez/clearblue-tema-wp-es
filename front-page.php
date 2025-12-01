@@ -199,7 +199,9 @@ get_header();
             <div class="bg-gradient-to-b from-white to-secondary/20 rounded-2xl px-8 py-12 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
                 <div class="flex items-center gap-6">
                     <div class="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-chart-line text-2xl text-blue-600"></i>
+                        <svg class="w-8 h-8 text-blue-600" viewBox="0 0 24 24" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm4.5 7.5a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V14.25a.75.75 0 0 1 .75-.75Zm3.75-1.5a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0V12Zm3.75-3a.75.75 0 0 0-1.5 0v7.5a.75.75 0 0 0 1.5 0V9Zm3.75-1.5a.75.75 0 0 0-1.5 0v9a.75.75 0 0 0 1.5 0v-9Z" clip-rule="evenodd" />
+                        </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
                         Mejoramos la productividad
@@ -211,7 +213,9 @@ get_header();
             <div class="bg-gradient-to-b from-white to-secondary/20 rounded-2xl px-8 py-12 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
                 <div class="flex items-center gap-6">
                     <div class="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-users text-2xl text-blue-600"></i>
+                        <svg class="w-8 h-8 text-blue-600" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4.5 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM14.25 8.625a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0ZM1.5 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM17.25 19.128l-.001.144a2.25 2.25 0 0 1-.233.96 10.088 10.088 0 0 0 5.06-1.01.75.75 0 0 0 .42-.643 4.875 4.875 0 0 0-6.957-4.611 8.586 8.586 0 0 1 1.71 5.157l.001.003Z" />
+                        </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
                         Disminuimos la rotación de personal
@@ -223,7 +227,9 @@ get_header();
             <div class="bg-gradient-to-b from-white to-secondary/20 rounded-2xl px-8 py-12 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 opacity-0 translate-y-8 animate-on-scroll" data-delay="800">
                 <div class="flex items-center gap-6">
                     <div class="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-dollar-sign text-2xl text-blue-600"></i>
+                        <svg class="w-8 h-8 text-blue-600" viewBox="0 0 24 24" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM9 7a1 1 0 0 1 2 0v1.068A2.25 2.25 0 0 1 13.25 10.5h.25a.75.75 0 0 1 0 1.5h-.25a.25.25 0 0 1-.25-.25v-.75a.75.75 0 0 1-.75-.75.75.75 0 0 0-1.5 0c0 .69.56 1.25 1.25 1.25h.75A1.75 1.75 0 0 1 14.5 13v.25c0 .966-.784 1.75-1.75 1.75h-.318A2.25 2.25 0 0 1 10.182 17H9a1 1 0 1 1 0-2h1.068c.133 0 .26-.053.354-.146A.5.5 0 0 0 10.5 14.5H10a1 1 0 1 1 0-2h.5a.5.5 0 0 0 .5-.5V11a1 1 0 1 1 2 0v.068A2.25 2.25 0 0 1 10.75 13.5H10a.75.75 0 0 1 0-1.5h.75c.69 0 1.25-.56 1.25-1.25V10a1 1 0 1 1 2 0v1c0 .966-.784 1.75-1.75 1.75H12a.25.25 0 0 1-.25-.25V11a.75.75 0 0 1 .75-.75.75.75 0 0 0 0-1.5A2.25 2.25 0 0 1 10.25 7H9Z" clip-rule="evenodd" />
+                        </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
                         Optimizamos tus costos operativos
