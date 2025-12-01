@@ -143,7 +143,7 @@ get_header();
             
             <!-- Lado izquierdo - Texto y logos -->
             <div class="space-y-8">
-                <p class="text-blue-300 uppercase tracking-[0.2em] text-md font-black mb-6 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">CREATBLUE ORIGINALS</p>
+                <p class="text-blue-300 uppercase tracking-[0.2em] text-lg font-black mb-6 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">CREATBLUE ORIGINALS</p>
                  <!-- Logo WorkForce -->
                   <div class="opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
                     <div>
@@ -180,12 +180,6 @@ get_header();
             
         </div>
     </div>
-    
-    <!-- Efecto de partículas/puntos decorativos con parallax -->
-    <div class="absolute top-20 right-20 w-2 h-2 bg-blue-400 rounded-full opacity-50 particle-float z-50" data-speed="0.5"></div>
-    <div class="absolute top-40 right-40 w-3 h-3 bg-purple-400 rounded-full opacity-40 particle-float z-50" data-speed="-0.3"></div>
-    <div class="absolute bottom-32 left-32 w-2 h-2 bg-indigo-400 rounded-full opacity-50 particle-float z-50" data-speed="0.8"></div>
-    <div class="absolute bottom-20 left-20 w-3 h-3 bg-blue-400 rounded-full opacity-30 particle-float z-50" data-speed="-0.6"></div>
 </section>
 
 <!-- Sección Diferenciadores -->
@@ -193,7 +187,7 @@ get_header();
     <div class="container mx-auto px-6">
         <!-- Título -->
         <div class="mb-16">
-            <p class="text-primary uppercase tracking-wide text-2xl font-black mb-3">DIFERENCIADOR CREATBLUE</p>
+            <p class="text-secondary uppercase tracking-wide text-2xl font-black mb-3">DIFERENCIADOR CREATBLUE</p>
             <p class="text-gray-700 text-lg max-w-3xl leading-relaxed">
                 En Creatblue México nos caracterizamos por incrementar la productividad en todas las zonas que trabajamos, por medio de la capacitación y entrenamiento de los trabajadores y gerentes de los negocios.
             </p>
@@ -202,48 +196,45 @@ get_header();
         <!-- Cards mejoradas -->
         <div class="grid md:grid-cols-3 gap-6">
             <!-- Card 1 - Mejoramos la productividad -->
-            <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                <div class="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center mb-6">
-                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                    </svg>
+            <div class="bg-gradient-to-b from-white to-secondary/20 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="flex items-center gap-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 leading-tight">
+                        Mejoramos la productividad
+                    </h3>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-4 leading-tight">
-                    Mejoramos la productividad
-                </h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                    Incrementamos la eficiencia operativa mediante capacitación especializada y procesos optimizados.
-                </p>
             </div>
             
             <!-- Card 2 - Disminuimos la rotación -->
-            <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                <div class="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center mb-6">
-                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                    </svg>
+            <div class="bg-gradient-to-b from-white to-secondary/20 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="flex items-center gap-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 leading-tight">
+                        Disminuimos la rotación de personal
+                    </h3>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-4 leading-tight">
-                    Disminuimos la rotación de personal
-                </h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                    Reducimos significativamente la rotación mediante estrategias de retención y desarrollo del talento.
-                </p>
             </div>
             
             <!-- Card 3 - Optimizamos costos -->
-            <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                <div class="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center mb-6">
-                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+            <div class="bg-gradient-to-b from-white to-secondary/20 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="flex items-center gap-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 leading-tight">
+                        Optimizamos tus costos operativos
+                    </h3>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-4 leading-tight">
-                    Optimizamos tus costos operativos
-                </h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                    Maximizamos el retorno de inversión optimizando recursos y procesos operacionales.
-                </p>
             </div>
         </div>
     </div>
