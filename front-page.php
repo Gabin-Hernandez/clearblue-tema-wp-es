@@ -199,8 +199,8 @@ get_header();
             <div class="bg-gradient-to-b from-white to-secondary/20 rounded-2xl px-8 py-12 shadow-xl hover:shadow-sm transition-all duration-300 border border-gray-100 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
                 <div class="flex items-center gap-6">
                     <div class="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                        <svg class="w-8 h-8 text-secondary" viewBox="0 0 24 24" fill="currentColor">
-                            <path fill-rule="evenodd" d="M2.25 2.25a.75.75 0 0 0 0 1.5H3v10.5a3 3 0 0 0 3 3h1.21l-1.172 3.513a.75.75 0 0 0 1.424.474l.329-.987h8.418l.33.987a.75.75 0 0 0 1.422-.474L15.79 17H18a3 3 0 0 0 3-3V3.75h.75a.75.75 0 0 0 0-1.5H2.25ZM6.54 17h10.92l.5 1.5H6.04l.5-1.5Zm11.46-8.25a.75.75 0 0 0-.75-.75h-1.5a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h1.5a.75.75 0 0 0 .75-.75v-4.5Zm-9 2.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1-.75-.75V11Zm6-2.25a.75.75 0 0 0-.75-.75h-1.5a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h1.5a.75.75 0 0 0 .75-.75v-4.5Z" clip-rule="evenodd" />
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
@@ -213,12 +213,8 @@ get_header();
             <div class="bg-gradient-to-b from-white to-secondary/20 rounded-2xl px-8 py-12 shadow-xl hover:shadow-sm transition-all duration-300 border border-gray-100 opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
                 <div class="flex items-center gap-6">
                     <div class="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                        <svg class="w-8 h-8 text-secondary" viewBox="0 0 24 24" fill="currentColor">
-                            <path fill-rule="evenodd" d="M4.5 2.25a.75.75 0 0 0 0 1.5v16.5c0 1.085.46 2.085 1.2 2.8.74.715 1.74 1.2 2.8 1.2h8.25a.75.75 0 0 0 0-1.5H8.5a1.75 1.75 0 0 1-1.75-1.75V3.75a.75.75 0 0 0 0-1.5h-.25ZM21 6.75a.75.75 0 0 1 .75.75v10.5c0 1.519-1.231 2.75-2.75 2.75H8.5a.75.75 0 0 1 0-1.5H19a1.25 1.25 0 0 0 1.25-1.25V7.5A.75.75 0 0 1 21 6.75Z" clip-rule="evenodd" />
-                            <path fill-rule="evenodd" d="m15.22 2.47 3.25 3.25a.75.75 0 0 1-1.06 1.06L14.16 3.53a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                            <path fill-rule="evenodd" d="m2.47 8.78 3.25-3.25a.75.75 0 0 1 1.06 1.06L3.53 9.84a.75.75 0 0 1-1.06-1.06Z" clip-rule="evenodd" />
-                            <path d="M18.75 8.25V12a5.25 5.25 0 0 1-5.25 5.25H9.75L12 19.5l-2.25 2.25H13.5A7.5 7.5 0 0 0 21 14.25V8.25h-2.25Z" />
-                            <path d="M5.25 15.75V12A5.25 5.25 0 0 1 10.5 6.75h3.75L12 4.5l2.25-2.25H10.5A7.5 7.5 0 0 0 3 9.75v6h2.25Z" />
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
@@ -231,8 +227,8 @@ get_header();
             <div class="bg-gradient-to-b from-white to-secondary/20 rounded-2xl px-8 py-12 shadow-xl hover:shadow-sm transition-all duration-300 border border-gray-100 opacity-0 translate-y-8 animate-on-scroll" data-delay="800">
                 <div class="flex items-center gap-6">
                     <div class="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                        <svg class="w-8 h-8 text-secondary" viewBox="0 0 24 24" fill="currentColor">
-                            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM9 7a1 1 0 0 1 2 0v1.068A2.25 2.25 0 0 1 13.25 10.5h.25a.75.75 0 0 1 0 1.5h-.25a.25.25 0 0 1-.25-.25v-.75a.75.75 0 0 1-.75-.75.75.75 0 0 0-1.5 0c0 .69.56 1.25 1.25 1.25h.75A1.75 1.75 0 0 1 14.5 13v.25c0 .966-.784 1.75-1.75 1.75h-.318A2.25 2.25 0 0 1 10.182 17H9a1 1 0 1 1 0-2h1.068c.133 0 .26-.053.354-.146A.5.5 0 0 0 10.5 14.5H10a1 1 0 1 1 0-2h.5a.5.5 0 0 0 .5-.5V11a1 1 0 1 1 2 0v.068A2.25 2.25 0 0 1 10.75 13.5H10a.75.75 0 0 1 0-1.5h.75c.69 0 1.25-.56 1.25-1.25V10a1 1 0 1 1 2 0v1c0 .966-.784 1.75-1.75 1.75H12a.25.25 0 0 1-.25-.25V11a.75.75 0 0 1 .75-.75.75.75 0 0 0 0-1.5A2.25 2.25 0 0 1 10.25 7H9Z" clip-rule="evenodd" />
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
