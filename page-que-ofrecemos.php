@@ -36,21 +36,21 @@ get_header();
             <!-- Columna derecha - Grid de imágenes desordenado -->
             <div class="relative h-[500px] lg:h-[600px] hidden lg:block">
                 <!-- Imagen 1 - Superior izquierda -->
-                <div class="absolute top-0 left-0 w-48 h-48 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-10 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="300" data-speed="0.3">
+                <div class="absolute top-0 left-0 w-60 h-72 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-10 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="300" data-speed="0.3">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima1.jpg" 
                          alt="Trabajador 1" 
                          class="w-full h-full object-cover">
                 </div>
                 
                 <!-- Imagen 2 - Superior derecha -->
-                <div class="absolute top-0 right-0 w-56 h-40 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="500" data-speed="0.5">
+                <div class="absolute top-0 right-0 w-64 h-64 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="500" data-speed="0.5">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima2.jpg" 
                          alt="Trabajador 2" 
                          class="w-full h-full object-cover">
                 </div>
                 
                 <!-- Imagen 3 - Centro izquierda (más grande y destacada) -->
-                <div class="absolute top-32 left-12 w-52 h-56 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-30 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="700" data-speed="0.2">
+                <div class="absolute top-32 left-12 w-60 h-72 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-30 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="700" data-speed="0.2">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima3.jpg" 
                          alt="Trabajador 3" 
                          class="w-full h-full object-cover">
@@ -268,7 +268,7 @@ get_header();
             
             <!-- Imagen grande izquierda: Reduce la curva de aprendizaje -->
             <div class="relative rounded-3xl overflow-hidden shadow-2xl group md:row-span-2 h-96 md:h-[500px] opacity-0 scale-75 animate-on-scroll" data-delay="600">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima5.jpg" 
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima6.jpg" 
                      alt="Reduce la curva de aprendizaje" 
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -281,7 +281,7 @@ get_header();
             
             <!-- Imagen pequeña superior derecha: Disminuye la accidentabilidad -->
             <div class="relative rounded-3xl overflow-hidden shadow-2xl group h-60 md:h-60 opacity-0 scale-75 animate-on-scroll" data-delay="800">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima6.jpg" 
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima5.jpg" 
                      alt="Disminuye la accidentabilidad" 
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
