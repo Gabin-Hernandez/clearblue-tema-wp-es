@@ -16,15 +16,15 @@ get_header();
             <div class="max-w-xl">
                 <!-- Badge -->
                 <div class="inline-block mb-6 opacity-0 translate-y-8 animate-on-scroll" data-delay="100">
-                    <span class="bg-[#849dfa] text-white text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wider">
+                    <span class="bg-secondary text-white text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wider">
                         CB RECLUTAMIENTO + SELECCIÓN
                     </span>
                 </div>
                 
                 <!-- Título principal -->
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-normal text-gray-900 mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
                     Estrategias efectivas de reclutamiento y selección de personal para 
-                    <span class="text-[#849dfa]">IMPULSAR</span> tu capital humano
+                    <span class="text-secondary font-black">IMPULSAR</span> tu capital humano
                 </h1>
                 
                 <!-- CTA Button -->
@@ -36,36 +36,36 @@ get_header();
             <!-- Columna derecha - Grid de imágenes desordenado -->
             <div class="relative h-[500px] lg:h-[600px] hidden lg:block">
                 <!-- Imagen 1 - Superior izquierda -->
-                <div class="absolute top-0 left-0 w-48 h-48 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-10 opacity-0 scale-75 animate-on-scroll" data-delay="300">
+                <div class="absolute top-0 left-0 w-48 h-48 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-10 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="300" data-speed="0.3">
                     <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=400" 
                          alt="Trabajador 1" 
                          class="w-full h-full object-cover">
                 </div>
                 
                 <!-- Imagen 2 - Superior derecha -->
-                <div class="absolute top-0 right-0 w-56 h-40 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20 opacity-0 scale-75 animate-on-scroll" data-delay="500">
+                <div class="absolute top-0 right-0 w-56 h-40 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="500" data-speed="0.5">
                     <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=400" 
                          alt="Trabajador 2" 
                          class="w-full h-full object-cover">
                 </div>
                 
                 <!-- Imagen 3 - Centro izquierda (más grande y destacada) -->
-                <div class="absolute top-32 left-12 w-52 h-56 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-30 opacity-0 scale-75 animate-on-scroll" data-delay="700">
+                <div class="absolute top-32 left-12 w-52 h-56 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-30 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="700" data-speed="0.2">
                     <img src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?q=80&w=400" 
                          alt="Trabajador 3" 
                          class="w-full h-full object-cover">
                 </div>
                 
                 <!-- Imagen 4 - Inferior derecha -->
-                <div class="absolute bottom-0 right-8 w-48 h-52 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20 opacity-0 scale-75 animate-on-scroll" data-delay="900">
+                <div class="absolute bottom-0 right-8 w-48 h-52 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="900" data-speed="0.4">
                     <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=400" 
                          alt="Trabajador 4" 
                          class="w-full h-full object-cover">
                 </div>
                 
                 <!-- Elementos decorativos (cuadrados morados como en la imagen) -->
-                <div class="absolute top-24 right-32 w-20 h-20 bg-[#849dfa] rounded-lg opacity-80 z-0"></div>
-                <div class="absolute bottom-32 left-32 w-16 h-16 bg-[#849dfa] rounded-lg opacity-60 z-0"></div>
+                <div class="absolute top-24 right-32 w-20 h-20 bg-secondary rounded-lg opacity-80 z-0 particle-float" data-speed="0.6"></div>
+                <div class="absolute bottom-32 left-32 w-16 h-16 bg-primary rounded-lg opacity-60 z-0 particle-float" data-speed="0.7"></div>
             </div>
             
             <!-- Grid móvil - Mostrar solo en pantallas pequeñas -->

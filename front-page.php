@@ -15,10 +15,10 @@ get_header();
     <!-- Hero Content -->
     <div class="relative z-10 container mx-auto px-6 flex items-center" style="min-height: 100vh; padding-top: 80px;">
         <div class="max-w-2xl">
-            <h1 class="text-white text-5xl md:text-6xl font-normal leading-tight mb-6">
+            <h1 class="text-white text-5xl md:text-6xl font-normal leading-tight mb-6 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
                 Lorem <span class="font-bold text-secondary">ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem has been the industry's
             </h1>
-            <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
+            <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
                 ACTION BT
             </button>
         </div>
