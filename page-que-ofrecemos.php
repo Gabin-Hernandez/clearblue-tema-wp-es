@@ -252,11 +252,11 @@ get_header();
             </div>
             
             <!-- Columna 2: Título y texto -->
-            <div>
-                <h2 class="text-[#849dfa] uppercase tracking-[0.2em] text-xs font-bold mb-4">
+            <div class="text-right">
+                <h2 class="text-secondary uppercase tracking-[0.2em] font-bold mb-4">
                     Reclutamiento + Entrenamiento
                 </h2>
-                <p class="text-white text-lg max-w-2xl">
+                <p class="text-white text-base max-w-2xl ml-auto">
                     de personal sin experiencia.
                 </p>
             </div>
