@@ -17,13 +17,14 @@ get_header();
                 <!-- Badge -->
                 <div class="inline-block mb-6 opacity-0 translate-y-8 animate-on-scroll" data-delay="100">
                     <span class="bg-secondary text-white text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wider">
-                    CB ENTRENAMIENTO
+                        CB RECLUTAMIENTO + SELECCIÓN
                     </span>
                 </div>
                 
                 <!-- Título principal -->
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-normal text-gray-900 mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-                Entrenamiento industrial para <span class="text-secondary font-black">AUMENTAR</span> la productividad de tu equipo
+                    Estrategias efectivas de reclutamiento y selección de personal para 
+                    <span class="text-secondary font-black">IMPULSAR</span> tu capital humano
                 </h1>
                 
                 <!-- CTA Button -->
@@ -100,7 +101,7 @@ get_header();
     <div class="container mx-auto px-6">
         <div class="text-center max-w-3xl mx-auto mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-            Diseñamos programas de entrenamiento profesional enfocados en productividad, ideales para empresas que buscan optimizar, mejorar la eficiencia operativa y el desarrollo de soft skills.
+                Gracias a nuestra experiencia en la gestión de capital humano, conocemos los desafíos clave que enfrentan las empresas y el impacto en su Core Business.
             </h2>
         </div>
         
@@ -115,7 +116,7 @@ get_header();
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
-                        Mejora de productividad y eficiencia.
+                        Menor tiempo de espera en respuesta
                     </h3>
                 </div>
             </div>
@@ -129,7 +130,7 @@ get_header();
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
-                        Entrenamiento adaptado a tu industria.
+                        Reclutamiento especializado por sector
                     </h3>
                 </div>
             </div>
@@ -143,7 +144,7 @@ get_header();
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
-                        Formación para operativos, mandos medios y líderes.
+                        Procesos asistidos con Tecnología de IA
                     </h3>
                 </div>
             </div>
@@ -246,18 +247,18 @@ get_header();
         <div class="grid max-w-5xl mx-auto md:grid-cols-2 gap-8 items-center mb-16">
             <!-- Columna 1: Logo WORKFORCE -->
             <div class="opacity-0 translate-x-8 animate-on-scroll" data-delay="200">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/creatblue_asset.png" 
-                     alt="CREATBLUE" 
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/workforce_asset.png" 
+                     alt="WORKFORCE" 
                      class="w-full max-w-[400px] h-auto">
             </div>
             
             <!-- Columna 2: Título y texto -->
             <div class="text-right opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
                 <h2 class="text-secondary uppercase tracking-[0.2em] font-bold">
-                mapea.
+                    Reclutamiento + Entrenamiento
                 </h2>
                 <p class="text-white text-base max-w-2xl ml-auto">
-                Cada persona de su equipo será evaluada previo y posterior al entrenamiento con nuestros medidores de rendimiento.
+                    de personal sin experiencia.
                 </p>
             </div>
         </div>
@@ -301,117 +302,6 @@ get_header();
                     <h3 class="text-white text-xl md:text-2xl font-bold leading-tight">
                         Aumenta la productividad desde el primer día.
                     </h3>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-
-<!-- Sección LUGARES DE ENTRENAMIENTO -->
-<section class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-        <!-- Título principal -->
-        <div class="mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-                LUGARES DE ENTRENAMIENTO
-            </h2>
-        </div>
-        
-        <!-- Grid de 2 columnas -->
-        <div class="grid md:grid-cols-2 gap-8 lg:gap-12 mb-20">
-            
-            <!-- Elemento 1: Conoce CREATmobil -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                        Conoce <span class="font-black">CREAT</span>mobil
-                    </h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        Llevamos todo nuestro equipo de entrenamiento hasta tus instalaciones
-                    </p>
-                </div>
-            </div>
-            
-            <!-- Elemento 2: Conoce nuestros CEC -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                        Conoce nuestros CEC<br>
-                        <span class="text-lg font-normal">(Centro de Entrenamiento Creatblue)</span>
-                    </h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        Descripción de reclutamiento puro diferenciada para creatblue
-                    </p>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-
-<!-- Sección MATERIALES DE ENTRENAMIENTO -->
-<section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-        <!-- Título principal -->
-        <div class="mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-                MATERIALES DE ENTRENAMIENTO
-            </h2>
-        </div>
-        
-        <!-- Grid de 2 columnas -->
-        <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
-            
-            <!-- Elemento 3: Catálogo equipo móvil -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                        Catálogo equipo móvil
-                    </h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        Descripción de los equipos móviles que tenemos diferenciada para creatblue
-                    </p>
-                </div>
-            </div>
-            
-            <!-- Elemento 4: Preparación de Materiales -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                        Preparación de Materiales
-                    </h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        Descripción de los equipos móviles que tenemos diferenciada para creatblue
-                    </p>
                 </div>
             </div>
             
