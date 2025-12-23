@@ -234,7 +234,18 @@ get_header();
     </div>
 </section>
 
-<!-- Sección WORKFORCE ready to go! -->
+<!-- Sección El talento idóneo en el menor tiempo posible -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
+                El talento idóneo en el menor tiempo posible
+            </h2>
+        </div>
+    </div>
+</section>
+<!-- Sección
+  WORKFORCE ready to go! -->
 <section class="relative overflow-hidden py-20 bg-gradient-to-br from-[#2f3082] to-[#0f1229]">
     <!-- Efectos de fondo -->
     <div class="absolute inset-0 opacity-40">
@@ -262,7 +273,7 @@ get_header();
                 </p>
             </div>
         </div>
-        <h2 class="text-white text-2xl md:text-3xl font-bold leading-tight text-center opacity-0 translate-x-8 animate-on-scroll" data-delay="400">¿Dificultad para encontrar personal calificado?</h2>
+        <h2 class="text-white text-2xl md:text-3xl font-bold leading-tight text-center opacity-0 translate-x-8 animate-on-scroll mb-16" data-delay="400">¿Dificultad para encontrar personal calificado?</h2>
 
         <!-- Grid de imágenes tipo collage: 1 grande a la izquierda, 2 pequeñas apiladas a la derecha -->
         <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
