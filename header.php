@@ -55,6 +55,7 @@
                                 <a href="<?php echo esc_url(home_url('/reclutamiento')); ?>" class="block px-4 py-3 text-gray-800 hover:bg-secondary hover:text-white transition">Reclutamiento</a>
                                 <a href="<?php echo esc_url(home_url('/capacitacion')); ?>" class="block px-4 py-3 text-gray-800 hover:bg-secondary hover:text-white transition">Capacitación</a>
                                 <a href="<?php echo esc_url(home_url('/consultoria')); ?>" class="block px-4 py-3 text-gray-800 hover:bg-secondary hover:text-white transition rounded-b-lg">Consultoría</a>
+                                <a href="<?php echo esc_url(home_url('/originals')); ?>" class="block px-4 py-3 text-gray-800 hover:bg-secondary hover:text-white transition">Originals</a>
                             </div>
                         </div>
                         
@@ -103,6 +104,7 @@
                                 <a href="<?php echo esc_url(home_url('/reclutamiento')); ?>" class="block text-white/80 hover:text-secondary transition py-1">Reclutamiento</a>
                                 <a href="<?php echo esc_url(home_url('/capacitacion')); ?>" class="block text-white/80 hover:text-secondary transition py-1">Capacitación</a>
                                 <a href="<?php echo esc_url(home_url('/consultoria')); ?>" class="block text-white/80 hover:text-secondary transition py-1">Consultoría</a>
+                                <a href="<?php echo esc_url(home_url('/originals')); ?>" class="block text-white/80 hover:text-secondary transition py-1">Originals</a>
                             </div>
                         </div>
                         
