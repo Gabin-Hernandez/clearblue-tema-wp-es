@@ -112,7 +112,7 @@ get_header();
     <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto">
             <!-- Badge elegante con sombra -->
-            <div class="bg-gradient-to-br from-[#849dfa]/20 to-[#6b7fd8]/30 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-1 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
+            <div class="bg-white rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-1 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
                 <div class="px-6 py-8 md:px-16 md:py-16 text-center">                    
                     <h2 class="text-3xl md:text-4xl lg:text-3xl font-bold bg-gradient-to-r from-[#2f3082] to-[#849dfa] bg-clip-text text-transparent leading-tight">
                         Decisiones respaldadas por estrategia
