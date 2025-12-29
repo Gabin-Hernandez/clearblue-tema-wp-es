@@ -10,7 +10,7 @@ get_header();
 
 <!-- Nosotros section -->
 <!-- Sección Hero - Título principal -->
-<section class="pt-32 pb-20py-20 bg-white">
+<section class="pt-32 pb-20 bg-white">
     <div class="container mx-auto px-6">
         <div class="text-center max-w-4xl mx-auto mb-8">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
