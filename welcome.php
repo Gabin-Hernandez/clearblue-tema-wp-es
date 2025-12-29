@@ -3,6 +3,8 @@
  * Template Name: Welcome Page
  * Description: Página de bienvenida con diseño personalizado usando Tailwind CSS
  */
+
+get_header();
 ?>
 
 <!-- Welcome section - Selección de País/Idioma -->
@@ -107,3 +109,7 @@
         </div>
     </div>
 </section>
+
+<?php
+get_footer();
+?>
