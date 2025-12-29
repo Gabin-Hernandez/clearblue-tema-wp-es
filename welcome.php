@@ -18,11 +18,11 @@ get_header();
             </h1>
         </div>
         
-        <!-- Grid de 2 columnas -->
-        <div class="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+        <!-- Grid de 2 columnas: 1/3 - 2/3 -->
+        <div class="grid lg:grid-cols-3 gap-12 items-center max-w-7xl mx-auto">
             
-            <!-- Columna izquierda - Texto y enlaces -->
-            <div class="space-y-8 opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
+            <!-- Columna izquierda - Texto y enlaces (1/3) -->
+            <div class="lg:col-span-1 space-y-8 opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
                 
                 <!-- Título de selección -->
                 <div>
@@ -77,8 +77,8 @@ get_header();
                 </div>
             </div>
             
-            <!-- Columna derecha - Imagen con iconos superpuestos -->
-            <div class="relative w-full h-[600px] opacity-0 scale-75 animate-on-scroll" data-delay="600">
+            <!-- Columna derecha - Imagen con iconos superpuestos (2/3) -->
+            <div class="lg:col-span-2 relative w-full h-[600px] opacity-0 scale-75 animate-on-scroll" data-delay="600">
                 <!-- Imagen de fondo del globo -->
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/back_global.webp" 
                      alt="Global Network" 
