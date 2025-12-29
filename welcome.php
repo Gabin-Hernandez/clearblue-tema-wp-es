@@ -93,14 +93,14 @@ get_header();
                 
                 <!-- Icono México - Abajo izquierda -->
                 <div class="absolute bottom-[20%] left-[5%] transform animate-float" style="animation-delay: 1s;">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/mexio_l.webp" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/mexico_l.webp" 
                          alt="México" 
                          class="w-32 h-32 md:w-40 md:h-40 drop-shadow-2xl hover:scale-110 transition-transform duration-300 cursor-pointer">
                 </div>
                 
                 <!-- Icono Alemania - Centro derecha -->
                 <div class="absolute top-[35%] right-[5%] transform animate-float" style="animation-delay: 2s;">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/deutchaland_l.webp" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/deutschland_l.webp" 
                          alt="Deutschland" 
                          class="w-32 h-32 md:w-40 md:h-40 drop-shadow-2xl hover:scale-110 transition-transform duration-300 cursor-pointer">
                 </div>
