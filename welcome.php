@@ -17,7 +17,7 @@ get_header('welcome');
         
         <!-- Título principal -->
         <div class="text-center mb-16">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
                 CREADORES DE TALENTO <span class="text-secondary">Human Talent Solutions</span>
             </h1>
         </div>
