@@ -3,6 +3,11 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags específicos para Welcome Page -->
+    <title>Bienvenidos a Creatblue® Group | Selecciona tu país</title>
+    <meta name="description" content="Selecciona tu país y descubre cómo Creatblue® impulsa la productividad de tu empresa.">
+    
     <?php wp_head(); ?>
 </head>
 <body <?php body_class('welcome-page'); ?>>

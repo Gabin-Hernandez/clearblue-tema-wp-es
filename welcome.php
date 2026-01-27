@@ -15,10 +15,10 @@ get_header('welcome');
 <section class="min-h-screen pt-44 md:pt-48 pb-20 bg-gradient-to-br from-gray-50 to-gray-100">
     <div class="container mx-auto px-6">
         
-        <!-- Título principal -->
+        <!-- Título principal H1 -->
         <div class="text-center mb-16">
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-                CREADORES DE TALENTO <span class="text-secondary">Human Talent Solutions</span>
+                Bienvenidos a Creatblue<sup>®</sup> <span class="text-secondary">Group</span>
             </h1>
         </div>
         
@@ -28,13 +28,13 @@ get_header('welcome');
             <!-- Columna izquierda - Texto y enlaces (40%) -->
             <div class="space-y-8 opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
                 
-                <!-- Título de selección -->
+                <!-- Título de selección H2 -->
                 <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
-                        Selecciona tu país para comenzar
+                    <h2 class="text-2xl md:text-3xl font-bold text-primary mb-4">
+                        Selecciona tu país para comenzar.
                     </h2>
-                    <p class="text-primary text-lg italic">
-                        Select your country to start / Wählen sie ihr land zum starten
+                    <p class="text-primary/70 text-base italic">
+                        Select your country to start / Wählen Sie Ihr Land zum Starten
                     </p>
                 </div>
                 
@@ -78,6 +78,16 @@ get_header('welcome');
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                         </svg>
                     </a>
+                </div>
+                
+                <!-- Badge informativo -->
+                <div class="mt-8 p-4 bg-primary/5 border border-primary/10 rounded-xl">
+                    <p class="text-primary/80 text-sm flex items-start gap-3">
+                        <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span>Adaptamos nuestras soluciones de acuerdo con tu ubicación, industria y necesidades operativas.</span>
+                    </p>
                 </div>
             </div>
             
