@@ -241,10 +241,10 @@ get_header();
             </div>
         </div>
         <!-- BADGE Reclutamiento y selección para prevenir rotación de personal -->
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-            Reclutamiento y selección para prevenir rotación de personal, cuidar del prestigio y erradicar pérdidas
-            </h2>
+        <div class="text-center mt-12">
+            <p class="inline-block text-white/90 text-base md:text-lg bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
+                Reclutamiento y selección para prevenir rotación de personal, cuidar del prestigio y erradicar pérdidas
+            </p>
         </div>
     </div>
 </section>
@@ -309,7 +309,7 @@ get_header();
             
             <!-- Imagen grande izquierda: Reduce la curva de aprendizaje -->
             <div class="relative rounded-3xl overflow-hidden shadow-2xl group md:row-span-2 h-96 md:h-[500px] opacity-0 scale-75 animate-on-scroll" data-delay="600">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima6.jpg" 
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/reclutamiento/4.webp" 
                      alt="Beneficios Modelo de reclutamiento y selección Creatblue® México " 
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -356,8 +356,10 @@ get_header();
         <!-- Título principal -->
         <div class="mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-            SOLUCIONES DE RECLUTAMIENTO + SELECCIÓN
+            Soluciones de Reclutamiento y Selección de Personal
             </h2>
+            <p>Nos adaptamos a las necesidades de cada empresa, desde posiciones especializadas hasta procesos de contratación masiva. 
+            </p>
         </div>
         
         <!-- Grid de 2 columnas -->
@@ -373,10 +375,10 @@ get_header();
                 <!-- Contenido de texto -->
                 <div class="flex-1">
                     <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                    Headhunting
+                    Headhunting especializado
                     </h3>
                     <p class="text-gray-700 leading-relaxed">
-                    Descripción de headhunting diferenciada para creatblue
+                    Búsqueda directa y confidencial de talento estratégico con perfiles clave, alineados con la cultura, objetivos y necesidades específicas de tu organización.
                     </p>
                 </div>
             </div>
@@ -391,10 +393,10 @@ get_header();
                 <!-- Contenido de texto -->
                 <div class="flex-1">
                     <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                    MRP (Massive Recruitment Process)
+                    MRP Reclutamiento Masivo (Massive Recruitment Process)
                     </h3>
                     <p class="text-gray-700 leading-relaxed">
-                    Descripción del reclutamiento masivo diferenciado para creatblue
+                    Proceso estructurado de reclutamiento masivo diseñado para cubrir grandes volúmenes de vacantes en tiempos reducidos, manteniendo altos estándares de calidad en la selección.
                     </p>
                 </div>
             </div>
@@ -412,7 +414,7 @@ get_header();
                     Reclutamiento Puro
                     </h3>
                     <p class="text-gray-700 leading-relaxed">
-                    Descripción de reclutamiento puro diferenciada para creatblue
+                    Enfocado en la atracción, filtrado y presentación de candidatos calificados, permitiendo que tu equipo tome la decisión final de contratación con total confianza.
                     </p>
                 </div>
             </div>
@@ -430,84 +432,43 @@ get_header();
                     Evaluación de Perfiles
                     </h3>
                     <p class="text-gray-700 leading-relaxed">
-                    Descripción de evaluación de perfiles diferenciada para creatblue
-                    </p>
-                </div>
-            </div>
-
-            <!-- Elemento 5: Headhunting -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                    Headhunting
-                    </h3>
-                    <p class="text-gray-700 leading-relaxed">
-                    Descripción de headhunting diferenciada para creatblue
-                    </p>
-                </div>
-            </div>
-
-            <!-- Elemento 6: MRP (Massive Recruitment Process) -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                    MRP (Massive Recruitment Process)
-                    </h3>
-                    <p class="text-gray-700 leading-relaxed">
-                    Descripción del reclutamiento masivo diferenciado para creatblue
-                    </p>
-                </div>
-            </div>
-
-            <!-- Elemento 7: Reclutamiento Puro -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                    Reclutamiento Puro
-                    </h3>
-                    <p class="text-gray-700 leading-relaxed">
-                    Descripción de reclutamiento puro diferenciada para creatblue
-                    </p>
-                </div>
-            </div>
-
-            <!-- Elemento 8: Evaluación de Perfiles -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                    Evaluación de Perfiles
-                    </h3>
-                    <p class="text-gray-700 leading-relaxed">
-                    Descripción de evaluación de perfiles diferenciada para creatblue
+                    Evaluaciones técnicas y conductuales que aseguren la compatibilidad del candidato con el puesto, el equipo y la cultura organizacional.
                     </p>
                 </div>
             </div>
             
         </div>
+        
+        <!-- Alcance de Perfiles -->
+        <div class="mt-16 max-w-4xl">
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
+                Alcance de Perfiles para Reclutamiento y Selección
+            </h3>
+            <p class="text-gray-700 text-lg mb-6 opacity-0 translate-y-8 animate-on-scroll" data-delay="300">
+                Trabajamos con una amplia variedad de perfiles, adaptándonos a las necesidades operativas y estratégicas de cada empresa.
+            </p>
+            <ul class="space-y-3 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+                <li class="flex items-center gap-3 text-gray-800">
+                    <svg class="w-5 h-5 text-secondary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="text-lg">Directivos y Gerenciales</span>
+                </li>
+                <li class="flex items-center gap-3 text-gray-800">
+                    <svg class="w-5 h-5 text-secondary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="text-lg">Administración y Mandos medios</span>
+                </li>
+                <li class="flex items-center gap-3 text-gray-800">
+                    <svg class="w-5 h-5 text-secondary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="text-lg">Operativos y Técnicos</span>
+                </li>
+            </ul>
+        </div>
+        
     </div>
 </section>
 
@@ -515,13 +476,13 @@ get_header();
 <section class="py-20 bg-gray-50">
     <div class="container mx-auto px-6 text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            ¿Listo para transformar tu capital humano?
+        ¿Qué solución de reclutamiento necesita tu empresa?
         </h2>
         <p class="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
-            Contáctanos hoy y descubre cómo podemos ayudarte a optimizar tus procesos de reclutamiento y capacitación.
+        Nuestro equipo te ayuda a definir la estrategia de reclutamiento más eficiente para optimizar tiempos, costos y resultados.
         </p>
         <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-            Contáctanos ahora
+            Habla con un asesor
         </button>
     </div>
 </section>
