@@ -12,7 +12,7 @@ get_header('welcome');
 ?>
 
 <!-- Welcome section - Selección de País/Idioma -->
-<section class="min-h-screen pt-32 pb-20 bg-gradient-to-br from-gray-50 to-gray-100">
+<section class="min-h-screen pt-44 md:pt-48 pb-20 bg-gradient-to-br from-gray-50 to-gray-100">
     <div class="container mx-auto px-6">
         
         <!-- Título principal -->
