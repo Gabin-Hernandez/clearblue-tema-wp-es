@@ -370,7 +370,7 @@ get_header();
                 <!-- Contenedor de imagen -->
                 <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
                     <!-- Placeholder para imagen - cambiar después -->
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/rico1.webp" alt="Headhunting especializado" class="w-full h-full object-cover">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/rico1.jpg" alt="Headhunting especializado" class="w-full h-full object-cover">
                 </div>
                 <!-- Contenido de texto -->
                 <div class="flex-1">
@@ -388,7 +388,7 @@ get_header();
                 <!-- Contenedor de imagen -->
                 <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
                     <!-- Placeholder para imagen - cambiar después -->
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/rico2.webp" alt="Headhunting especializado" class="w-full h-full object-cover">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/rico2.jpg" alt="Headhunting especializado" class="w-full h-full object-cover">
                 </div>
                 <!-- Contenido de texto -->
                 <div class="flex-1">
@@ -406,7 +406,7 @@ get_header();
                 <!-- Contenedor de imagen -->
                 <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
                     <!-- Placeholder para imagen - cambiar después -->
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/rico3.webp" alt="Headhunting especializado" class="w-full h-full object-cover">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/rico3.jpg" alt="Headhunting especializado" class="w-full h-full object-cover">
                 </div>
                 <!-- Contenido de texto -->
                 <div class="flex-1">
@@ -424,7 +424,7 @@ get_header();
                 <!-- Contenedor de imagen -->
                 <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
                     <!-- Placeholder para imagen - cambiar después -->
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/rico4.webp" alt="Headhunting especializado" class="w-full h-full object-cover">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/rico4.jpg" alt="Headhunting especializado" class="w-full h-full object-cover">
                 </div>
                 <!-- Contenido de texto -->
                 <div class="flex-1">
