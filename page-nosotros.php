@@ -2,9 +2,14 @@
 /**
  * Template Name: Acerca de nosotros
  * Description: Página de Acerca de nosotros
+ * 
+ * SEO:
+ * - Title: Quiénes Somos | Creatblue® México
+ * - Meta Description: Somos una empresa de origen alemán especializada en CREAR Talento Humano calificado para el sector industrial y corporativo en México.
  */
 
-get_header();
+// Usar header con SEO específico (header-nosotros.php)
+get_header('nosotros');
 ?>
 
 
