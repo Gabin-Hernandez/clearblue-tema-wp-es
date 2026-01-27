@@ -370,7 +370,7 @@ get_header();
                 <!-- Contenedor de imagen -->
                 <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
                     <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/rico1.webp" alt="Headhunting especializado" class="w-full h-full object-cover">
                 </div>
                 <!-- Contenido de texto -->
                 <div class="flex-1">
@@ -388,7 +388,7 @@ get_header();
                 <!-- Contenedor de imagen -->
                 <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
                     <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/rico2.webp" alt="Headhunting especializado" class="w-full h-full object-cover">
                 </div>
                 <!-- Contenido de texto -->
                 <div class="flex-1">
@@ -406,7 +406,7 @@ get_header();
                 <!-- Contenedor de imagen -->
                 <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
                     <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/rico3.webp" alt="Headhunting especializado" class="w-full h-full object-cover">
                 </div>
                 <!-- Contenido de texto -->
                 <div class="flex-1">
@@ -424,7 +424,7 @@ get_header();
                 <!-- Contenedor de imagen -->
                 <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
                     <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/rico4.webp" alt="Headhunting especializado" class="w-full h-full object-cover">
                 </div>
                 <!-- Contenido de texto -->
                 <div class="flex-1">
@@ -474,16 +474,30 @@ get_header();
 
 <!-- Sección CTA Final -->
 <section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-        ¿Qué solución de reclutamiento necesita tu empresa?
-        </h2>
-        <p class="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
-        Nuestro equipo te ayuda a definir la estrategia de reclutamiento más eficiente para optimizar tiempos, costos y resultados.
-        </p>
-        <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-            Habla con un asesor
-        </button>
+    <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <!-- Columna izquierda - Imagen -->
+            <div class="opacity-0 scale-75 animate-on-scroll" data-delay="200">
+                <div class="rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/r5.webp" 
+                         alt="Soluciones de reclutamiento Creatblue" 
+                         class="w-full h-[400px] object-cover">
+                </div>
+            </div>
+            
+            <!-- Columna derecha - Texto -->
+            <div class="opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    ¿Qué solución de reclutamiento necesita tu empresa?
+                </h2>
+                <p class="text-gray-600 text-lg mb-8">
+                    Nuestro equipo te ayuda a definir la estrategia de reclutamiento más eficiente para optimizar tiempos, costos y resultados.
+                </p>
+                <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
+                    Habla con un asesor
+                </button>
+            </div>
+        </div>
     </div>
 </section>
 
