@@ -45,21 +45,21 @@ get_header();
             <div class="relative h-[500px] lg:h-[600px] hidden lg:block">
                 <!-- Imagen 1 - Superior izquierda -->
                 <div class="absolute top-0 left-0 w-60 h-72 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-10 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="300" data-speed="0.3">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima1.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/reclutamiento/3.webp" 
                          alt="Trabajador 1" 
                          class="w-full h-full object-cover">
                 </div>
                 
                 <!-- Imagen 2 - Superior derecha -->
                 <div class="absolute top-0 right-0 w-64 h-64 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="500" data-speed="0.5">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima2.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/reclutamiento/1.webp" 
                          alt="Trabajador 2" 
                          class="w-full h-full object-cover">
                 </div>
                 
                 <!-- Imagen 3 - Centro izquierda (más grande y destacada) -->
                 <div class="absolute top-60 left-24 w-60 h-72 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-30 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="700" data-speed="0.2">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima3.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/reclutamiento/2.webp" 
                          alt="Trabajador 3" 
                          class="w-full h-full object-cover">
                 </div>
@@ -89,7 +89,7 @@ get_header();
                          class="w-full h-48 object-cover">
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/reclutamiento/1.webp" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/reclutamiento/2.webp" 
                          alt="Trabajador 3" 
                          class="w-full h-48 object-cover">
                 </div>
