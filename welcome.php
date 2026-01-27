@@ -2,13 +2,17 @@
 /**
  * Template Name: Welcome Page
  * Description: Página de bienvenida con diseño personalizado usando Tailwind CSS
+ * 
+ * Esta página utiliza un header minimalista (sin navegación) y un footer global
+ * con información general de la empresa, ya que es la página de selección de país.
  */
 
-get_header();
+// Usar header especial sin navegación (header-welcome.php)
+get_header('welcome');
 ?>
 
 <!-- Welcome section - Selección de País/Idioma -->
-<section class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+<section class="min-h-screen pt-32 pb-20 bg-gradient-to-br from-gray-50 to-gray-100">
     <div class="container mx-auto px-6">
         
         <!-- Título principal -->
@@ -168,5 +172,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </style>
 
 <?php
-get_footer();
+// Usar footer global especial (footer-welcome.php)
+get_footer('welcome');
 ?>
