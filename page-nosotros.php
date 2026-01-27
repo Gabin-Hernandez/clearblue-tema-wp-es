@@ -55,7 +55,6 @@ get_header('nosotros');
                     </p>
                 </div>
             </div>
-            </div>
             
             <!-- Columna derecha - Contenedor de imagen -->
             <div class="opacity-0 scale-75 animate-on-scroll" data-delay="600">
@@ -77,11 +76,10 @@ get_header('nosotros');
             
             <!-- Columna izquierda - Contenedor de imagen -->
             <div class="opacity-0 scale-75 animate-on-scroll" data-delay="400">
-                <div class="w-full h-[400px] bg-gradient-to-br from-primary to-[#1a1d4a] rounded-2xl shadow-2xl">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full flex items-center justify-center">
-                        <span class="text-white/20 text-xl">Imagen placeholder</span>
-                    </div>
+                <div class="w-full h-[400px] rounded-2xl shadow-2xl overflow-hidden">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/images/acerca/2.webp" 
+                         alt="La importancia de Creatblue para el mercado mexicano" 
+                         class="w-full h-full object-cover">
                 </div>
             </div>
             
