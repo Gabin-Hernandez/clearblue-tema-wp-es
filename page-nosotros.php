@@ -17,7 +17,7 @@ get_header();
                 CREAT<span class="font-normal">alento</span> idóneo en el menor tiempo posible.
             </h1>
             <p class="text-lg text-primary opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                Promesa <span class="font-bold">Creatblue</span> que se cumple.
+                Promesa <span class="font-bold">Creatblue®</span> que se cumple.
             </p>
         </div>
     </div>
@@ -25,6 +25,7 @@ get_header();
 
 <!-- Sección: Quiénes Somos -->
 <section class="py-20 bg-white">
+    <h2 class="text-2xl md:text-3xl font-bold text-primary uppercase tracking-wide">Quiénes somos como Creatblue® México</h2>
     <div class="container mx-auto px-6">
         <div class="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
             
