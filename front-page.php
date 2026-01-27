@@ -2,9 +2,14 @@
 /**
  * Template Name: Home Page - pagina de incicio MX
  * Description: Página principal con diseño personalizado usando Tailwind CSS
+ * 
+ * SEO:
+ * - Title: Creatblue® México | Entrenamiento Industrial, Reclutamiento, Capacitación y Consultoría Empresarial
+ * - Meta Description: Incrementamos la productividad de las empresas en México con entrenamiento industrial, reclutamiento especializado y consultoría estratégica en talento humano.
  */
 
-get_header();
+// Usar header con SEO específico para Home MX (header-front.php)
+get_header('front');
 ?>
 
 <!-- Hero Section con fondo de video -->
