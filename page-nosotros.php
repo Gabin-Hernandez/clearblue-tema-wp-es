@@ -25,37 +25,39 @@ get_header();
 
 <!-- Sección: Quiénes Somos -->
 <section class="py-20 bg-white">
-    <h2 class="text-2xl md:text-3xl font-bold text-primary uppercase tracking-wide">Quiénes somos como Creatblue® México</h2>
+    <div class="container mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-primary uppercase tracking-wide text-center mb-12">Quiénes somos como Creatblue® México</h2>
+    </div>
     <div class="container mx-auto px-6">
         <div class="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
             
             <!-- Columna izquierda - Texto -->
             <div class="space-y-6 opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
                 <h2 class="text-2xl md:text-3xl font-bold text-primary uppercase tracking-wide">
-                    ¿QUIÉNES SOMOS?
+                Nuestro Origen
                 </h2>
-                
                 <div class="space-y-4 text-primary">
                     <p class="text-lg">
-                        <span class="font-bold">Creatblue México</span> una nueva división de Grupo Schnellecke.
+                    Creatblue® México es la nueva división de Grupo Schnellecke, empresa de clase mundial especializada en la gestión de cadenas de suministro para el sector industrial.
                     </p>
-                    
-                    <div>
-                        <p class="font-bold mb-2">¿Nuestra misión?</p>
-                        <p class="leading-relaxed">
-                            Crear talento humano altamente calificado con las habilidades y actitudes correctas para despegar el potencial de tu empresa.
-                        </p>
-                    </div>
                 </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-primary uppercase tracking-wide">
+                Nuestra Misión
+                </h2>
+                <div class="space-y-4 text-primary">
+                    <p class="text-lg">
+                    Crear talento humano altamente calificado con las habilidades y actitudes correctas para despegar el potencial de tu empresa.
+                    </p>
+                </div>
+            </div>
             </div>
             
             <!-- Columna derecha - Contenedor de imagen -->
             <div class="opacity-0 scale-75 animate-on-scroll" data-delay="600">
-                <div class="w-full h-[400px] bg-gradient-to-br from-primary to-[#1a1d4a] rounded-2xl shadow-2xl">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full flex items-center justify-center">
-                        <span class="text-white/20 text-xl">Imagen placeholder</span>
-                    </div>
+                <div class="w-full h-[400px] rounded-2xl shadow-2xl overflow-hidden">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/images/acerca/1.webp" 
+                         alt="Quiénes somos - Creatblue México" 
+                         class="w-full h-full object-cover">
                 </div>
             </div>
             
@@ -81,7 +83,7 @@ get_header();
             <!-- Columna derecha - Texto -->
             <div class="space-y-6 opacity-0 translate-x-8 animate-on-scroll" data-delay="600">
                 <h2 class="text-2xl md:text-3xl font-bold text-primary uppercase tracking-wide">
-                    LA IMPORTANCIA DE CREATBLUE PARA LAS EMPRESAS
+                La impotancia de CREATBLUE® para el mercado mexicano
                 </h2>
                 
                 <div class="space-y-4 text-primary">
