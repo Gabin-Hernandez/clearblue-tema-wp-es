@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home Page
+ * Template Name: Home Page - pagina de incicio MX
  * Description: Página principal con diseño personalizado usando Tailwind CSS
  */
 
