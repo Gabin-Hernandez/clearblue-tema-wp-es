@@ -166,7 +166,7 @@ get_header();
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-                ¿Te ha pasado?
+            ¿Te ha pasado? Principales problemas en la búsqueda y contratación de personal
             </h2>
         </div>
         
@@ -182,10 +182,10 @@ get_header();
                     </div>
                 </div>
                 <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">
-                    Paros en línea de producción
+                Rotación de personal 
                 </h3>
                 <p class="text-gray-700 text-center leading-relaxed">
-                    Una hora de paro en línea puede costar entre <span class="font-bold">$10,000 y $50,000 USD.</span> Dependiendo de la empresa.
+                El 80% de la rotación de personal se atribuye a malas decisiones de contratación, afectando clima laboral y continuidad corporativa.
                 </p>
             </div>
             
@@ -199,10 +199,10 @@ get_header();
                     </div>
                 </div>
                 <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">
-                    Daños en las instalaciones
+                Costos por vacantes abiertas
                 </h3>
                 <p class="text-gray-700 text-center leading-relaxed">
-                    El <span class="font-bold">60%</span> de los incidentes industriales se deben a malas prácticas operativas.
+                Si una vacante permanece 60 días sin cubrir, el costo total podría alcanzar los $166,140 MXN en pérdida de productividad y oportunidades de negocio.
                 </p>
             </div>
             
@@ -216,10 +216,10 @@ get_header();
                     </div>
                 </div>
                 <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">
-                    Accidentes e incidentes en el área operativa
+                Incompatibilidad cultural y desgaste temprano
                 </h3>
                 <p class="text-gray-700 text-center leading-relaxed">
-                    El <span class="font-bold">38%</span> de los accidentes por mantenimiento implican daños a infraestructura (fugas, incas, paredes/ o barreras de seguridad) enfermedos.
+                Hasta 46% de los empleados que renuncian lo hacen por incompatibilidad, no por falta de habilidades técnicas.
                 </p>
             </div>
             
@@ -233,12 +233,18 @@ get_header();
                     </div>
                 </div>
                 <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">
-                    Scrap de materiales
+                Procesos ineficientes de contratación
                 </h3>
                 <p class="text-gray-700 text-center leading-relaxed">
-                    El scrap puede representar entre el <span class="font-bold">2% y 10%</span> de los ingresos totales por ventas de línea de producción.
+                Contratar sin métricas puede costar hasta 4.8 veces el salario anual del puesto, debido a decisiones subjetivas y falta de predictibilidad en el desempeño.
                 </p>
             </div>
+        </div>
+        <!-- BADGE Reclutamiento y selección para prevenir rotación de personal -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
+            Reclutamiento y selección para prevenir rotación de personal, cuidar del prestigio y erradicar pérdidas
+            </h2>
         </div>
     </div>
 </section>
@@ -288,14 +294,15 @@ get_header();
             <!-- Columna 2: Título y texto -->
             <div class="text-right opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
                 <h2 class="text-secondary uppercase tracking-[0.2em] font-bold">
-                    Reclutamiento + Entrenamiento
+                    Reclutamiento y entrenamiento
                 </h2>
                 <p class="text-white text-base max-w-2xl ml-auto">
                     de personal sin experiencia.
                 </p>
             </div>
         </div>
-        <h2 class="text-white text-2xl md:text-3xl font-bold leading-tight text-center opacity-0 translate-x-8 animate-on-scroll mb-16" data-delay="400">¿Dificultad para encontrar personal calificado?</h2>
+        <h2 class="text-white text-2xl md:text-3xl font-bold leading-tight text-center opacity-0 translate-x-8 animate-on-scroll mb-16" data-delay="400">¿Dificultad para encontrar personal calificado?
+        </h2>
 
         <!-- Grid de imágenes tipo collage: 1 grande a la izquierda, 2 pequeñas apiladas a la derecha -->
         <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -303,12 +310,12 @@ get_header();
             <!-- Imagen grande izquierda: Reduce la curva de aprendizaje -->
             <div class="relative rounded-3xl overflow-hidden shadow-2xl group md:row-span-2 h-96 md:h-[500px] opacity-0 scale-75 animate-on-scroll" data-delay="600">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima6.jpg" 
-                     alt="Reduce la curva de aprendizaje" 
+                     alt="Beneficios Modelo de reclutamiento y selección Creatblue® México " 
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute bottom-0 left-0 right-0 p-8">
                     <h3 class="text-white text-2xl md:text-3xl font-bold leading-tight">
-                        Reduce la curva de aprendizaje.
+                    Reduce la curva de aprendizaje
                     </h3>
                 </div>
             </div>
@@ -316,12 +323,12 @@ get_header();
             <!-- Imagen pequeña superior derecha: Disminuye la accidentabilidad -->
             <div class="relative rounded-3xl overflow-hidden shadow-2xl group h-60 md:h-60 opacity-0 scale-75 animate-on-scroll" data-delay="800">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/fdo1.jpg" 
-                     alt="Disminuye la accidentabilidad" 
+                     alt="Modelo CREATmap de Creatblue para evaluar, entrenar y optimizar talento humano industrial" 
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute bottom-0 left-0 right-0 p-6">
                     <h3 class="text-white text-xl md:text-2xl font-bold leading-tight">
-                        Disminuye la accidentabilidad y pérdidas de material.
+                    Disminuye la accidentabilidad y pérdidas de material
                     </h3>
                 </div>
             </div>
@@ -329,12 +336,12 @@ get_header();
             <!-- Imagen pequeña inferior derecha: Aumenta la productividad -->
             <div class="relative rounded-3xl overflow-hidden shadow-2xl group h-60 md:h-56 opacity-0 scale-75 animate-on-scroll" data-delay="1000">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima7.jpg" 
-                     alt="Aumenta la productividad" 
+                     alt="Beneficios Modelo Workforce Ready to Go por Creatblue® México" 
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute bottom-0 left-0 right-0 p-6">
                     <h3 class="text-white text-xl md:text-2xl font-bold leading-tight">
-                        Aumenta la productividad desde el primer día.
+                    Aumenta la productividad desde el primer día
                     </h3>
                 </div>
             </div>
