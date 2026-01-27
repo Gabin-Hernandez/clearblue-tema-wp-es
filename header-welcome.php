@@ -22,7 +22,7 @@
                 <?php the_custom_logo(); ?>
             <?php else : ?>
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="flex items-center">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/logo_dark.png" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/logo_darkCB.png" 
                          alt="<?php bloginfo('name'); ?>" 
                          class="h-20 md:h-24" 
                          onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
