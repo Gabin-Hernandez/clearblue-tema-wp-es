@@ -27,10 +27,18 @@ get_header();
                     <span class="text-secondary font-black">IMPULSAR</span> tu capital humano
                 </h1>
                 
-                <!-- CTA Button -->
-                <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                    ACCIÓN BT
-                </button>
+                <!-- CTA Buttons -->
+                <div class="flex flex-wrap gap-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+                    <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
+                        Cotizar ahora
+                    </button>
+                    <button class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-3">
+                        <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        Ver cómo funciona
+                    </button>
+                </div>
             </div>
             
             <!-- Columna derecha - Grid de imágenes desordenado -->
@@ -71,17 +79,17 @@ get_header();
             <!-- Grid móvil - Mostrar solo en pantallas pequeñas -->
             <div class="grid grid-cols-2 gap-4 lg:hidden">
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima1.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/reclutamiento/3.webp" 
                          alt="Trabajador 1" 
                          class="w-full h-48 object-cover">
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima2.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/reclutamiento/1.webp" 
                          alt="Trabajador 2" 
                          class="w-full h-48 object-cover">
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima3.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/reclutamiento/1.webp" 
                          alt="Trabajador 3" 
                          class="w-full h-48 object-cover">
                 </div>
@@ -101,8 +109,9 @@ get_header();
     <div class="container mx-auto px-6">
         <div class="text-center max-w-3xl mx-auto mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-                Gracias a nuestra experiencia en la gestión de capital humano, conocemos los desafíos clave que enfrentan las empresas y el impacto en su Core Business.
+            Expertos en gestión de capital humano, conocemos los desafíos clave que enfrentan las empresas y el impacto en su Core Business. 
             </h2>
+            <p>BENEFICIOS CREATBLUE®</p>
         </div>
         
         <!-- Grid de 3 columnas con iconos -->
