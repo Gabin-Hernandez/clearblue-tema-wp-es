@@ -210,8 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             <!-- Lado izquierdo - Texto y logos -->
             <div class="space-y-8">
-                <p class="text-secondary uppercase tracking-[0.2em] text-lg font-black mb-6 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">Creatblue Originals | <span class="text-white">Soluciones innovadoras para tu negocio.</span>
-                "           Soluciones innovadoras para tu negocio.</p>
+                <p class="text-secondary uppercase tracking-[0.2em] text-lg font-black mb-6 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">Creatblue Originals | <span class="text-white">Soluciones innovadoras para tu negocio.</span></p>
                  <!-- Logo WorkForce -->
                   <div class="opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
                     <div>
@@ -249,9 +248,9 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="container mx-auto px-6">
         <!-- Título -->
         <div class="mb-16 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-            <p class="text-secondary uppercase tracking-wide text-2xl font-black mb-3">DIFERENCIADOR CREATBLUE</p>
+            <p class="text-secondary uppercase tracking-wide text-2xl font-black mb-3">DIFERENCIADOR CREATBLUE®</p>
             <p class="text-gray-700 text-lg max-w-2xl leading-relaxed">
-                En Creatblue México nos caracterizamos por incrementar la productividad en todas las zonas que trabajamos, por medio de la capacitación y entrenamiento de los trabajadores y gerentes de los negocios.
+            En Creatblue® México incrementamos la rentabilidad de nuestros clientes mediante soluciones especializadas en talento humano, sin comprometer la calidad ni la plusvalía de sus negocios.
             </p>
         </div>
         
@@ -294,7 +293,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
-                        Optimizamos tus costos operativos
+                    Optimizamos los costos operativos
                     </h3>
                 </div>
             </div>
@@ -314,14 +313,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         Camino<span class="italic font-normal">zum</span> talent
                     </h3>
                     <p class="text-gray-200 text-base">
-                        No te pierdas de la mejor información dentro del sector
+                    La mejor información dentro del sector industrial y corporativo.
                     </p>
                 </div>
                 
                 <!-- Botón CTA -->
                 <div class="flex-shrink-0">
                     <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
-                        ACTION BT
+                        Ponte al día
                     </button>
                 </div>
             </div>
