@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <!-- Card de texto a la izquierda -->
                 <div class="w-full md:w-auto md:max-w-md z-10 p-8 md:p-10">
                     <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-3 md:mb-4 leading-tight">
-                        Nuestras Soluciones
+                        Soluciones integrales para el desarrollo del talento.
                     </h3>
                     <p class="text-white text-lg md:text-lg leading-relaxed">
                         Encuentra el camino correcto con nosotros.
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <path d="M4.5 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM14.25 8.625a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0ZM1.5 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM17.25 19.128l-.001.144a2.25 2.25 0 0 1-.233.96 10.088 10.088 0 0 0 5.06-1.01.75.75 0 0 0 .42-.643 4.875 4.875 0 0 0-6.957-4.611 8.586 8.586 0 0 1 1.71 5.157l.001.003Z" />
                                 </svg>
                             </div>
-                            <span class="font-semibold text-gray-800 group-hover:text-white transition-colors duration-300 text-lg md:text-lg">Reclutamiento + Selección</span>
+                            <span class="font-semibold text-gray-800 group-hover:text-white transition-colors duration-300 text-lg md:text-lg">Reclutamiento y Selección</span>
                         </div>
                         <svg class="w-5 h-5 md:w-6 md:h-6 text-gray-400 group-hover:text-white transition-colors duration-300 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
                             <path fillRule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clipRule="evenodd" />
@@ -210,11 +210,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             <!-- Lado izquierdo - Texto y logos -->
             <div class="space-y-8">
-                <p class="text-secondary uppercase tracking-[0.2em] text-lg font-black mb-6 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">CREATBLUE ORIGINALS</p>
+                <p class="text-secondary uppercase tracking-[0.2em] text-lg font-black mb-6 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">Creatblue Originals | <span class="text-white">Soluciones innovadoras para tu negocio.</span>
+                "           Soluciones innovadoras para tu negocio.</p>
                  <!-- Logo WorkForce -->
                   <div class="opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
                     <div>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/workforce_asset.png" 
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/workforce_asset.png"     
                              alt="WORKFORCE" 
                              class="block mb-3 w-full max-w-[400px] h-auto">
                     </div>
