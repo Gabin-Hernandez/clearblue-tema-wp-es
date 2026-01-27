@@ -440,14 +440,14 @@ get_header();
         </div>
         
         <!-- Alcance de Perfiles -->
-        <div class="mt-16 max-w-4xl">
+        <div class="mt-16 max-w-xl mx-auto text-center">
             <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
                 Alcance de Perfiles para Reclutamiento y Selección
             </h3>
             <p class="text-gray-700 text-lg mb-6 opacity-0 translate-y-8 animate-on-scroll" data-delay="300">
                 Trabajamos con una amplia variedad de perfiles, adaptándonos a las necesidades operativas y estratégicas de cada empresa.
             </p>
-            <ul class="space-y-3 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+            <ul class="space-y-3 opacity-0 translate-y-8 animate-on-scroll inline-block text-left" data-delay="400">
                 <li class="flex items-center gap-3 text-gray-800">
                     <svg class="w-5 h-5 text-secondary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
