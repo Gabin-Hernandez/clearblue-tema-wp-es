@@ -7,8 +7,19 @@
 get_header();
 ?>
 
-<!-- Hero Section con fondo de imagen -->
-<section class="relative min-h-screen bg-cover bg-center" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/public/fdo1.jpg');">
+<!-- Hero Section con fondo de video -->
+<section class="relative min-h-screen overflow-hidden">
+    <!-- Video de fondo -->
+    <video 
+        autoplay 
+        muted 
+        loop 
+        playsinline
+        class="absolute inset-0 w-full h-full object-cover"
+    >
+        <source src="<?php echo get_stylesheet_directory_uri(); ?>/public/video/home.mp4" type="video/mp4">
+    </video>
+    
     <!-- Overlay oscuro -->
     <div class="absolute inset-0 bg-black/50"></div>
     
@@ -16,13 +27,70 @@ get_header();
     <div class="relative z-10 container mx-auto px-6 flex items-center" style="min-height: 100vh; padding-top: 80px;">
         <div class="max-w-2xl">
             <h1 class="text-white text-5xl md:text-6xl font-bold leading-tight mb-6">
-                CAMBIO <span class="font-black text-secondary">ejemplo2</span> is simply dummy text of the printing and typesetting industry.</h1>
+                Creatblue® México: Creamos talento que impulsa <span id="typewriter" class="font-black text-secondary"></span><span class="typewriter-cursor text-secondary">|</span>
+            </h1>
             <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                ACTION BT
+                Cotiza ahora
             </button>
         </div>
     </div>
 </section>
+
+<!-- Typewriter Effect Styles -->
+<style>
+.typewriter-cursor {
+    animation: blink 0.7s infinite;
+    font-weight: 100;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+</style>
+
+<!-- Typewriter Effect Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const words = ['productividad', 'estrategia', 'innovación', 'talento'];
+    const typewriterElement = document.getElementById('typewriter');
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 100;
+    
+    function type() {
+        const currentWord = words[wordIndex];
+        
+        if (isDeleting) {
+            // Borrando
+            typewriterElement.textContent = currentWord.substring(0, charIndex - 1);
+            charIndex--;
+            typeSpeed = 50;
+        } else {
+            // Escribiendo
+            typewriterElement.textContent = currentWord.substring(0, charIndex + 1);
+            charIndex++;
+            typeSpeed = 100;
+        }
+        
+        // Palabra completa
+        if (!isDeleting && charIndex === currentWord.length) {
+            typeSpeed = 2000; // Pausa al final de la palabra
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            typeSpeed = 500; // Pausa antes de la siguiente palabra
+        }
+        
+        setTimeout(type, typeSpeed);
+    }
+    
+    // Iniciar el efecto
+    setTimeout(type, 1000);
+});
+</script>
 
 <!-- Sección Nuestras Soluciones -->
 <section class="py-20 bg-gray-50 relative overflow-hidden">
