@@ -17,7 +17,7 @@ get_header();
                 <!-- Badge -->
                 <div class="inline-block mb-6 opacity-0 translate-y-8 animate-on-scroll" data-delay="100">
                     <span class="bg-secondary text-white text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wider">
-                    Creatblue Originals
+                    Contacto
                     </span>
                 </div>
                 
