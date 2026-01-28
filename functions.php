@@ -6,10 +6,16 @@ function my_theme_enqueue_styles() {
 
 /**
  * SEO Dinámico - Meta tags centralizados por página
- * Agrega title y meta description según el template de página
+ * Modifica el título y agrega la meta description según el template de página.
+ * Utiliza los filtros de WordPress para compatibilidad con plugins de SEO.
  */
-add_action( 'wp_head', 'creatblue_dynamic_seo', 1 );
-function creatblue_dynamic_seo() {
+add_action( 'wp', 'creatblue_setup_seo' );
+function creatblue_setup_seo() {
+    // No ejecutar en el admin
+    if ( is_admin() ) {
+        return;
+    }
+
     // Configuración de SEO por página
     $seo_config = array(
         'front-page' => array(
@@ -45,22 +51,38 @@ function creatblue_dynamic_seo() {
             'description' => 'Contáctanos si buscas empleo o talento con soluciones de reclutamiento, capacitación, entrenamiento y consultoría empresarial. En Creatblue conectamos talento con oportunidades reales.'
         ),
     );
-    
+
     // Detectar el template actual
     $template = '';
-    
-    if (is_front_page()) {
+    if ( is_front_page() ) {
         $template = 'front-page';
-    } elseif (is_page_template()) {
+    } elseif ( is_page_template() ) {
         $template_file = get_page_template_slug();
-        $template = str_replace('.php', '', $template_file);
+        $template = str_replace( '.php', '', $template_file );
     }
-    
-    // Si hay configuración SEO para este template, mostrar las meta tags
-    if (!empty($template) && isset($seo_config[$template])) {
-        $seo = $seo_config[$template];
-        echo '<title>' . esc_html($seo['title']) . '</title>' . "\n";
-        echo '<meta name="description" content="' . esc_attr($seo['description']) . '">' . "\n";
+
+    // Si hay configuración SEO para este template, registrar los filtros y acciones
+    if ( ! empty( $template ) && isset( $seo_config[ $template ] ) ) {
+        $GLOBALS['creatblue_seo_data'] = $seo_config[ $template ];
+
+        // Modificar el título
+        add_filter( 'pre_get_document_title', 'creatblue_dynamic_title', 20 );
+
+        // Agregar meta description
+        add_action( 'wp_head', 'creatblue_dynamic_description', 1 );
+    }
+}
+
+function creatblue_dynamic_title( $title ) {
+    if ( isset( $GLOBALS['creatblue_seo_data']['title'] ) ) {
+        return $GLOBALS['creatblue_seo_data']['title'];
+    }
+    return $title;
+}
+
+function creatblue_dynamic_description() {
+    if ( isset( $GLOBALS['creatblue_seo_data']['description'] ) ) {
+        echo '<meta name="description" content="' . esc_attr( $GLOBALS['creatblue_seo_data']['description'] ) . '">' . "\n";
     }
 }
 
