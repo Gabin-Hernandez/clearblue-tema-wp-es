@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Entrenamiento
+ * Template Name: Entrenamiento MX
  * Description: Página de servicios de entrenamiento
  * 
  * SEO:
