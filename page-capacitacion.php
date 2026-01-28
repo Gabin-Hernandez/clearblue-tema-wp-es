@@ -27,7 +27,7 @@ get_header();
                     <span class="text-secondary font-black">FORTALECER</span> tu talento humano
                 </h1>
                 
-                <!-- CTA Button -->
+                <!-- CTA Button y descargar catalogo-->
                 <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
                     Cotizar ahora
                 </button>
