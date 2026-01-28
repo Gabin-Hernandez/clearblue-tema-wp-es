@@ -311,13 +311,14 @@ get_header('entrenamiento');
                     </svg>
                     Ver cómo funciona
                 </button>
+                <button class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    Descargar brochure
+                </button>
             </div>
-            <button class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-3">
-                <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z"/>
-                </svg>
-                Descargar brochure
-            </button>
+            
         </div>
     </div>
 </section>
