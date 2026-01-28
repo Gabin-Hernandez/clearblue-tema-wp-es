@@ -330,10 +330,10 @@ get_header('entrenamiento');
             <!-- Tarjeta 1: Mapea -->
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
                 <!-- Imagen -->
-                <div class="h-48 overflow-hidden">
+                <div class="bg-gray-100">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e1.webp" 
                          alt="Mapea - Evaluación de rendimiento" 
-                         class="w-full h-full object-cover">
+                         class="w-full h-auto">
                 </div>
                 <!-- Contenido -->
                 <div class="p-6">
@@ -347,10 +347,10 @@ get_header('entrenamiento');
             <!-- Tarjeta 2: Entrena -->
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
                 <!-- Imagen -->
-                <div class="h-48 overflow-hidden">
+                <div class="bg-gray-100">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e2.webp" 
                          alt="Entrena - Capacitación del equipo" 
-                         class="w-full h-full object-cover">
+                         class="w-full h-auto">
                 </div>
                 <!-- Contenido -->
                 <div class="p-6">
@@ -364,10 +364,10 @@ get_header('entrenamiento');
             <!-- Tarjeta 3: Optimiza -->
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
                 <!-- Imagen -->
-                <div class="h-48 overflow-hidden">
+                <div class="bg-gray-100">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e3.webp" 
                          alt="Optimiza - Mejora del rendimiento" 
-                         class="w-full h-full object-cover">
+                         class="w-full h-auto">
                 </div>
                 <!-- Contenido -->
                 <div class="p-6">
@@ -388,52 +388,48 @@ get_header('entrenamiento');
         <!-- Título principal -->
         <div class="mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-                LUGARES DE ENTRENAMIENTO
+            Modalidades de Entrenamiento Creatblue® México
             </h2>
         </div>
         
-        <!-- Grid de 2 columnas -->
-        <div class="grid md:grid-cols-2 gap-8 lg:gap-12 mb-20">
-            
-            <!-- Elemento 1: Conoce CREATmobil -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                        Conoce <span class="font-black">CREAT</span>mobil
+        <!-- Banner 1: CREATmobil - Ancho completo -->
+        <div class="grid lg:grid-cols-2 gap-8 items-center mb-12 bg-gray-50 rounded-3xl overflow-hidden opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+            <!-- Texto a la izquierda -->
+            <div class="p-8 lg:p-12">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                    CREATmobil: entrenamiento en tus instalaciones
+                </h3>
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    Llevamos todo nuestro equipo de entrenamiento directamente a tus instalaciones, adaptándonos a tus procesos y operación.
+                </p>
+            </div>
+            <!-- Imagen a la derecha -->
+            <div class="h-64 lg:h-80">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e4.webp" 
+                     alt="CREATmobil - Entrenamiento en tus instalaciones" 
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+        
+        <!-- Banner 2: CEC - Imagen de fondo con texto encima -->
+        <div class="relative rounded-3xl overflow-hidden mb-12 opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
+            <!-- Imagen de fondo -->
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e5.webp" 
+                 alt="CEC - Centros de Entrenamiento Creatblue" 
+                 class="w-full h-64 lg:h-80 object-cover">
+            <!-- Overlay oscuro -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+            <!-- Texto encima -->
+            <div class="absolute inset-0 flex items-center">
+                <div class="p-8 lg:p-12 max-w-2xl">
+                    <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">
+                        CEC: Centros de Entrenamiento Creatblue®
                     </h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        Llevamos todo nuestro equipo de entrenamiento hasta tus instalaciones
+                    <p class="text-white/90 leading-relaxed text-lg">
+                        <strong>SLP Y SILAO con una capacidad de 1,050 m²</strong> — Prepara a tu equipo en nuestros Centros de Entrenamiento Creatblue®, diseñados para simular entornos operativos reales.
                     </p>
                 </div>
             </div>
-            
-            <!-- Elemento 2: Conoce nuestros CEC -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                        Conoce nuestros CEC<br>
-                        <span class="text-lg font-normal">(Centro de Entrenamiento Creatblue)</span>
-                    </h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        Descripción de reclutamiento puro diferenciada para creatblue
-                    </p>
-                </div>
-            </div>
-            
         </div>
     </div>
 </section>
