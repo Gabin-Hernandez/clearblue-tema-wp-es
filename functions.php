@@ -21,28 +21,28 @@ function creatblue_dynamic_seo() {
             'description' => 'Modelos de entrenamiento industrial diseñados para aumentar la productividad, eficiencia operativa y desempeño del talento humano.'
         ),
         'page-reclutamiento' => array(
-            'title' => 'Reclutamiento y Selección de Personal | Creatblue® México',
-            'description' => 'Servicios de reclutamiento especializado para encontrar el talento humano que tu empresa necesita.'
+            'title' => 'Reclutamiento y Selección de Personal en México | Creatblue® México',
+            'description' => 'Reclutamiento especializado con IA para cubrir posiciones clave en el menor tiempo posible.'
         ),
         'page-capacitacion' => array(
-            'title' => 'Capacitación Empresarial | Creatblue® México',
-            'description' => 'Programas de capacitación empresarial diseñados para fortalecer las competencias de tu equipo de trabajo.'
+            'title' => 'Capacitación Empresarial y E-learning | Creatblue® México',
+            'description' => 'Capacitación empresarial con métodos andragógicos y plataformas e-learning diseñadas para el desarrollo continuo.'
         ),
         'page-consultoria' => array(
-            'title' => 'Consultoría Empresarial | Creatblue® México',
-            'description' => 'Consultoría estratégica para potenciar el desarrollo de tu empresa y optimizar la gestión de talento humano.'
+            'title' => 'Consultoría Empresarial en Talento y Productividad | Creatblue® México',
+            'description' => 'Consultoría especializada en seguridad, calidad, operación y recursos humanos para industria automotriz, industria textil, industria alimentaria, industria de bienestar, logística, entre otras industrias.'
         ),
         'page-originals' => array(
-            'title' => 'Creatblue Originals | Creatblue® México',
-            'description' => 'Soluciones exclusivas de marca propia que diferencian a tu empresa con valor único y adaptado.'
+            'title' => 'Creatblue® Originals | Modelos propios para el desarrollo del talento humano',
+            'description' => 'Impulsamos el desarrollo del talento humano con soluciones propias creadas para fortalecer personas, equipos y organizaciones.'
         ),
         'page-nosotros' => array(
             'title' => 'Quiénes Somos | Creatblue® México',
             'description' => 'Somos una empresa de origen alemán especializada en CREAR Talento Humano calificado para el sector industrial y corporativo en México.'
         ),
         'page-contacto' => array(
-            'title' => 'Contacto | Creatblue® México',
-            'description' => 'Contáctanos y descubre cómo podemos ayudarte a crear equipos más fuertes, productivos y preparados.'
+            'title' => 'Habla con un especialista en talento, entrenamiento, capacitación y consultoría | Creatblue® México',
+            'description' => 'Contáctanos si buscas empleo o talento con soluciones de reclutamiento, capacitación, entrenamiento y consultoría empresarial. En Creatblue conectamos talento con oportunidades reales.'
         ),
     );
     
