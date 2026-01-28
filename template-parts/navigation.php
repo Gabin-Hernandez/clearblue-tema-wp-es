@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-    <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags específicos para Quiénes Somos -->
-    <title>Quiénes Somos | Creatblue® México</title>
-    <meta name="description" content="Somos una empresa de origen alemán especializada en CREAR Talento Humano calificado para el sector industrial y corporativo en México.">
-    
-    <?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-
 <!-- Header/Nav fixed con efecto glassmorphism -->
 <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-white/10 shadow-lg bg-primary/80" id="main-header">
     <nav class="container mx-auto px-6 py-4">
@@ -45,7 +30,7 @@
                     'items_wrap' => '%3$s',
                     'fallback_cb' => function() {
                         ?>
-                        <a href="<?php echo esc_url(home_url('/acerca')); ?>" class="text-white hover:text-secondary transition">Quiénes somos</a>
+                        <a href="<?php echo esc_url(home_url('/nosotros')); ?>" class="text-white hover:text-secondary transition">Quiénes somos</a>
                         
                         <!-- Dropdown: ¿Qué ofrecemos? -->
                         <div class="relative dropdown-container">
@@ -59,13 +44,13 @@
                                 <a href="<?php echo esc_url(home_url('/entrenamiento')); ?>" class="block px-4 py-3 text-gray-800 hover:bg-secondary hover:text-white transition rounded-t-lg">Entrenamiento</a>
                                 <a href="<?php echo esc_url(home_url('/reclutamiento')); ?>" class="block px-4 py-3 text-gray-800 hover:bg-secondary hover:text-white transition">Reclutamiento</a>
                                 <a href="<?php echo esc_url(home_url('/capacitacion')); ?>" class="block px-4 py-3 text-gray-800 hover:bg-secondary hover:text-white transition">Capacitación</a>
-                                <a href="<?php echo esc_url(home_url('/consultoria')); ?>" class="block px-4 py-3 text-gray-800 hover:bg-secondary hover:text-white transition rounded-b-lg">Consultoría</a>
-                                <a href="<?php echo esc_url(home_url('/originals')); ?>" class="block px-4 py-3 text-gray-800 hover:bg-secondary hover:text-white transition">Originals</a>
+                                <a href="<?php echo esc_url(home_url('/consultoria')); ?>" class="block px-4 py-3 text-gray-800 hover:bg-secondary hover:text-white transition">Consultoría</a>
+                                <a href="<?php echo esc_url(home_url('/originals')); ?>" class="block px-4 py-3 text-gray-800 hover:bg-secondary hover:text-white transition rounded-b-lg">Originals</a>
                             </div>
                         </div>
                         
                         <a href="#" class="text-white hover:text-secondary transition">Camino zum talent</a>
-                        <a href="#" class="text-white hover:text-secondary transition">Contacto</a>
+                        <a href="<?php echo esc_url(home_url('/contacto')); ?>" class="text-white hover:text-secondary transition">Contacto</a>
                         <a href="#" class="text-white hover:text-secondary transition">Bolsa de trabajo</a>
                         <?php
                     },
@@ -94,7 +79,7 @@
                 'fallback_cb' => function() {
                     ?>
                     <div class="space-y-3">
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="block text-white hover:text-secondary transition py-2">Quiénes somos</a>
+                        <a href="<?php echo esc_url(home_url('/nosotros')); ?>" class="block text-white hover:text-secondary transition py-2">Quiénes somos</a>
                         
                         <!-- Dropdown móvil: ¿Qué ofrecemos? -->
                         <div class="mobile-dropdown">
@@ -114,7 +99,7 @@
                         </div>
                         
                         <a href="#" class="block text-white hover:text-secondary transition py-2">Camino zum talent</a>
-                        <a href="#" class="block text-white hover:text-secondary transition py-2">Contáctanos</a>
+                        <a href="<?php echo esc_url(home_url('/contacto')); ?>" class="block text-white hover:text-secondary transition py-2">Contacto</a>
                         <a href="#" class="block text-white hover:text-secondary transition py-2">Bolsa de trabajo</a>
                     </div>
                     <?php

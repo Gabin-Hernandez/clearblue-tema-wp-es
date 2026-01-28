@@ -8,8 +8,8 @@
  * - Meta Description: Modelos de entrenamiento industrial diseñados para aumentar la productividad, eficiencia operativa y desempeño del talento humano.
  */
 
-// Usar header con SEO específico (header-entrenamiento.php)
-get_header('entrenamiento');
+// SEO manejado dinámicamente desde functions.php
+get_header();
 ?>
 
 <!-- Hero Section -->

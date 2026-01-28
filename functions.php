@@ -4,6 +4,66 @@ function my_theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
 
+/**
+ * SEO Dinámico - Meta tags centralizados por página
+ * Agrega title y meta description según el template de página
+ */
+add_action( 'wp_head', 'creatblue_dynamic_seo', 1 );
+function creatblue_dynamic_seo() {
+    // Configuración de SEO por página
+    $seo_config = array(
+        'front-page' => array(
+            'title' => 'Creatblue® México | Entrenamiento Industrial, Reclutamiento, Capacitación y Consultoría Empresarial',
+            'description' => 'Incrementamos la productividad de las empresas en México con entrenamiento industrial, reclutamiento especializado y consultoría estratégica en talento humano.'
+        ),
+        'page-entrenamiento' => array(
+            'title' => 'Entrenamiento Industrial en México | Creatblue® México',
+            'description' => 'Modelos de entrenamiento industrial diseñados para aumentar la productividad, eficiencia operativa y desempeño del talento humano.'
+        ),
+        'page-reclutamiento' => array(
+            'title' => 'Reclutamiento y Selección de Personal | Creatblue® México',
+            'description' => 'Servicios de reclutamiento especializado para encontrar el talento humano que tu empresa necesita.'
+        ),
+        'page-capacitacion' => array(
+            'title' => 'Capacitación Empresarial | Creatblue® México',
+            'description' => 'Programas de capacitación empresarial diseñados para fortalecer las competencias de tu equipo de trabajo.'
+        ),
+        'page-consultoria' => array(
+            'title' => 'Consultoría Empresarial | Creatblue® México',
+            'description' => 'Consultoría estratégica para potenciar el desarrollo de tu empresa y optimizar la gestión de talento humano.'
+        ),
+        'page-originals' => array(
+            'title' => 'Creatblue Originals | Creatblue® México',
+            'description' => 'Soluciones exclusivas de marca propia que diferencian a tu empresa con valor único y adaptado.'
+        ),
+        'page-nosotros' => array(
+            'title' => 'Quiénes Somos | Creatblue® México',
+            'description' => 'Somos una empresa de origen alemán especializada en CREAR Talento Humano calificado para el sector industrial y corporativo en México.'
+        ),
+        'page-contacto' => array(
+            'title' => 'Contacto | Creatblue® México',
+            'description' => 'Contáctanos y descubre cómo podemos ayudarte a crear equipos más fuertes, productivos y preparados.'
+        ),
+    );
+    
+    // Detectar el template actual
+    $template = '';
+    
+    if (is_front_page()) {
+        $template = 'front-page';
+    } elseif (is_page_template()) {
+        $template_file = get_page_template_slug();
+        $template = str_replace('.php', '', $template_file);
+    }
+    
+    // Si hay configuración SEO para este template, mostrar las meta tags
+    if (!empty($template) && isset($seo_config[$template])) {
+        $seo = $seo_config[$template];
+        echo '<title>' . esc_html($seo['title']) . '</title>' . "\n";
+        echo '<meta name="description" content="' . esc_attr($seo['description']) . '">' . "\n";
+    }
+}
+
 // Agregar Tailwind CSS al head
 add_action( 'wp_head', 'add_tailwind_css' );
 function add_tailwind_css() {

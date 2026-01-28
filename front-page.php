@@ -8,8 +8,8 @@
  * - Meta Description: Incrementamos la productividad de las empresas en México con entrenamiento industrial, reclutamiento especializado y consultoría estratégica en talento humano.
  */
 
-// Usar header con SEO específico para Home MX (header-front.php)
-get_header('front');
+// SEO manejado dinámicamente desde functions.php
+get_header();
 ?>
 
 <!-- Hero Section con fondo de video -->

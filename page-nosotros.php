@@ -8,8 +8,8 @@
  * - Meta Description: Somos una empresa de origen alemán especializada en CREAR Talento Humano calificado para el sector industrial y corporativo en México.
  */
 
-// Usar header con SEO específico (header-nosotros.php)
-get_header('nosotros');
+// SEO manejado dinámicamente desde functions.php
+get_header();
 ?>
 
 
