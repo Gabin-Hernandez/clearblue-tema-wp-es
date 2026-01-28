@@ -27,69 +27,25 @@ get_header();
                     <span class="text-secondary font-black">DIFERENCIAN</span> a tu empresa
                 </h1>
                 
-                <!-- CTA Button -->
-                <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                    ACCIÓN BT
-                </button>
+                 <!-- CTA Buttons -->
+                 <div class="flex flex-wrap gap-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+                    <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
+                        Cotizar ahora
+                    </button>
+                    <button class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-3">
+                        <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                        Descargar brochure
+                    </button>
+                </div>
             </div>
             
-            <!-- Columna derecha - Grid de imágenes desordenado -->
-            <div class="relative h-[500px] lg:h-[600px] hidden lg:block">
-                <!-- Imagen 1 - Superior izquierda -->
-                <div class="absolute top-0 left-0 w-60 h-72 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-10 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="300" data-speed="0.3">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima1.jpg" 
-                         alt="Trabajador 1" 
-                         class="w-full h-full object-cover">
-                </div>
-                
-                <!-- Imagen 2 - Superior derecha -->
-                <div class="absolute top-0 right-0 w-64 h-64 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="500" data-speed="0.5">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima2.jpg" 
-                         alt="Trabajador 2" 
-                         class="w-full h-full object-cover">
-                </div>
-                
-                <!-- Imagen 3 - Centro izquierda (más grande y destacada) -->
-                <div class="absolute top-60 left-24 w-60 h-72 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-30 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="700" data-speed="0.2">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima3.jpg" 
-                         alt="Trabajador 3" 
-                         class="w-full h-full object-cover">
-                </div>
-                
-                <!-- Imagen 4 - Inferior derecha -->
-                <div class="absolute bottom-0 right-8 w-48 h-52 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="900" data-speed="0.4">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima4.jpg" 
-                         alt="Trabajador 4" 
-                         class="w-full h-full object-cover">
-                </div>
-                
-                <!-- Elementos decorativos (cuadrados morados como en la imagen) -->
-                <div class="absolute top-64 right-32 w-20 h-20 bg-secondary rounded-lg opacity-80 z-0 particle-float" data-speed="0.6"></div>
-                <div class="absolute bottom-32 left-4 w-16 h-16 bg-primary rounded-lg opacity-60 z-0 particle-float" data-speed="0.7"></div>
-            </div>
-            
-            <!-- Grid móvil - Mostrar solo en pantallas pequeñas -->
-            <div class="grid grid-cols-2 gap-4 lg:hidden">
-                <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima1.jpg" 
-                         alt="Trabajador 1" 
-                         class="w-full h-48 object-cover">
-                </div>
-                <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima2.jpg" 
-                         alt="Trabajador 2" 
-                         class="w-full h-48 object-cover">
-                </div>
-                <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima3.jpg" 
-                         alt="Trabajador 3" 
-                         class="w-full h-48 object-cover">
-                </div>
-                <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima4.jpg" 
-                         alt="Trabajador 4" 
-                         class="w-full h-48 object-cover">
-                </div>
+            <!-- Columna derecha - Imagen única -->
+            <div class="rounded-3xl overflow-hidden shadow-2xl opacity-0 scale-95 animate-on-scroll" data-delay="400">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/or1.webp" 
+                     alt="Creatblue Originals México" 
+                     class="w-full h-auto object-cover">
             </div>
             
         </div>

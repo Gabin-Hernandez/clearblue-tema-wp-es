@@ -27,7 +27,6 @@ get_header();
                 <span class="text-secondary font-black">POTENCIAR</span>  el desarrollo de tu empresa
                 </h1>
                 
-                <!-- CTA Button -->
                 <!-- CTA Buttons -->
                 <div class="flex flex-wrap gap-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
                     <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
