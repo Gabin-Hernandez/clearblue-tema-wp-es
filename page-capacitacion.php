@@ -109,8 +109,9 @@ get_header();
     <div class="container mx-auto px-6">
         <div class="text-center max-w-3xl mx-auto mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-            Entendemos que el éxito de una organización depende del desarrollo de su equipo. Por eso, diseñamos programas de capacitación especializados que impulsan la productividad, mejoran las habilidades profesionales y generan un impacto directo en los resultaos de tu negocio.
+            Diseñamos programas de capacitación empresarial que impulsan la productividad, fortalecen habilidades clave y generan resultados reales en tu equipo
             </h2>
+            <p>BENEFICIOS CREATBLUE®</p>
         </div>
         
         <!-- Grid de 3 columnas con iconos -->
@@ -124,7 +125,7 @@ get_header();
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
-                    Contenidos prácticos y adaptados a las necesidades de tu sector.
+                    Aumento de la productividad operativa
                     </h3>
                 </div>
             </div>
@@ -138,7 +139,7 @@ get_header();
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
-                    Capacitación en liderazgo, recursos humanos, seguridad, etc.
+                    Desarrollo de habilidades personalizadas clave
                     </h3>
                 </div>
             </div>
@@ -152,7 +153,7 @@ get_header();
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
-                    Metodologías innovadoras apoyadas en tecnología y casos reales.
+                    Resultados medibles para las áreas administrativas y de operación
                     </h3>
                 </div>
             </div>
