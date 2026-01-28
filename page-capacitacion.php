@@ -161,6 +161,95 @@ get_header();
     </div>
 </section>
 
+<!-- Sección ¿Te ha pasado? -->
+<section class="py-20 bg-gradient-to-br from-[#849dfa] to-[#6b7fd8]">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
+                ¿Te ha pasado? Principales problemas en las empresas al capacitar equipos
+            </h2>
+        </div>
+        
+        <!-- Grid de 4 cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Card 1: Retrabajo y errores -->
+            <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+                <div class="flex justify-center mb-6">
+                    <div class="w-16 h-16 bg-[#849dfa] rounded-2xl flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">
+                    Retrabajo y errores por capacitaciones ineficientes
+                </h3>
+                <p class="text-gray-700 text-center leading-relaxed">
+                    Los costos se elevan hasta 25% más por correcciones y ajustes, ya que se necesita mayor supervisión, restando tiempo efectivo.
+                </p>
+            </div>
+            
+            <!-- Card 2: Dificultad para medir ROI -->
+            <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
+                <div class="flex justify-center mb-6">
+                    <div class="w-16 h-16 bg-[#849dfa] rounded-2xl flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">
+                    Dificultad para medir ROI
+                </h3>
+                <p class="text-gray-700 text-center leading-relaxed">
+                    El 40% de empresas reporta que no se puede demostrar el ROI de sus programas de capacitación, lo que hace difícil justificar presupuestos y mejora continua.
+                </p>
+            </div>
+            
+            <!-- Card 3: Barreras para crecimiento -->
+            <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 opacity-0 translate-y-8 animate-on-scroll" data-delay="800">
+                <div class="flex justify-center mb-6">
+                    <div class="w-16 h-16 bg-[#849dfa] rounded-2xl flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">
+                    Barreras para crecimiento individual y colectivo
+                </h3>
+                <p class="text-gray-700 text-center leading-relaxed">
+                    La falta de aprovechamiento en herramientas digitales o mejoras de performance operacional, afectando la competitividad.
+                </p>
+            </div>
+            
+            <!-- Card 4: Learning Gap -->
+            <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 opacity-0 translate-y-8 animate-on-scroll" data-delay="1000">
+                <div class="flex justify-center mb-6">
+                    <div class="w-16 h-16 bg-[#849dfa] rounded-2xl flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">
+                    Learning Gap al capacitar equipos
+                </h3>
+                <p class="text-gray-700 text-center leading-relaxed">
+                    Baja de adopción de plataformas de aprendizaje, LMS subutilizados que se invierten pero no son utilizados.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Badge -->
+        <div class="text-center mt-12">
+            <p class="inline-block text-white/90 text-base md:text-lg bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
+                Capacitación empresarial para prevenir pérdidas, fortalecer el clima laboral y actualización de competencias
+            </p>
+        </div>
+    </div>
+</section>
+
 <!-- Sección Transforma el talento en resultados -->
 <section class="relative py-20 overflow-hidden">
     <!-- Imagen de fondo de la sección -->
