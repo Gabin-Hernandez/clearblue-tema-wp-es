@@ -1,10 +1,15 @@
 <?php
 /**
  * Template Name: Entrenamiento
- * Description: Página de servicios de entrenamientoE
+ * Description: Página de servicios de entrenamiento
+ * 
+ * SEO:
+ * - Title: Entrenamiento Industrial en México | Creatblue® México
+ * - Meta Description: Modelos de entrenamiento industrial diseñados para aumentar la productividad, eficiencia operativa y desempeño del talento humano.
  */
 
-get_header();
+// Usar header con SEO específico (header-entrenamiento.php)
+get_header('entrenamiento');
 ?>
 
 <!-- Hero Section -->
@@ -26,10 +31,18 @@ get_header();
                 Entrenamiento industrial para <span class="text-secondary font-black">AUMENTAR</span> la productividad de tu equipo
                 </h1>
                 
-                <!-- CTA Button -->
-                <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                    ACCIÓN BT
-                </button>
+                <!-- CTA Buttons -->
+                <div class="flex flex-wrap gap-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+                    <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
+                        Cotizar ahora
+                    </button>
+                    <button class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-3">
+                        <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        Ver cómo funciona
+                    </button>
+                </div>
             </div>
             
             <!-- Columna derecha - Grid de imágenes desordenado -->
@@ -100,8 +113,9 @@ get_header();
     <div class="container mx-auto px-6">
         <div class="text-center max-w-3xl mx-auto mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-            Diseñamos programas de entrenamiento profesional enfocados en productividad, ideales para empresas que buscan optimizar, mejorar la eficiencia operativa y el desarrollo de soft skills.
+            Diseñamos modelos de entrenamiento profesionales, ideales para empresas que buscan optimizar, mejorar la eficiencia operativa y el desarrollo de soft skills en su equipo.
             </h2>
+            <p>BENEFICIOS CREATBLUE®</p>
         </div>
         
         <!-- Grid de 3 columnas con iconos -->
@@ -115,7 +129,7 @@ get_header();
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
-                        Mejora de productividad y eficiencia.
+                    Mejora de productividad y eficiencia
                     </h3>
                 </div>
             </div>
@@ -156,7 +170,7 @@ get_header();
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-                ¿Te ha pasado?
+            ¿Te ha pasado? Principales problemas en la operación industrial
             </h2>
         </div>
         
@@ -172,10 +186,10 @@ get_header();
                     </div>
                 </div>
                 <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">
-                    Paros en línea de producción
+                Paros en línea de producción
                 </h3>
                 <p class="text-gray-700 text-center leading-relaxed">
-                    Una hora de paro en línea puede costar entre <span class="font-bold">$10,000 y $50,000 USD.</span> Dependiendo de la empresa.
+                Una hora de paro en línea puede costar entre 10K y 50K USD. Dependiendo de la empresa. 
                 </p>
             </div>
             
@@ -189,10 +203,10 @@ get_header();
                     </div>
                 </div>
                 <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">
-                    Daños en las instalaciones
+                Daños en las instalaciones
                 </h3>
                 <p class="text-gray-700 text-center leading-relaxed">
-                    El <span class="font-bold">60%</span> de los incidentes industriales se deben a malas prácticas operativas.
+                El 60% de los incidentes industriales se deben a malas prácticas operativas y falta de capacitación del personal.
                 </p>
             </div>
             
@@ -206,10 +220,10 @@ get_header();
                     </div>
                 </div>
                 <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">
-                    Accidentes e incidentes en el área operativa
+                Accidentes e incidentes en el área operativa
                 </h3>
                 <p class="text-gray-700 text-center leading-relaxed">
-                    El <span class="font-bold">38%</span> de los accidentes por mantenimiento implican daños a infraestructura (fugas, incas, paredes/ o barreras de seguridad) enfermedos.
+                El 38% de los accidentes por mantenimiento generan daños a infraestructura, equipos y barreras de seguridad.
                 </p>
             </div>
             
@@ -223,12 +237,18 @@ get_header();
                     </div>
                 </div>
                 <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">
-                    Scrap de materiales
+                Scrap de materiales
                 </h3>
                 <p class="text-gray-700 text-center leading-relaxed">
-                    El scrap puede representar entre el <span class="font-bold">2% y 10%</span> de los ingresos totales por ventas de línea de producción.
+                El scrap puede representar entre el 2% y el 10% de los ingresos totales por ventas de una línea de producción.
                 </p>
             </div>
+        </div>
+        <!-- BADGE Reclutamiento y selección para prevenir rotación de personal -->
+        <div class="text-center mt-12">
+            <p class="inline-block text-white/90 text-base md:text-lg bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
+            Entrenamiento industrial para prevenir paros, accidentes y scrap de materiales
+            </p>
         </div>
     </div>
 </section>
@@ -264,7 +284,6 @@ get_header();
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-b from-[#2f3082]/30 to-primary/20 rounded-full blur-3xl"></div>
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-b from-[#2f3082]/20 to-primary/10 rounded-full blur-2xl"></div>
     </div>
-
     <div class="container mx-auto px-6 relative z-10">
         <!-- Header -->
         <div class="grid max-w-5xl mx-auto md:grid-cols-2 gap-8 items-center mb-16">
@@ -278,14 +297,13 @@ get_header();
             <!-- Columna 2: Título y texto -->
             <div class="text-right opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
                 <h2 class="text-secondary uppercase tracking-[0.2em] font-bold">
-                mapea.
+                CREATmap:
                 </h2>
                 <p class="text-white text-base max-w-2xl ml-auto">
-                Cada persona de su equipo será evaluada previo y posterior al entrenamiento con nuestros medidores de rendimiento.
+                modelo de entrenamiento industrial para optimizar la productividad
                 </p>
             </div>
         </div>
-        
     </div>
 </section>
 
