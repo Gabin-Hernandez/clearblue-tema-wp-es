@@ -440,14 +440,14 @@ get_header('entrenamiento');
         <!-- Título principal -->
         <div class="mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-                MATERIALES DE ENTRENAMIENTO
+            Materiales y Equipos de Entrenamiento Industrial
             </h2>
         </div>
         
         <!-- Grid de 2 columnas -->
         <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
             
-            <!-- Elemento 3: Catálogo equipo móvil -->
+            <!-- Elemento 3: Preparación de materiales para entrenamiento operativo -->
             <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
                 <!-- Contenedor de imagen -->
                 <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
@@ -458,15 +458,15 @@ get_header('entrenamiento');
                 <!-- Contenido de texto -->
                 <div class="flex-1">
                     <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                        Catálogo equipo móvil
+                    Preparación de materiales para entrenamiento operativo
                     </h3>
                     <p class="text-gray-700 leading-relaxed">
-                        Descripción de los equipos móviles que tenemos diferenciada para creatblue
+                    Diseñamos y preparamos materiales de entrenamiento para picking, kitting y simulaciones reales de operación.
                     </p>
                 </div>
             </div>
             
-            <!-- Elemento 4: Preparación de Materiales -->
+            <!-- Elemento 4: Catálogo de equipo móvil industrial y operativo -->
             <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
                 <!-- Contenedor de imagen -->
                 <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
@@ -477,11 +477,18 @@ get_header('entrenamiento');
                 <!-- Contenido de texto -->
                 <div class="flex-1">
                     <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                        Preparación de Materiales
+                    Catálogo de equipo móvil industrial y operativo
                     </h3>
                     <p class="text-gray-700 leading-relaxed">
-                        Descripción de los equipos móviles que tenemos diferenciada para creatblue
+                    Contamos con equipos móviles especializados para entrenamiento operativo adaptado a cada industria y giro empresarial
                     </p>
+                    <!-- Boton de descargar catalogo-->
+                    <button class="mt-4 bg-secondary hover:bg-secondary/80 text-white px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                        Descargar catálogo
+                    </button>
                 </div>
             </div>
             
