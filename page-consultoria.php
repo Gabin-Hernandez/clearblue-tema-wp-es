@@ -28,9 +28,18 @@ get_header();
                 </h1>
                 
                 <!-- CTA Button -->
-                <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                    ACCIÓN BT
-                </button>
+                <!-- CTA Buttons -->
+                <div class="flex flex-wrap gap-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+                    <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
+                        Cotizar ahora
+                    </button>
+                    <button class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-3">
+                        <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                        Descargar brochure
+                    </button>
+                </div>
             </div>
             
             <!-- Columna derecha - Grid de imágenes desordenado -->
@@ -101,8 +110,9 @@ get_header();
     <div class="container mx-auto px-6">
         <div class="text-center max-w-3xl mx-auto mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-            Acompañamos a las organizaciones a resolver los desafíos clave para asesorar, actualizar y conectar a lo más nuevo en áreas como Seguridad, Calidad, Operaciones y Recursos Humanos, con soluciones prácticas que generan un impacto real en su operación y rentabilidad.
+            Adaptamos nuestros modelos, metodologías y programas para potencializar el talento humano
             </h2>
+            <p>BENEFICIOS CREATBLUE®</p>
         </div>
         
         <!-- Grid de 3 columnas con iconos -->
@@ -116,7 +126,7 @@ get_header();
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
-                    Análisis y diagnóstico integral de tu negocio.
+                    Análisis y diagnóstico integral de tu negocio
                     </h3>
                 </div>
             </div>
@@ -130,7 +140,7 @@ get_header();
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
-                    Estrategias financieras y operativas personalizadas.
+                    Desarrollo de estrategias financieras y operativas personalizadas
                     </h3>
                 </div>
             </div>
@@ -144,7 +154,7 @@ get_header();
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 leading-tight">
-                    Acompañamiento experto en gestión y toma de decisiones.
+                    Acompañamiento experto en gestión y toma de decisiones
                     </h3>
                 </div>
             </div>
@@ -177,174 +187,102 @@ get_header();
 </section>
 
 
-<!-- Sección SOLUCIONES DE CONSULTORÍA ADMINISTRATIVA -->
-<section class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-        <!-- Título principal -->
-        <div class="mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-            SOLUCIONES DE CONSULTORÍA ADMINISTRATIVA
-            </h2>
-        </div>
-        
-        <!-- Grid de 2 columnas -->
-        <div class="grid md:grid-cols-2 gap-8 lg:gap-12 mb-20">
-            
-            <!-- Elemento 1: Normas Oficiales Mexicanas (NOMs) -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                    Normas Oficiales Mexicanas (NOMs)
-                    </h3>
-                </div>
-            </div>
-            
-            <!-- Elemento 2: Clima Laboral -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                    Clima Laboral
-                    </h3>
-                </div>
-            </div>
 
-            <!-- Elemento 3: Assesment Center -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                    Assesment Center
-                    </h3>
-                </div>
-            </div>
 
-            <!-- Elemento 4: Estudios de Sueldos y Salarios -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                    Estudios de Sueldos y Salarios
-                    </h3>
-                </div>
-            </div>
-
-            <!-- Elemento 5: 9 Boxes -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                    9 Boxes
-                    </h3>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-
-<!-- Sección SOLUCIONES DE CONSULTORÍA OPERATIVA -->
+<!-- Sección Banners de Soluciones de Consultoría -->
 <section class="py-20 bg-gray-50">
     <div class="container mx-auto px-6">
-        <!-- Título principal -->
-        <div class="mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-            SOLUCIONES DE CONSULTORÍA OPERATIVA
-            </h2>
+        
+        <!-- Banner 1: Consultoría Administrativa - Texto izquierda, Imagen derecha -->
+        <div class="grid lg:grid-cols-2 gap-8 items-center mb-12 bg-white rounded-3xl overflow-hidden shadow-lg opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+            <!-- Texto a la izquierda -->
+            <div class="p-8 lg:p-12">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                    Soluciones de Consultoría Administrativa Creatblue® México
+                </h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-3 text-gray-700">
+                        <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Normas Oficiales Mexicanas (NOMs)</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-gray-700">
+                        <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Clima Laboral</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-gray-700">
+                        <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Assessment Center</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-gray-700">
+                        <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Estudios de Sueldos y Salarios</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-gray-700">
+                        <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>9 Boxes</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Imagen a la derecha -->
+            <div class="h-64 lg:h-96">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ca1.webp" 
+                     alt="Soluciones de Consultoría Administrativa Creatblue México" 
+                     class="w-full h-full object-cover">
+            </div>
         </div>
         
-        <!-- Grid de 2 columnas -->
-        <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
-            
-            <!-- Elemento 1: Capacitación y Desarrollo del Talento -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                    Capacitación y Desarrollo del Talento
-                    </h3>
-                </div>
+        <!-- Banner 2: Consultoría Operativa - Imagen izquierda, Texto derecha -->
+        <div class="grid lg:grid-cols-2 gap-8 items-center bg-white rounded-3xl overflow-hidden shadow-lg opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
+            <!-- Imagen a la izquierda -->
+            <div class="h-64 lg:h-96 order-2 lg:order-1">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ca2.webp" 
+                     alt="Soluciones de Consultoría Operativa Creatblue México" 
+                     class="w-full h-full object-cover">
             </div>
-            
-            <!-- Elemento 2: Recertificaciones de Competencias -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                    Recertificaciones de Competencias
-                    </h3>
-                </div>
+            <!-- Texto a la derecha -->
+            <div class="p-8 lg:p-12 order-1 lg:order-2">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                    Soluciones de Consultoría Operativa Creatblue® México
+                </h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-3 text-gray-700">
+                        <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Transformación Digital</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-gray-700">
+                        <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Certificaciones de Competencias</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-gray-700">
+                        <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Gestión de Cambio y Cultura Organizacional</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-gray-700">
+                        <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Capacitación y Desarrollo del Talento</span>
+                    </li>
+                </ul>
             </div>
-
-            <!-- Elemento 3: Transformación Digital -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                    Transformación Digital
-                    </h3>
-                </div>
-            </div>
-
-             <!-- Elemento 4: Gestión de Cambio y Cultura Organizacional -->
-             <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                    Gestión de Cambio y Cultura Organizacional
-                    </h3>
-                </div>
-            </div>
-
-
-            
         </div>
+        
     </div>
 </section>
 
