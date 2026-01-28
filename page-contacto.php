@@ -35,7 +35,7 @@ get_header();
             <!-- Columna derecha - Imagen única -->
             <div class="rounded-3xl overflow-hidden shadow-2xl opacity-0 scale-95 animate-on-scroll" data-delay="400">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/cont2.webp" 
-                     alt="Contacto Creatblue México" 
+                     alt="Contacto a Creatblue México" 
                      class="w-full h-auto object-cover">
             </div>
             
