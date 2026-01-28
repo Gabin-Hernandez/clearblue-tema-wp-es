@@ -151,12 +151,11 @@ get_header();
             
             <!-- Banner 1: WORKFORCE Ready to Go -->
             <div class="bg-gradient-to-b from-[#1a1d4a] to-[#2f3082] rounded-3xl overflow-hidden shadow-2xl opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                <!-- Imagen arriba (placeholder) -->
-                <div class="p-8 md:p-10 flex items-center justify-center border-b border-white/10 h-48 bg-gradient-to-br from-white/5 to-white/10">
-                    <!-- Placeholder para imagen -->
-                    <div class="w-full max-w-[200px] h-24 bg-white/20 rounded-xl flex items-center justify-center">
-                        <span class="text-white/60 text-sm">Imagen Workforce</span>
-                    </div>
+                <!-- Imagen arriba -->
+                <div class="p-8 md:p-10 flex items-center justify-center border-b border-white/10">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/wforce_light.webp" 
+                         alt="Workforce Ready to Go" 
+                         class="w-full max-w-[250px] h-auto">
                 </div>
                 
                 <!-- Contenido abajo -->
@@ -179,12 +178,11 @@ get_header();
             
             <!-- Banner 2: CREATmap -->
             <div class="bg-gradient-to-b from-[#1a1d4a] to-[#2f3082] rounded-3xl overflow-hidden shadow-2xl opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-                <!-- Imagen arriba (placeholder) -->
-                <div class="p-8 md:p-10 flex items-center justify-center border-b border-white/10 h-48 bg-gradient-to-br from-white/5 to-white/10">
-                    <!-- Placeholder para imagen -->
-                    <div class="w-full max-w-[200px] h-24 bg-white/20 rounded-xl flex items-center justify-center">
-                        <span class="text-white/60 text-sm">Imagen CREATmap</span>
-                    </div>
+                <!-- Imagen arriba -->
+                <div class="p-8 md:p-10 flex items-center justify-center border-b border-white/10">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/cmap_light.webp" 
+                         alt="CREATmap" 
+                         class="w-full max-w-[250px] h-auto">
                 </div>
                 
                 <!-- Contenido abajo -->
@@ -207,12 +205,11 @@ get_header();
             
             <!-- Banner 3: Creatblue Learning -->
             <div class="bg-gradient-to-b from-[#1a1d4a] to-[#2f3082] rounded-3xl overflow-hidden shadow-2xl opacity-0 translate-y-8 animate-on-scroll" data-delay="800">
-                <!-- Imagen arriba (placeholder) -->
-                <div class="p-8 md:p-10 flex items-center justify-center border-b border-white/10 h-48 bg-gradient-to-br from-white/5 to-white/10">
-                    <!-- Placeholder para imagen -->
-                    <div class="w-full max-w-[200px] h-24 bg-white/20 rounded-xl flex items-center justify-center">
-                        <span class="text-white/60 text-sm">Imagen Learning</span>
-                    </div>
+                <!-- Imagen arriba -->
+                <div class="p-8 md:p-10 flex items-center justify-center border-b border-white/10">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/clea_light.webp" 
+                         alt="Creatblue Learning" 
+                         class="w-full max-w-[250px] h-auto">
                 </div>
                 
                 <!-- Contenido abajo -->
