@@ -299,11 +299,11 @@ get_header('entrenamiento');
                 <h2 class="text-secondary uppercase tracking-[0.2em] font-bold">
                 CREATmap:
                 </h2>
-                <p class="text-white text-base max-w-2xl ml-auto">
+                <p class="text-white text-base max-w-2xl ml-auto mb-6">
                 modelo de entrenamiento industrial para optimizar la productividad
                 </p>
                 <!-- botones de como funciona y descarga brochure -->
-                <div class="flex flex-wrap gap-3 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+                <div class="flex flex-wrap gap-3 justify-end opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
                     <button class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-2">
                         <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M8 5v14l11-7z"/>
@@ -318,7 +318,65 @@ get_header('entrenamiento');
                     </button>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3 Banners: Mapea, Entrena, Optimiza -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             
+            <!-- Tarjeta 1: Mapea -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
+                <!-- Imagen -->
+                <div class="h-48 overflow-hidden">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e1.webp" 
+                         alt="Mapea - Evaluación de rendimiento" 
+                         class="w-full h-full object-cover">
+                </div>
+                <!-- Contenido -->
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-primary mb-3">Mapea</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Cada persona del equipo es evaluada antes y después del entrenamiento utilizando medidores de rendimiento operativos.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 2: Entrena -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+                <!-- Imagen -->
+                <div class="h-48 overflow-hidden">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e2.webp" 
+                         alt="Entrena - Capacitación del equipo" 
+                         class="w-full h-full object-cover">
+                </div>
+                <!-- Contenido -->
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-primary mb-3">Entrena</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Cada persona del equipo es evaluada antes y después del entrenamiento utilizando medidores de rendimiento operativos.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 3: Optimiza -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
+                <!-- Imagen -->
+                <div class="h-48 overflow-hidden">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e3.webp" 
+                         alt="Optimiza - Mejora del rendimiento" 
+                         class="w-full h-full object-cover">
+                </div>
+                <!-- Contenido -->
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-primary mb-3">Optimiza</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Cada persona del equipo es evaluada antes y después del entrenamiento utilizando medidores de rendimiento operativos.
+                    </p>
+                </div>
+            </div>
             
         </div>
     </div>
