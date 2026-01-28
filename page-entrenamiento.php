@@ -49,14 +49,14 @@ get_header('entrenamiento');
             <div class="relative h-[500px] lg:h-[600px] hidden lg:block">
                 <!-- Imagen 1 - Superior izquierda -->
                 <div class="absolute top-0 left-0 w-60 h-72 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-10 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="300" data-speed="0.3">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima1.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e8.webp" 
                          alt="Trabajador 1" 
                          class="w-full h-full object-cover">
                 </div>
                 
                 <!-- Imagen 2 - Superior derecha -->
                 <div class="absolute top-0 right-0 w-64 h-64 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="500" data-speed="0.5">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima2.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e7.webp" 
                          alt="Trabajador 2" 
                          class="w-full h-full object-cover">
                 </div>
@@ -70,7 +70,7 @@ get_header('entrenamiento');
                 
                 <!-- Imagen 4 - Inferior derecha -->
                 <div class="absolute bottom-0 right-8 w-48 h-52 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="900" data-speed="0.4">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima4.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e6.webp" 
                          alt="Trabajador 4" 
                          class="w-full h-full object-cover">
                 </div>
@@ -83,12 +83,12 @@ get_header('entrenamiento');
             <!-- Grid móvil - Mostrar solo en pantallas pequeñas -->
             <div class="grid grid-cols-2 gap-4 lg:hidden">
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima1.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e8.webp" 
                          alt="Trabajador 1" 
                          class="w-full h-48 object-cover">
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima2.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e7.webp" 
                          alt="Trabajador 2" 
                          class="w-full h-48 object-cover">
                 </div>
@@ -98,7 +98,7 @@ get_header('entrenamiento');
                          class="w-full h-48 object-cover">
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima4.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e6.webp" 
                          alt="Trabajador 4" 
                          class="w-full h-48 object-cover">
                 </div>
@@ -447,49 +447,31 @@ get_header('entrenamiento');
         <!-- Grid de 2 columnas -->
         <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
             
-            <!-- Elemento 3: Preparación de materiales para entrenamiento operativo -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
+            <!-- Elemento 1: Preparación de materiales para entrenamiento operativo -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+                <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
                     Preparación de materiales para entrenamiento operativo
-                    </h3>
-                    <p class="text-gray-700 leading-relaxed">
+                </h3>
+                <p class="text-gray-700 leading-relaxed">
                     Diseñamos y preparamos materiales de entrenamiento para picking, kitting y simulaciones reales de operación.
-                    </p>
-                </div>
+                </p>
             </div>
             
-            <!-- Elemento 4: Catálogo de equipo móvil industrial y operativo -->
-            <div class="flex gap-6 items-start opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-                <!-- Contenedor de imagen -->
-                <div class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-2xl overflow-hidden">
-                    <!-- Placeholder para imagen - cambiar después -->
-                    <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                </div>
-                
-                <!-- Contenido de texto -->
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
+            <!-- Elemento 2: Catálogo de equipo móvil industrial y operativo -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
+                <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
                     Catálogo de equipo móvil industrial y operativo
-                    </h3>
-                    <p class="text-gray-700 leading-relaxed">
+                </h3>
+                <p class="text-gray-700 leading-relaxed">
                     Contamos con equipos móviles especializados para entrenamiento operativo adaptado a cada industria y giro empresarial
-                    </p>
-                    <!-- Boton de descargar catalogo-->
-                    <button class="mt-4 bg-secondary hover:bg-secondary/80 text-white px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center gap-2">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                        </svg>
-                        Descargar catálogo
-                    </button>
-                </div>
+                </p>
+                <!-- Boton de descargar catalogo-->
+                <button class="mt-4 bg-secondary hover:bg-secondary/80 text-white px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    Descargar catálogo
+                </button>
             </div>
             
         </div>
