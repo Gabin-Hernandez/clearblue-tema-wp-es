@@ -297,8 +297,26 @@ get_header();
             <!-- Columna 2: Título y texto -->
             <div class="text-right opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
                 <h2 class="text-secondary uppercase tracking-[0.2em] font-bold">
-                Gaming y Métodos Andragógicos
+                    CREATplay:
                 </h2>
+                <p class="text-white text-base max-w-2xl ml-auto mb-6">
+                    Metodología de capacitación basada en gaming y métodos andragógicos
+                </p>
+                <!-- Botones de cómo funciona y descarga brochure -->
+                <div class="flex flex-wrap gap-3 justify-end opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+                    <button class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        Ver cómo funciona
+                    </button>
+                    <button class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                        Descargar brochure
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -307,36 +325,31 @@ get_header();
             
             <!-- Banner izquierdo: Gaming -->
             <div class="relative rounded-3xl overflow-hidden shadow-2xl group h-96 md:h-[450px] opacity-0 scale-75 animate-on-scroll" data-delay="600">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima6.jpg" 
-                     alt="Gaming" 
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/c4.jpg" 
+                     alt="Gaming - Capacitación empresarial" 
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute bottom-0 left-0 right-0 p-8">
                     <h3 class="text-white text-2xl md:text-3xl font-bold leading-tight">
-                    Gaming
+                    Capacitación empresarial a través de Gaming
                     </h3>
                     <p class="text-white text-base max-w-2xl ml-auto">
-                    Descripción de Gaming diferenciada para creatblue
-                    </p>
-                    <button class="mt-2 bg-secondary hover:bg-secondary/80 text-white px-4 py-2 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 animate-on-scroll animate-in" data-delay="400">
-                        <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" /></svg>  <span>Ver cómo funciona CREATPLAY</span></div>
-                    </button>
+                    Dinámicas de aprendizaje gamificadas diseñandas para fortalecer habilidades e incrementar la participación.                    </p>
                 </div>
             </div>
             
             <!-- Banner derecho: Métodos Andragógicos -->
             <div class="relative rounded-3xl overflow-hidden shadow-2xl group h-96 md:h-[450px] opacity-0 scale-75 animate-on-scroll" data-delay="800">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/fdo1.jpg" 
-                     alt="Métodos Andragógicos" 
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/c5.jpg" 
+                     alt="Métodos Andragógicos - Aprendizaje generacional" 
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 <div class="absolute bottom-0 left-0 right-0 p-8">
                     <h3 class="text-white text-2xl md:text-3xl font-bold leading-tight">
-                    Métodos Andragógicos
+                    Métodos Andragógicos para el aprendizaje generacional
                     </h3>
                         <p class="text-white text-base max-w-2xl ml-auto">
-                    Descripción de Métodos Andragógicos diferenciada para creatblue
-                    </p>
+                        Capacitación basada en la experiencia, la práctica y casos reales, adaptada a las necesidades del talento humano.                    </p>
                 </div>
             </div>
             
