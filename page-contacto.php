@@ -67,7 +67,7 @@ get_header();
                 <p class="text-gray-600 text-base mb-8">
                     Si estás buscando nuevas oportunidades laborales, aquí puedes descubrir nuestra variedad de vacantes desde posiciones operativas hasta directivas.
                 </p>
-                <a href="<?php echo esc_url(home_url('/vacantes')); ?>" class="inline-block bg-secondary hover:bg-secondary/80 text-white px-8 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
+                <a href="https://bolsadeempleo.creatblue.com/" target="_blank" class="inline-block bg-secondary hover:bg-secondary/80 text-white px-8 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
                     Descubre tu nuevo trabajo
                 </a>
             </div>
@@ -80,7 +80,7 @@ get_header();
                 <p class="text-gray-600 text-base mb-8">
                     Ayudamos a las empresas a atraer talento, fortalecer equipos y mejorar su operación con soluciones estratégicas a la medida.
                 </p>
-                <a href="<?php echo esc_url(home_url('/cotizar')); ?>" class="inline-block bg-primary hover:bg-primary/80 text-white px-8 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
+                <a href="#form_contact" class="inline-block bg-primary hover:bg-primary/80 text-white px-8 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
                     Cuéntanos más
                 </a>
             </div>
@@ -90,7 +90,7 @@ get_header();
 </section>
 
 <!-- Formulario de Contacto y WhatsApp -->
-<section class="bg-white py-20">
+<section id="form_contact" class="bg-white py-20">
     <div class="container mx-auto px-6">
         <div class="grid lg:grid-cols-3 gap-12">
 
@@ -168,7 +168,7 @@ get_header();
                 <div class="bg-gray-50 border-2 border-green-500 rounded-2xl p-8 text-center sticky top-28">
                     <h3 class="text-2xl font-bold text-gray-900 mb-3">¿Prefieres una conversación directa?</h3>
                     <p class="text-gray-600 mb-6">Nuestro equipo está disponible vía WhatsApp Business para atenderte rápidamente.</p>
-                    <a href="https://wa.me/5215512345678" target="_blank" class="inline-block bg-green-500 text-white px-10 py-4 rounded-lg font-bold hover:bg-green-600 transition-colors">
+                    <a href="https://wa.me/5669989384" target="_blank" class="inline-block bg-green-500 text-white px-10 py-4 rounded-lg font-bold hover:bg-green-600 transition-colors">
                         Escríbenos por WhatsApp
                     </a>
                 </div>

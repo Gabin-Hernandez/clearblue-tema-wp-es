@@ -51,7 +51,7 @@
                         
                         <a href="#" class="text-white hover:text-secondary transition">Camino zum talent</a>
                         <a href="<?php echo esc_url(home_url('/contacto')); ?>" class="text-white hover:text-secondary transition">Contacto</a>
-                        <a href="#" class="text-white hover:text-secondary transition">Bolsa de trabajo</a>
+                        <a href="http://bolsadeempleo.creatblue.com/" target="_blank" class="text-white hover:text-secondary transition">Bolsa de trabajo</a>
                         <?php
                     },
                     'link_before' => '<span class="text-white hover:text-secondary transition">',
