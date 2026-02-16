@@ -478,8 +478,8 @@ get_header();
                 
                 <!-- Columna derecha - Video -->
                 <div class="opacity-0 scale-75 animate-on-scroll" data-delay="400">
-                    <div class="rounded-2xl overflow-hidden shadow-2xl">
-                        <video autoplay loop muted playsinline class="w-full h-[400px] object-cover">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl mx-auto" style="max-width: 384px;">
+                        <video autoplay loop muted playsinline class="w-full h-auto">
                             <source src="<?php echo get_stylesheet_directory_uri(); ?>/public/video/reclutamiento.mp4" type="video/mp4">
                         </video>
                     </div>
