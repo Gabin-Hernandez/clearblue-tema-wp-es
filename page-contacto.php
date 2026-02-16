@@ -89,7 +89,7 @@ get_header();
     </div>
 </section>
 
-<!-- Formulario de Contacto y WhatsApp -->
+<!-- Formulario de Contacto (form_contact) y WhatsApp -->
 <section id="form_contact" class="bg-white py-20">
     <div class="container mx-auto px-6">
         <div class="grid lg:grid-cols-3 gap-12">
