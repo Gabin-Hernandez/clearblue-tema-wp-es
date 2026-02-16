@@ -43,7 +43,9 @@ get_header();
                 </div>
                 <!-- Contenido -->
                 <div>
-                    <h3 class="text-4xl md:text-5xl font-black text-primary mb-1">+2,000</h3>
+                    <h3 class="text-4xl md:text-5xl font-black text-primary mb-1">
+                        +<span class="counter-number" data-target="2000">0</span>
+                    </h3>
                     <p class="text-gray-600 text-sm md:text-base">vacantes cubiertas en lo que fue del 2025</p>
                 </div>
             </div>
@@ -58,7 +60,9 @@ get_header();
                 </div>
                 <!-- Contenido -->
                 <div>
-                    <h3 class="text-4xl md:text-5xl font-black text-primary mb-1">+250%</h3>
+                    <h3 class="text-4xl md:text-5xl font-black text-primary mb-1">
+                        +<span class="counter-number" data-target="250">0</span>%
+                    </h3>
                     <p class="text-gray-600 text-sm md:text-base">de efectividad e impacto en los reportes de entrenamiento del 2025</p>
                 </div>
             </div>
@@ -159,6 +163,25 @@ get_header();
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+    // Función para animar números (contador)
+    function animateCounter(element, target, duration = 2000) {
+        const start = 0;
+        const increment = target / (duration / 16); // 60 FPS
+        let current = start;
+        
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+            }
+            
+            // Formatear el número con comas
+            const formattedNumber = Math.floor(current).toLocaleString('en-US');
+            element.textContent = formattedNumber;
+        }, 16);
+    }
+    
     // Intersection Observer para las animaciones de scroll
     const observerOptions = {
         threshold: 0.1,
@@ -185,6 +208,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
     animatedElements.forEach((element) => {
         observer.observe(element);
+    });
+    
+    // Observer especial para los contadores
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+                const target = parseInt(entry.target.dataset.target);
+                entry.target.classList.add('counted');
+                animateCounter(entry.target, target);
+                counterObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    // Observar todos los números contadores
+    const counters = document.querySelectorAll('.counter-number');
+    counters.forEach((counter) => {
+        counterObserver.observe(counter);
     });
 
     // Efecto parallax para las partículas flotantes
