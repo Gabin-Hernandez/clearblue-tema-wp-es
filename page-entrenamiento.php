@@ -415,24 +415,22 @@ get_header();
             </div>
         </div>
         
-        <!-- Banner 2: CEC - Imagen de fondo con texto encima -->
-        <div class="relative rounded-3xl overflow-hidden mb-12 opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
-            <!-- Imagen de fondo -->
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e5.webp" 
-                 alt="CEC - Centros de Entrenamiento Creatblue" 
-                 class="w-full h-64 lg:h-80 object-cover">
-            <!-- Overlay oscuro -->
-            <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
-            <!-- Texto encima -->
-            <div class="absolute inset-0 flex items-center">
-                <div class="p-8 lg:p-12 max-w-2xl">
-                    <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">
-                        CEC: Centros de Entrenamiento Creatblue®
-                    </h3>
-                    <p class="text-white/90 leading-relaxed text-lg">
-                        <strong>SLP Y SILAO con una capacidad de 1,050 m²</strong> — Prepara a tu equipo en nuestros Centros de Entrenamiento Creatblue®, diseñados para simular entornos operativos reales.
-                    </p>
-                </div>
+        <!-- Banner 2: CEC - Grid con imagen y texto -->
+        <div class="grid lg:grid-cols-2 gap-8 items-center bg-white rounded-3xl overflow-hidden shadow-xl opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
+            <!-- Imagen a la izquierda -->
+            <div class="h-120">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e5.webp" 
+                     alt="CEC - Centros de Entrenamiento Creatblue" 
+                     class="w-full h-full object-cover">
+            </div>
+            <!-- Texto a la derecha -->
+            <div class="p-8 lg:p-12">
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                    CEC SLP Y SILAO con una capacidad de 1,050 m²
+                </h3>
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    Prepara a tu equipo en nuestros Centros de Entrenamiento Creatblue®, diseñados para simular entornos operativos reales.
+                </p>
             </div>
         </div>
     </div>
