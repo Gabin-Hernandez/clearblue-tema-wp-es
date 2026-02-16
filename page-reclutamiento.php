@@ -59,14 +59,14 @@ get_header();
                 
                 <!-- Imagen 3 - Centro izquierda (más grande y destacada) -->
                 <div class="absolute top-60 left-24 w-60 h-72 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-30 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="700" data-speed="0.2">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/r3.webp" 
-                         alt="Trabajador 3" 
-                         class="w-full h-full object-cover">
+                    <video autoplay loop muted playsinline class="w-full h-full object-cover">
+                        <source src="<?php echo get_stylesheet_directory_uri(); ?>/public/video/reclutamiento.mp4" type="video/mp4">
+                    </video>
                 </div>
                 
                 <!-- Imagen 4 - Inferior derecha -->
                 <div class="absolute bottom-0 right-8 w-48 h-52 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="900" data-speed="0.4">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima4.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/r3.jpg" 
                          alt="Trabajador 4" 
                          class="w-full h-full object-cover">
                 </div>
@@ -89,12 +89,12 @@ get_header();
                          class="w-full h-48 object-cover">
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/r3.webp" 
-                         alt="Trabajador 3" 
-                         class="w-full h-48 object-cover">
+                    <video autoplay loop muted playsinline class="w-full h-48 object-cover">
+                        <source src="<?php echo get_stylesheet_directory_uri(); ?>/public/video/reclutamiento.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima4.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/r3.jpg" 
                          alt="Trabajador 4" 
                          class="w-full h-48 object-cover">
                 </div>
@@ -444,33 +444,47 @@ get_header();
         </div>
         
         <!-- Alcance de Perfiles -->
-        <div class="mt-16 max-w-xl mx-auto text-center">
-            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-                Alcance de Perfiles para Reclutamiento y Selección
-            </h3>
-            <p class="text-gray-700 text-lg mb-6 opacity-0 translate-y-8 animate-on-scroll" data-delay="300">
-                Trabajamos con una amplia variedad de perfiles, adaptándonos a las necesidades operativas y estratégicas de cada empresa.
-            </p>
-            <ul class="space-y-3 opacity-0 translate-y-8 animate-on-scroll inline-block text-left" data-delay="400">
-                <li class="flex items-center gap-3 text-gray-800">
-                    <svg class="w-5 h-5 text-secondary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                    </svg>
-                    <span class="text-lg">Directivos y Gerenciales</span>
-                </li>
-                <li class="flex items-center gap-3 text-gray-800">
-                    <svg class="w-5 h-5 text-secondary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                    </svg>
-                    <span class="text-lg">Administración y Mandos medios</span>
-                </li>
-                <li class="flex items-center gap-3 text-gray-800">
-                    <svg class="w-5 h-5 text-secondary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                    </svg>
-                    <span class="text-lg">Operativos y Técnicos</span>
-                </li>
-            </ul>
+        <div class="mt-16 max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Columna izquierda - Texto -->
+                <div class="opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                        Alcance de Perfiles para Reclutamiento y Selección
+                    </h3>
+                    <p class="text-gray-700 text-lg mb-6">
+                        Trabajamos con una amplia variedad de perfiles, adaptándonos a las necesidades operativas y estratégicas de cada empresa.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-gray-800">
+                            <svg class="w-5 h-5 text-secondary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-lg">Directivos y Gerenciales</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-800">
+                            <svg class="w-5 h-5 text-secondary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-lg">Administración y Mandos medios</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-800">
+                            <svg class="w-5 h-5 text-secondary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-lg">Operativos y Técnicos</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Columna derecha - Video -->
+                <div class="opacity-0 scale-75 animate-on-scroll" data-delay="400">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl">
+                        <video autoplay loop muted playsinline class="w-full h-[400px] object-cover">
+                            <source src="<?php echo get_stylesheet_directory_uri(); ?>/public/video/reclutamiento.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
         </div>
         
     </div>
@@ -497,9 +511,9 @@ get_header();
                 <p class="text-gray-600 text-lg mb-8">
                     Nuestro equipo te ayuda a definir la estrategia de reclutamiento más eficiente para optimizar tiempos, costos y resultados.
                 </p>
-                <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
+                <a href="<?php echo esc_url(home_url('/contacto#form_contact')); ?>" class="inline-block bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
                     Habla con un asesor
-                </button>
+                </a>
             </div>
         </div>
     </div>
