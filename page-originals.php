@@ -42,8 +42,8 @@ get_header();
             </div>
             
             <!-- Columna derecha - Imagen única -->
-            <div class="rounded-3xl overflow-hidden shadow-2xl opacity-0 scale-95 animate-on-scroll" data-delay="400">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/or1.webp" 
+            <div class="overflow-hidden  opacity-0 scale-95 animate-on-scroll" data-delay="400">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/or2.webp" 
                      alt="Creatblue Originals México" 
                      class="w-full h-auto object-cover">
             </div>
@@ -171,7 +171,7 @@ get_header();
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" />
                         </svg>
-                        <span>Ver cómo funciona</span>
+                        <span>Descargar brochure</span>
                     </button>
                 </div>
             </div>
@@ -193,13 +193,13 @@ get_header();
                     <p class="text-white/90 text-base mb-6">
                         Modelo de entrenamiento industrial para optimizar la productividad.
                     </p>
-                    <button class="bg-secondary hover:bg-secondary/80 text-white px-5 py-3 rounded-xl transition-all duration-300 font-bold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center gap-2">
+                    <a href="https://www.youtube.com/@CreatblueMX" target="_blank" rel="noopener noreferrer" class="bg-secondary hover:bg-secondary/80 text-white px-5 py-3 rounded-xl transition-all duration-300 font-bold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center gap-2 inline-flex">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" />
                         </svg>
                         <span>Ver cómo funciona</span>
-                    </button>
+                    </a>
                 </div>
             </div>
             
@@ -225,7 +225,7 @@ get_header();
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" />
                         </svg>
-                        <span>Ver cómo funciona</span>
+                        <span>Descargar brochure</span>
                     </button>
                 </div>
             </div>
