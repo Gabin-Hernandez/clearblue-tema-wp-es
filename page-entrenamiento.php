@@ -56,21 +56,22 @@ get_header();
                 
                 <!-- Imagen 2 - Superior derecha -->
                 <div class="absolute top-0 right-0 w-64 h-64 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="500" data-speed="0.5">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e7.webp" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e6.webp" 
                          alt="Trabajador 2" 
                          class="w-full h-full object-cover">
                 </div>
                 
-                <!-- Imagen 3 - Centro izquierda (más grande y destacada) -->
+                <!-- Imagen 3 - Centro izquierda (más grande y destacada) - VIDEO -->
                 <div class="absolute top-60 left-24 w-60 h-72 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-30 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="700" data-speed="0.2">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima3.jpg" 
-                         alt="Trabajador 3" 
-                         class="w-full h-full object-cover">
+                    <video autoplay loop muted playsinline class="w-full h-full object-cover">
+                        <source src="<?php echo get_stylesheet_directory_uri(); ?>/public/video/entrenamiento.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
                 </div>
                 
                 <!-- Imagen 4 - Inferior derecha -->
                 <div class="absolute bottom-0 right-8 w-48 h-52 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="900" data-speed="0.4">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e6.webp" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e7.webp" 
                          alt="Trabajador 4" 
                          class="w-full h-full object-cover">
                 </div>
@@ -88,17 +89,17 @@ get_header();
                          class="w-full h-48 object-cover">
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e7.webp" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e6.webp" 
                          alt="Trabajador 2" 
                          class="w-full h-48 object-cover">
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima3.jpg" 
-                         alt="Trabajador 3" 
-                         class="w-full h-48 object-cover">
+                    <video autoplay loop muted playsinline class="w-full h-48 object-cover">
+                        <source src="<?php echo get_stylesheet_directory_uri(); ?>/public/video/entrenamiento.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e6.webp" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e7.webp" 
                          alt="Trabajador 4" 
                          class="w-full h-48 object-cover">
                 </div>
