@@ -29,15 +29,15 @@ get_header();
                 
                 <!-- CTA Buttons -->
                 <div class="flex flex-wrap gap-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                    <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
+                    <a href="<?php echo esc_url(home_url('/contacto#form_contact')); ?>" class="inline-block bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
                         Cotizar ahora
-                    </button>
-                    <button class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-3">
+                    </a>
+                    <a href="<?php echo get_stylesheet_directory_uri(); ?>/public/pdf/capacitacion.pdf" download class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-3">
                         <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                         </svg>
                         Descargar catálogo
-                    </button>
+                    </a>
                 </div>
             </div>
             
@@ -59,9 +59,9 @@ get_header();
                 
                 <!-- Imagen 3 - Centro izquierda (más grande y destacada) -->
                 <div class="absolute top-60 left-24 w-60 h-72 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-30 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="700" data-speed="0.2">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima3.jpg" 
-                         alt="Trabajador 3" 
-                         class="w-full h-full object-cover">
+                    <video autoplay loop muted playsinline class="w-full h-full object-cover">
+                        <source src="<?php echo get_stylesheet_directory_uri(); ?>/public/video/capacitacion.mp4" type="video/mp4">
+                    </video>
                 </div>
                 
                 <!-- Imagen 4 - Inferior derecha -->
@@ -89,9 +89,9 @@ get_header();
                          class="w-full h-48 object-cover">
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima3.jpg" 
-                         alt="Trabajador 3" 
-                         class="w-full h-48 object-cover">
+                    <video autoplay loop muted playsinline class="w-full h-48 object-cover">
+                        <source src="<?php echo get_stylesheet_directory_uri(); ?>/public/video/capacitacion.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/c3.webp" 
@@ -111,7 +111,11 @@ get_header();
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
             Diseñamos programas de capacitación empresarial que impulsan la productividad, fortalecen habilidades clave y generan resultados reales en tu equipo
             </h2>
-            <p>BENEFICIOS CREATBLUE®</p>
+           <div class="inline-block opacity-0 translate-y-8 animate-on-scroll" data-delay="300">
+                <span class="bg-gradient-to-r from-secondary to-primary text-white text-sm md:text-base font-bold px-8 py-3 rounded-full uppercase tracking-wider shadow-lg">
+                    BENEFICIOS CREATBLUE®
+                </span>
+            </div>
         </div>
         
         <!-- Grid de 3 columnas con iconos -->
@@ -289,7 +293,7 @@ get_header();
         <div class="grid max-w-5xl mx-auto md:grid-cols-2 gap-8 items-center mb-16">
             <!-- Columna 1: Logo CREATPLAY -->
             <div class="opacity-0 translate-x-8 animate-on-scroll" data-delay="200">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/creatplay_asset.png" 
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/clea_light.webp" 
                      alt="CREATPLAY" 
                      class="w-full max-w-[400px] h-auto">
             </div>
@@ -297,25 +301,25 @@ get_header();
             <!-- Columna 2: Título y texto -->
             <div class="text-right opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
                 <h2 class="text-secondary uppercase tracking-[0.2em] font-bold">
-                    CREATplay:
+                    CREATLearning:
                 </h2>
                 <p class="text-white text-base max-w-2xl ml-auto mb-6">
                     Metodología de capacitación basada en gaming y métodos andragógicos
                 </p>
                 <!-- Botones de cómo funciona y descarga brochure -->
                 <div class="flex flex-wrap gap-3 justify-end opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                    <button class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-2">
+                    <a href="https://www.youtube.com/@CreatblueMX" target="_blank" rel="noopener noreferrer" class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-2">
                         <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M8 5v14l11-7z"/>
                         </svg>
                         Ver cómo funciona
-                    </button>
-                    <button class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-2">
+                    </a>
+                    <a href="<?php echo get_stylesheet_directory_uri(); ?>/public/pdf/capacitacion.pdf" download class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-2">
                         <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                         </svg>
                         Descargar brochure
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -596,9 +600,9 @@ get_header();
         <p class="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Contáctanos hoy y descubre cómo podemos ayudarte a optimizar tus procesos de reclutamiento y capacitación.
         </p>
-        <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+        <a href="<?php echo esc_url(home_url('/contacto#form_contact')); ?>" class="inline-block bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
             Contáctanos ahora
-        </button>
+        </a>
     </div>
 </section>
 
