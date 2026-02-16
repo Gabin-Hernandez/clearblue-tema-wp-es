@@ -18,7 +18,7 @@ get_header('welcome');
         <!-- Título principal H1 -->
         <div class="text-center mb-16">
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-                Bienvenidos a Creatblue<sup>®</sup> <span class="text-secondary">Group</span>
+                Bienvenidos a Creatblue <span class="text-secondary">Group</span>
             </h1>
         </div>
         
@@ -58,7 +58,7 @@ get_header('welcome');
                        class="group flex items-center gap-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 border-transparent hover:border-secondary">
                         <div class="flex-1">
                             <h3 class="text-2xl font-bold text-primary group-hover:text-secondary transition-colors">
-                                Creatblue <span class="text-secondary">United States of America</span>
+                                Creatblue <span class="text-secondary">USA</span>
                             </h3>
                         </div>
                         <svg class="w-6 h-6 text-secondary transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
