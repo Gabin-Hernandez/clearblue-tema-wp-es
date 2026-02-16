@@ -20,12 +20,13 @@ get_header(); ?>
                 Conocimiento, tendencias y mejores prácticas en Recursos Humanos
             </p>
             
-            <!-- Formulario de Búsqueda -->
+            <!-- Formulario de Búsqueda (solo posts) -->
             <div class="max-w-2xl mx-auto mt-8">
                 <form role="search" method="get" class="relative" action="<?php echo esc_url(home_url('/')); ?>">
+                    <input type="hidden" name="post_type" value="post">
                     <input type="search" 
                            name="s" 
-                           placeholder="Buscar en el blog..." 
+                           placeholder="Buscar artículos del blog..." 
                            class="w-full px-6 py-4 pr-14 rounded-full text-lg focus:outline-none focus:ring-4 focus:ring-secondary/30 text-primary"
                            aria-label="Buscar en el blog">
                     <button type="submit" 
@@ -45,6 +46,76 @@ get_header(); ?>
 <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-6">
         <div class="max-w-7xl mx-auto">
+            
+            <!-- Filtros por Categorías y Tags -->
+            <div class="mb-12">
+                <div class="bg-white rounded-2xl shadow-lg p-6">
+                    
+                    <!-- Categorías -->
+                    <?php
+                    $categories = get_categories(array(
+                        'orderby' => 'name',
+                        'order'   => 'ASC',
+                        'hide_empty' => true,
+                    ));
+                    
+                    if (!empty($categories)) :
+                    ?>
+                        <div class="mb-6">
+                            <h3 class="text-lg font-black text-primary mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
+                                </svg>
+                                Filtrar por Categoría
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <a href="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>" 
+                                   class="inline-block px-4 py-2 rounded-full font-semibold transition-colors <?php echo !is_category() && !is_tag() && !is_author() ? 'bg-secondary text-white' : 'bg-gray-100 text-gray-700 hover:bg-secondary hover:text-white'; ?>">
+                                    Todas
+                                </a>
+                                <?php foreach ($categories as $category) : ?>
+                                    <a href="<?php echo esc_url(get_category_link($category->term_id)); ?>" 
+                                       class="inline-block px-4 py-2 rounded-full font-semibold bg-gray-100 text-gray-700 hover:bg-secondary hover:text-white transition-colors">
+                                        <?php echo esc_html($category->name); ?>
+                                        <span class="text-xs opacity-60">(<?php echo $category->count; ?>)</span>
+                                    </a>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+                    
+                    <!-- Tags Populares -->
+                    <?php
+                    $tags = get_tags(array(
+                        'orderby' => 'count',
+                        'order'   => 'DESC',
+                        'number'  => 10,
+                        'hide_empty' => true,
+                    ));
+                    
+                    if (!empty($tags)) :
+                    ?>
+                        <div>
+                            <h3 class="text-lg font-black text-primary mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path>
+                                </svg>
+                                Tags Populares
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <?php foreach ($tags as $tag) : ?>
+                                    <a href="<?php echo esc_url(get_tag_link($tag->term_id)); ?>" 
+                                       class="inline-block px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-secondary hover:text-white transition-colors">
+                                        #<?php echo esc_html($tag->name); ?>
+                                        <span class="text-xs opacity-60">(<?php echo $tag->count; ?>)</span>
+                                    </a>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+                    
+                </div>
+            </div>
             
             <?php if (have_posts()) : ?>
                 

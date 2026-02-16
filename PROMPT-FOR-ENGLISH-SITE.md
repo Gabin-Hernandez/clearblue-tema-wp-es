@@ -141,7 +141,8 @@ WordPress searches in order:
 ### Specific Features to Implement:
 
 #### home.php:
-- **Search form in hero section** (prominent, styled with Tailwind)
+- **Search form in hero section** (prominent, styled with Tailwind, **posts only**)
+- **Visual category and tag filters** (before posts grid, with counts)
 - Responsive grid (3 columns desktop, 2 tablet, 1 mobile)
 - Featured image with hover zoom effect
 - Category badge on image
@@ -169,7 +170,8 @@ WordPress searches in order:
 - Dynamic hero based on archive type (category/tag/author/date)
 - Display category/tag description
 - Author avatar and bio for author archives
-- **Search form in hero section** (same as home.php)
+- **Search form in hero section** (same as home.php, **posts only**)
+- **Visual category and tag filters** (with active state highlighting)
 - Breadcrumb navigation
 - Result counter
 - Same grid layout as home.php
@@ -485,7 +487,13 @@ Add this search form in both `home.php` and `archive.php` right after the hero c
 - Change "Post anterior" to "Previous post"
 - Change "Post siguiente" to "Next post"
 - Change "Resultados para:" to "Results for:"
-- Change "Buscar en el blog..." to "Search the blog..." (search placeholder)
+- Change "Buscar artículos del blog..." to "Search blog articles..." (search placeholder)
+- Change "Filtrar por Categoría" to "Filter by Category"
+- Change "Tags Populares" to "Popular Tags"
+- Change "Todas" to "All" (in category filters)
+- Use `get_the_date('F j, Y')` for proper English date format
+- All screen reader text should be in English
+- All aria-labels should be in English
 - Change "Resultados para:" to "Results for:"
 - Use `get_the_date('F j, Y')` for proper English date format
 - All screen reader text should be in English
