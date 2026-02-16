@@ -166,5 +166,67 @@ function creatblue_setup() {
         'flex-height' => true,
         'flex-width'  => true,
     ) );
+    
+    // Soporte para HTML5
+    add_theme_support( 'html5', array(
+        'search-form',
+        'comment-form',
+        'comment-list',
+        'gallery',
+        'caption',
+    ) );
+    
+    // Soporte para feeds automáticos
+    add_theme_support( 'automatic-feed-links' );
+}
+
+/**
+ * Configurar posts por página para el blog
+ * Solo aplica a la página principal del blog (home.php)
+ * No afecta otros custom post types ni queries personalizadas
+ * 
+ * @param WP_Query $query La query de WordPress
+ */
+add_action( 'pre_get_posts', 'creatblue_posts_per_page' );
+function creatblue_posts_per_page( $query ) {
+    // Solo modificar la query principal en el frontend
+    if ( ! is_admin() && $query->is_main_query() ) {
+        
+        // Solo para la página del blog (home) con posts normales
+        if ( is_home() && ! is_front_page() ) {
+            $query->set( 'posts_per_page', 7 );
+        }
+        
+        // Si la página de inicio también muestra posts (configuración WP)
+        // Puedes ajustar esto según tu configuración en Ajustes > Lectura
+        if ( is_front_page() && $query->get( 'post_type' ) === 'post' ) {
+            $query->set( 'posts_per_page', 7 );
+        }
+    }
+}
+
+/**
+ * Agregar tamaños de imagen personalizados para el blog
+ */
+add_action( 'after_setup_theme', 'creatblue_custom_image_sizes' );
+function creatblue_custom_image_sizes() {
+    // Tamaño para las tarjetas del blog
+    add_image_size( 'blog-card', 600, 400, true );
+    
+    // Tamaño para el hero del single post
+    add_image_size( 'blog-hero', 1920, 800, true );
+}
+
+/**
+ * Mejorar el extracto de los posts
+ */
+add_filter( 'excerpt_length', 'creatblue_excerpt_length', 999 );
+function creatblue_excerpt_length( $length ) {
+    return 30; // 30 palabras para el extracto
+}
+
+add_filter( 'excerpt_more', 'creatblue_excerpt_more' );
+function creatblue_excerpt_more( $more ) {
+    return '...';
 }
 ?>
