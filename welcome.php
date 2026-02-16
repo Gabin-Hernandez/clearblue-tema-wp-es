@@ -103,7 +103,7 @@ get_header('welcome');
                 </div>
                 
                 <!-- Icono Alemania - Centro derecha -->
-                <div class="absolute top-[35%] right-[5%] transform animate-float" style="animation-delay: 2s;">
+                <div class="absolute top-[35%] right-[40%] transform animate-float" style="animation-delay: 2s;">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/deutschland_l.webp" 
                          alt="Deutschland" 
                          class="w-32 h-auto md:w-40 md:h-auto drop-shadow-2xl hover:scale-110 transition-transform duration-300 cursor-pointer">
