@@ -164,7 +164,7 @@ get_header();
 <!-- Sección Decisiones respaldadas por estrategia -->
 <section class="relative py-20 overflow-hidden">
     <!-- Imagen de fondo de la sección -->
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/fdo1.jpg" 
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/back_consultoria.webp" 
          alt="Background" 
          class="absolute inset-0 w-full h-full object-cover">
     

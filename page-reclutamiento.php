@@ -256,7 +256,7 @@ get_header();
 <!-- Sección El talento idóneo en el menor tiempo posible -->
 <section class="relative py-20 overflow-hidden">
     <!-- Imagen de fondo de la sección -->
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/fdo1.jpg" 
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/back_reclutamiento.webp" 
          alt="Background" 
          class="absolute inset-0 w-full h-full object-cover">
     
