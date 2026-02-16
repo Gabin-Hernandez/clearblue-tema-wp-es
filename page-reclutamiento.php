@@ -66,7 +66,7 @@ get_header();
                 
                 <!-- Imagen 4 - Inferior derecha -->
                 <div class="absolute bottom-0 right-8 w-48 h-52 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-20 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="900" data-speed="0.4">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/r3.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/r3.webp" 
                          alt="Trabajador 4" 
                          class="w-full h-full object-cover">
                 </div>
@@ -94,7 +94,7 @@ get_header();
                     </video>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/r3.jpg" 
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/r3.webp" 
                          alt="Trabajador 4" 
                          class="w-full h-48 object-cover">
                 </div>
