@@ -8,7 +8,7 @@ get_header();
 ?>
 
 <!-- Hero Section -->
-<section class="relative min-h-[80vh] bg-gradient-to-br from-gray-50 to-gray-100 pt-32 pb-20 overflow-hidden">
+<section class="relative min-h-[80vh] bg-gradient-to-br from-gray-50 to-gray-100 pt-32 overflow-hidden">
     <div class="container mx-auto px-6">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             
