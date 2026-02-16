@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <!-- Logo Creatmap -->
                 <div class="opacity-0 translate-x-8 animate-on-scroll" data-delay="600">
                     <div>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/creatmap_light.webp"     
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/cmap_light.webp"     
                              alt="CREATmap" 
                              class="w-full max-w-[400px] h-auto">
                     </div>
