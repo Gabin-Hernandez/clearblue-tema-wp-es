@@ -115,7 +115,11 @@ get_header();
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
             Diseñamos modelos de entrenamiento profesionales, ideales para empresas que buscan optimizar, mejorar la eficiencia operativa y el desarrollo de soft skills en su equipo.
             </h2>
-            <p>BENEFICIOS CREATBLUE®</p>
+            <div class="inline-block opacity-0 translate-y-8 animate-on-scroll" data-delay="300">
+                <span class="bg-gradient-to-r from-secondary to-primary text-white text-sm md:text-base font-bold px-8 py-3 rounded-full uppercase tracking-wider shadow-lg">
+                    BENEFICIOS CREATBLUE®
+                </span>
+            </div>
         </div>
         
         <!-- Grid de 3 columnas con iconos -->
@@ -337,9 +341,9 @@ get_header();
                 </div>
                 <!-- Contenido -->
                 <div class="p-6">
-                    <h3 class="text-2xl font-bold text-primary mb-3">Mapea</h3>
+                    <h3 class="text-2xl font-bold text-primary mb-3">Mapea: evaluación de desempeño y habilidades</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Cada persona del equipo es evaluada antes y después del entrenamiento utilizando medidores de rendimiento operativos.
+                       Cada persona del equipo es evaluada antes y después del entrenamiento utilizando medidores de rendimiento operativos.
                     </p>
                 </div>
             </div>
@@ -354,9 +358,9 @@ get_header();
                 </div>
                 <!-- Contenido -->
                 <div class="p-6">
-                    <h3 class="text-2xl font-bold text-primary mb-3">Entrena</h3>
+                    <h3 class="text-2xl font-bold text-primary mb-3">Entrena: formación operativa y fortalecimiento</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Cada persona del equipo es evaluada antes y después del entrenamiento utilizando medidores de rendimiento operativos.
+                    Programas de entrenamiento básico o de fortalecimiento enfocados en habilidades técnicas, operativas y conductuales.  
                     </p>
                 </div>
             </div>
@@ -371,9 +375,9 @@ get_header();
                 </div>
                 <!-- Contenido -->
                 <div class="p-6">
-                    <h3 class="text-2xl font-bold text-primary mb-3">Optimiza</h3>
+                    <h3 class="text-2xl font-bold text-primary mb-3">Optimiza: equipos productivos orientados a resultados</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Cada persona del equipo es evaluada antes y después del entrenamiento utilizando medidores de rendimiento operativos.
+                        El proceso finaliza con equipos altamente productivos, comprometidos y enfocados en la mejora continua.
                     </p>
                 </div>
             </div>
