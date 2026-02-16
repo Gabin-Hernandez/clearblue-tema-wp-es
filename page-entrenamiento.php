@@ -294,18 +294,15 @@ get_header();
         <div class="grid max-w-5xl mx-auto md:grid-cols-2 gap-8 items-center mb-16">
             <!-- Columna 1: Logo WORKFORCE -->
             <div class="opacity-0 translate-x-8 animate-on-scroll" data-delay="200">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/creatmap_asset.png" 
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/cmap_light.webp" 
                      alt="CREATMAP" 
                      class="w-full max-w-[400px] h-auto">
             </div>
             
             <!-- Columna 2: Título y texto -->
             <div class="text-right opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
-                <h2 class="text-secondary uppercase tracking-[0.2em] font-bold">
-                CREATmap:
-                </h2>
                 <p class="text-white text-base max-w-2xl ml-auto mb-6">
-                modelo de entrenamiento industrial para optimizar la productividad
+                Modelo de entrenamiento industrial para optimizar la productividad
                 </p>
                 <!-- botones de como funciona y descarga brochure -->
                 <div class="flex flex-wrap gap-3 justify-end opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
@@ -315,12 +312,12 @@ get_header();
                         </svg>
                         Ver cómo funciona
                     </a>
-                    <button class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-2">
+                    <a href="<?php echo get_stylesheet_directory_uri(); ?>/public/pdf/entrenamiento.pdf" download class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-2">
                         <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                         </svg>
                         Descargar brochure
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -469,12 +466,12 @@ get_header();
                     Contamos con equipos móviles especializados para entrenamiento operativo adaptado a cada industria y giro empresarial
                 </p>
                 <!-- Boton de descargar catalogo-->
-                <button class="mt-4 bg-secondary hover:bg-secondary/80 text-white px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center gap-2">
+                <a href="<?php echo get_stylesheet_directory_uri(); ?>/public/pdf/entrenamiento.pdf" download class="mt-4 bg-secondary hover:bg-secondary/80 text-white px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center gap-2 inline-flex">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                     </svg>
                     Descargar catálogo
-                </button>
+                </a>
             </div>
             
         </div>
@@ -490,9 +487,9 @@ get_header();
         <p class="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Contáctanos hoy y descubre cómo podemos ayudarte a optimizar tus procesos de reclutamiento y capacitación.
         </p>
-        <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+        <a href="<?php echo esc_url(home_url('/contacto#form_contact')); ?>" class="inline-block bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
             Contáctanos ahora
-        </button>
+        </a>
     </div>
 </section>
 

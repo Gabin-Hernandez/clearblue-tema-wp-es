@@ -29,15 +29,15 @@ get_header();
                 
                 <!-- CTA Buttons -->
                 <div class="flex flex-wrap gap-4 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                    <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
+                    <a href="<?php echo esc_url(home_url('/contacto#form_contact')); ?>" class="inline-block bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
                         Cotizar ahora
-                    </button>
-                    <button class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-3">
+                    </a>
+                    <a href="https://www.youtube.com/@CreatblueMX" target="_blank" rel="noopener noreferrer" class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-3">
                         <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M8 5v14l11-7z"/>
                         </svg>
                         Ver cómo funciona
-                    </button>
+                    </a>
                 </div>
             </div>
             
@@ -111,7 +111,11 @@ get_header();
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
             Expertos en gestión de capital humano, conocemos los desafíos clave que enfrentan las empresas y el impacto en su Core Business. 
             </h2>
-            <p>BENEFICIOS CREATBLUE®</p>
+            <div class="inline-block opacity-0 translate-y-8 animate-on-scroll" data-delay="300">
+                <span class="bg-gradient-to-r from-secondary to-primary text-white text-sm md:text-base font-bold px-8 py-3 rounded-full uppercase tracking-wider shadow-lg">
+                    BENEFICIOS CREATBLUE®
+                </span>
+            </div>
         </div>
         
         <!-- Grid de 3 columnas con iconos -->
