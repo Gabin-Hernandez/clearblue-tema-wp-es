@@ -49,7 +49,7 @@
                             </div>
                         </div>
                         
-                        <a href="#" class="text-white hover:text-secondary transition">Camino zum talent</a>
+                        <a href="<?php echo esc_url(home_url('/blog')); ?>" class="text-white hover:text-secondary transition">Blog</a>
                         <a href="<?php echo esc_url(home_url('/contacto')); ?>" class="text-white hover:text-secondary transition">Contacto</a>
                         <a href="http://bolsadeempleo.creatblue.com/" target="_blank" class="text-white hover:text-secondary transition">Bolsa de trabajo</a>
                         <?php
@@ -98,7 +98,7 @@
                             </div>
                         </div>
                         
-                        <a href="#" class="block text-white hover:text-secondary transition py-2">Camino zum talent</a>
+                        <a href="<?php echo esc_url(home_url('/blog')); ?>" class="block text-white hover:text-secondary transition py-2">Blog</a>
                         <a href="<?php echo esc_url(home_url('/contacto')); ?>" class="block text-white hover:text-secondary transition py-2">Contacto</a>
                         <a href="#" class="block text-white hover:text-secondary transition py-2">Bolsa de trabajo</a>
                     </div>
