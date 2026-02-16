@@ -408,7 +408,7 @@ get_header();
                 </p>
             </div>
             <!-- Imagen a la derecha -->
-            <div class="h-64 lg:h-120">
+            <div class="h-120">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e4.webp" 
                      alt="CREATmobil - Entrenamiento en tus instalaciones" 
                      class="w-full h-full object-cover">
