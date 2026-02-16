@@ -36,12 +36,12 @@ get_header();
                     <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
                         Cotizar ahora
                     </button>
-                    <button class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-3">
+                    <a href="https://www.youtube.com/@CreatblueMX" target="_blank" rel="noopener noreferrer" class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-3">
                         <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M8 5v14l11-7z"/>
                         </svg>
                         Ver cómo funciona
-                    </button>
+                    </a>
                 </div>
             </div>
             
@@ -304,12 +304,12 @@ get_header();
                 </p>
                 <!-- botones de como funciona y descarga brochure -->
                 <div class="flex flex-wrap gap-3 justify-end opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                    <button class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-2">
+                    <a href="https://www.youtube.com/@CreatblueMX" target="_blank" rel="noopener noreferrer" class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-2">
                         <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M8 5v14l11-7z"/>
                         </svg>
                         Ver cómo funciona
-                    </button>
+                    </a>
                     <button class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded-xl transition-all duration-300 font-semibold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-primary/20 flex items-center gap-2">
                         <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>

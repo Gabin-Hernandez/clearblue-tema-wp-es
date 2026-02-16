@@ -17,11 +17,11 @@ get_header();
 <!-- Sección Hero - Título principal -->
 <section class="pt-32 pb-20 bg-white">
     <div class="container mx-auto px-6">
-        <div class="text-center max-w-4xl mx-auto mb-8">
+        <div class="text-center max-w-4xl mx-auto mb-8 mtp-8">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
                 CREAT<span class="font-normal">alento</span> idóneo en el menor tiempo posible.
             </h1>
-            <p class="text-lg text-primary opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+            <p class="text-xl text-primary opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
                 Promesa <span class="font-bold">Creatblue®</span> que se cumple.
             </p>
         </div>
@@ -43,7 +43,7 @@ get_header();
                 </div>
                 <!-- Contenido -->
                 <div>
-                    <h3 class="text-4xl md:text-5xl font-black text-primary mb-1">+2K</h3>
+                    <h3 class="text-4xl md:text-5xl font-black text-primary mb-1">+2,000</h3>
                     <p class="text-gray-600 text-sm md:text-base">vacantes cubiertas en lo que fue del 2025</p>
                 </div>
             </div>
@@ -70,7 +70,7 @@ get_header();
 <!-- Sección: Quiénes Somos -->
 <section class="py-20 bg-white">
     <div class="container mx-auto px-6">
-        <h2 class="text-2xl md:text-3xl font-bold text-primary uppercase tracking-wide text-center mb-12">Quiénes somos como Creatblue® México</h2>
+        <h2 class="text-2xl md:text-3xl font-bold text-primary uppercase tracking-wide text-center mb-12">Quiénes somos como Creatblue México</h2>
     </div>
     <div class="container mx-auto px-6">
         <div class="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
@@ -82,7 +82,7 @@ get_header();
                 </h2>
                 <div class="space-y-4 text-primary">
                     <p class="text-lg">
-                    Creatblue® México es la nueva división de Grupo Schnellecke, empresa de clase mundial especializada en la gestión de cadenas de suministro para el sector industrial.
+                    Creatblue México es la nueva división de Grupo Schnellecke, empresa de clase mundial especializada en la gestión de cadenas de suministro para el sector industrial.
                     </p>
                 </div>
                 <h2 class="text-2xl md:text-3xl font-bold text-primary uppercase tracking-wide">
@@ -115,7 +115,7 @@ get_header();
             
             <!-- Columna izquierda - Contenedor de imagen -->
             <div class="opacity-0 scale-75 animate-on-scroll" data-delay="400">
-                <div class="w-full h-[400px] rounded-2xl shadow-2xl overflow-hidden">
+                <div class="w-full h-[500px] rounded-2xl shadow-2xl overflow-hidden">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/images/acerca/2.webp" 
                          alt="La importancia de Creatblue para el mercado mexicano" 
                          class="w-full h-full object-cover">
@@ -125,7 +125,7 @@ get_header();
             <!-- Columna derecha - Texto -->
             <div class="space-y-6 opacity-0 translate-x-8 animate-on-scroll" data-delay="600">
                 <h2 class="text-2xl md:text-3xl font-bold text-primary uppercase tracking-wide">
-                La impotancia de CREATBLUE® para el mercado mexicano
+                La impotancia de CREATBLUE para el mercado mexicano
                 </h2>
                 
                 <div class="space-y-4 text-primary">
@@ -142,32 +142,6 @@ get_header();
     </div>
 </section>
 
-<!-- Sección Promesa Creatblue cumplida. -->
-<section class="relative py-20 overflow-hidden">
-    <!-- Imagen de fondo de la sección -->
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/fdo1.jpg" 
-         alt="Background" 
-         class="absolute inset-0 w-full h-full object-cover">
-    
-    <!-- Overlay oscuro sobre la imagen -->
-    <div class="absolute inset-0 bg-gradient-to-br from-[#2f3082]/70 to-[#0f1229]/70"></div>
-    
-    <div class="container mx-auto px-6 relative z-10">
-        <div class="max-w-4xl mx-auto">
-            <!-- Badge con efecto glassmorphism -->
-            <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-1 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-                <div class="px-6 py-8 md:px-14 md:py-14 text-center">                    
-                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight drop-shadow-2xl">
-                    Promesa Creatblue cumplida.
-                    </h2>
-                    <p class="text-white text-lg">Creamos talento idóneo en el menor tiempo
-                    posible enfocado en productividad.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Sección CTA Final -->
 <section class="py-20 bg-gray-50">
     <div class="container mx-auto px-6 text-center">
@@ -177,9 +151,9 @@ get_header();
         <p class="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Contáctanos hoy y descubre cómo podemos ayudarte a optimizar tus procesos de reclutamiento y capacitación.
         </p>
-        <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+        <a href="<?php echo esc_url(home_url('/contacto#form_contact')); ?>" class="inline-block bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
             Contáctanos ahora
-        </button>
+        </a>
     </div>
 </section>
 
