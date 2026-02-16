@@ -58,7 +58,7 @@ get_header('welcome');
                        class="group flex items-center gap-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 border-transparent hover:border-secondary">
                         <div class="flex-1">
                             <h3 class="text-2xl font-bold text-primary group-hover:text-secondary transition-colors">
-                                Creatblue <span class="text-secondary">USA</span>
+                                Creatblue <span class="text-secondary">US</span>
                             </h3>
                         </div>
                         <svg class="w-6 h-6 text-secondary transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
