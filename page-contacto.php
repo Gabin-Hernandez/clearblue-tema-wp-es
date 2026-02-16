@@ -8,7 +8,7 @@ get_header();
 ?>
 
 <!-- Hero Section -->
-<section class="relative min-h-[60vh] bg-gradient-to-br from-gray-50 to-gray-100 pt-32 pb-20 overflow-hidden">
+<section class="relative min-h-[60vh] bg-gradient-to-br from-gray-50 to-gray-100 pt-32 overflow-hidden">
     <div class="container mx-auto px-6">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             
@@ -33,8 +33,8 @@ get_header();
             </div>
             
             <!-- Columna derecha - Imagen única -->
-            <div class="rounded-3xl overflow-hidden shadow-2xl opacity-0 scale-95 animate-on-scroll" data-delay="400">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/cont2.webp" 
+            <div class="overflow-hidden opacity-0 scale-95 animate-on-scroll" data-delay="400">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/cont3.webp" 
                      alt="Contacto a Creatblue México" 
                      class="w-full h-auto object-cover">
             </div>
