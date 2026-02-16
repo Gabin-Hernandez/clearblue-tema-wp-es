@@ -271,11 +271,15 @@ get_header(); ?>
                     </div>
                     
                     <!-- Sección de Comentarios -->
-                    <?php if (comments_open() || get_comments_number()) : ?>
+                    <?php 
+                    /* Sección de comentarios temporalmente oculta
+                    if (comments_open() || get_comments_number()) : ?>
                         <div class="mt-12 pt-8 border-t border-gray-200">
                             <?php comments_template(); ?>
                         </div>
-                    <?php endif; ?>
+                    <?php endif; 
+                    */ 
+                    ?>
                     
                 </div>
             </div>
