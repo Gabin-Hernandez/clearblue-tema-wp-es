@@ -32,11 +32,11 @@ get_header();
     <div class="relative z-10 container mx-auto px-6 flex items-center" style="min-height: 100vh; padding-top: 80px;">
         <div class="max-w-2xl">
             <h1 class="text-white text-5xl md:text-6xl font-bold leading-tight mb-6">
-                Creatblue® México: Creamos talento que impulsa <span id="typewriter" class="font-black text-secondary"></span><span class="typewriter-cursor text-secondary">|</span>
+                Creatblue México: Creamos talento que impulsa <span id="typewriter" class="font-black text-secondary"></span><span class="typewriter-cursor text-secondary">|</span>
             </h1>
-            <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
+            <a href="<?php echo esc_url(home_url('/contacto#form_contact')); ?>" class="inline-block bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
                 Cotiza ahora
-            </button>
+            </a>
         </div>
     </div>
 </section>
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function() {
                  <!-- Logo WorkForce -->
                   <div class="opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
                     <div>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/workforce_asset.png"     
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/wforce_light.webp"     
                              alt="WORKFORCE" 
                              class="block mb-3 w-full max-w-[400px] h-auto">
                     </div>
@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <!-- Logo Creatmap -->
                 <div class="opacity-0 translate-x-8 animate-on-scroll" data-delay="600">
                     <div>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/creatmap_asset.png" 
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/creatmap_light.webp"     
                              alt="CREATmap" 
                              class="w-full max-w-[400px] h-auto">
                     </div>
@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="mb-16 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
             <p class="text-secondary uppercase tracking-wide text-2xl font-black mb-3">DIFERENCIADOR CREATBLUE®</p>
             <p class="text-gray-700 text-lg max-w-2xl leading-relaxed">
-            En Creatblue® México incrementamos la rentabilidad de nuestros clientes mediante soluciones especializadas en talento humano, sin comprometer la calidad ni la plusvalía de sus negocios.
+            En Creatblue México incrementamos la rentabilidad de nuestros clientes mediante soluciones especializadas en talento humano, sin comprometer la calidad ni la plusvalía de sus negocios.
             </p>
         </div>
         
@@ -324,9 +324,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <!-- Botón CTA -->
                 <div class="flex-shrink-0">
-                    <button class="bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
+                    <a href="<?php echo esc_url(home_url('/blog')); ?>" class="inline-block bg-secondary hover:bg-secondary/80 text-white px-10 py-4 rounded-xl transition-all duration-300 font-bold text-md shadow-lg hover:shadow-xl transform hover:scale-105">
                         Ponte al día
-                    </button>
+                    </a>
                 </div>
             </div>
             
