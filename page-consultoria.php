@@ -57,11 +57,11 @@ get_header();
                          class="w-full h-full object-cover">
                 </div>
                 
-                <!-- Imagen 3 - Centro izquierda (más grande y destacada) -->
+                <!-- Video 3 - Centro izquierda (más grande y destacada) -->
                 <div class="absolute top-60 left-24 w-60 h-72 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 z-30 opacity-0 scale-75 animate-on-scroll particle-float" data-delay="700" data-speed="0.2">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima3.jpg" 
-                         alt="Trabajador 3" 
-                         class="w-full h-full object-cover">
+                    <video autoplay loop muted playsinline class="w-full h-full object-cover">
+                        <source src="<?php echo get_stylesheet_directory_uri(); ?>/public/video/consultoria.mp4" type="video/mp4">
+                    </video>
                 </div>
                 
                 <!-- Imagen 4 - Inferior derecha -->
@@ -89,9 +89,9 @@ get_header();
                          class="w-full h-48 object-cover">
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima3.jpg" 
-                         alt="Trabajador 3" 
-                         class="w-full h-48 object-cover">
+                    <video autoplay loop muted playsinline class="w-full h-48 object-cover">
+                        <source src="<?php echo get_stylesheet_directory_uri(); ?>/public/video/consultoria.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-lg">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ca3.webp" 
@@ -111,7 +111,11 @@ get_header();
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
             Adaptamos nuestros modelos, metodologías y programas para potencializar el talento humano
             </h2>
-            <p>BENEFICIOS CREATBLUE®</p>
+            <div class="inline-block opacity-0 translate-y-8 animate-on-scroll" data-delay="300">
+                <span class="bg-gradient-to-r from-secondary to-primary text-white text-sm md:text-base font-bold px-8 py-3 rounded-full uppercase tracking-wider shadow-lg">
+                    BENEFICIOS CREATBLUE
+                </span>
+            </div>
         </div>
         
         <!-- Grid de 3 columnas con iconos -->
@@ -197,7 +201,7 @@ get_header();
             <!-- Texto a la izquierda -->
             <div class="p-8 lg:p-12">
                 <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                    Soluciones de Consultoría Administrativa Creatblue® México
+                    Soluciones de Consultoría Administrativa Creatblue México
                 </h3>
                 <ul class="space-y-3">
                     <li class="flex items-start gap-3 text-gray-700">

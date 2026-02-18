@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="container mx-auto px-6">
         <!-- Título -->
         <div class="mb-16 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-            <p class="text-secondary uppercase tracking-wide text-2xl font-black mb-3">DIFERENCIADOR CREATBLUE®</p>
+            <p class="text-secondary uppercase tracking-wide text-2xl font-black mb-3">DIFERENCIADOR CREATBLUE</p>
             <p class="text-gray-700 text-lg max-w-2xl leading-relaxed">
             En Creatblue México incrementamos la rentabilidad de nuestros clientes mediante soluciones especializadas en talento humano, sin comprometer la calidad ni la plusvalía de sus negocios.
             </p>

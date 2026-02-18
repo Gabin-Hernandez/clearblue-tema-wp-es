@@ -113,7 +113,7 @@ get_header();
             </h2>
             <div class="inline-block opacity-0 translate-y-8 animate-on-scroll" data-delay="300">
                 <span class="bg-gradient-to-r from-secondary to-primary text-white text-sm md:text-base font-bold px-8 py-3 rounded-full uppercase tracking-wider shadow-lg">
-                    BENEFICIOS CREATBLUE®
+                    BENEFICIOS CREATBLUE
                 </span>
             </div>
         </div>

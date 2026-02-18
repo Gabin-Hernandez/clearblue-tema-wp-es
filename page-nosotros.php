@@ -22,7 +22,7 @@ get_header();
                 CREAT<span class="font-normal">alento</span> idóneo en el menor tiempo posible.
             </h1>
             <p class="text-xl text-primary opacity-0 translate-y-8 animate-on-scroll" data-delay="400">
-                Promesa <span class="font-bold">Creatblue®</span> que se cumple.
+                Promesa <span class="font-bold">Creatblue</span> que se cumple.
             </p>
         </div>
     </div>

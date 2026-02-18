@@ -118,7 +118,7 @@ get_header();
             </h2>
             <div class="inline-block opacity-0 translate-y-8 animate-on-scroll" data-delay="300">
                 <span class="bg-gradient-to-r from-secondary to-primary text-white text-sm md:text-base font-bold px-8 py-3 rounded-full uppercase tracking-wider shadow-lg">
-                    BENEFICIOS CREATBLUE®
+                    BENEFICIOS CREATBLUE
                 </span>
             </div>
         </div>
@@ -390,7 +390,7 @@ get_header();
         <!-- Título principal -->
         <div class="mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-            Modalidades de Entrenamiento Creatblue® México
+            Modalidades de Entrenamiento Creatblue México
             </h2>
         </div>
         
@@ -427,7 +427,7 @@ get_header();
                     CEC SLP Y SILAO con una capacidad de 1,050 m²
                 </h3>
                 <p class="text-gray-700 leading-relaxed text-lg">
-                    Prepara a tu equipo en nuestros Centros de Entrenamiento Creatblue®, diseñados para simular entornos operativos reales.
+                    Prepara a tu equipo en nuestros Centros de Entrenamiento Creatblue, diseñados para simular entornos operativos reales.
                 </p>
             </div>
         </div>

@@ -59,7 +59,11 @@ get_header();
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
             Adaptamos nuestros modelos, metodologías y programas para potencializar el exito de cada empresa en México con el talento humano
             </h2>
-            <p>BENEFICIOS CREATBLUE®</p>
+            <div class="inline-block opacity-0 translate-y-8 animate-on-scroll" data-delay="300">
+                <span class="bg-gradient-to-r from-secondary to-primary text-white text-sm md:text-base font-bold px-8 py-3 rounded-full uppercase tracking-wider shadow-lg">
+                    BENEFICIOS CREATBLUE
+                </span>
+            </div>
         </div>
         
         <!-- Grid de 3 columnas con iconos -->
@@ -115,7 +119,7 @@ get_header();
 <!-- Sección Decisiones respaldadas por estrategia - Banner Badge con Glassmorphism -->
 <section class="relative py-20 overflow-hidden">
     <!-- Imagen de fondo de la sección -->
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/fdo1.jpg" 
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/back_originals.webp" 
          alt="Background" 
          class="absolute inset-0 w-full h-full object-cover">
     
@@ -161,7 +165,7 @@ get_header();
                 <!-- Contenido abajo -->
                 <div class="p-6 md:p-8">
                     <h3 class="text-white text-xl md:text-2xl font-bold mb-3 leading-tight">
-                        Workforce Ready to Go Creatblue® México
+                        Workforce Ready to Go Creatblue México
                     </h3>
                     <p class="text-white/90 text-base mb-6">
                         Reclutamiento y entrenamiento de personal sin experiencia.
@@ -188,7 +192,7 @@ get_header();
                 <!-- Contenido abajo -->
                 <div class="p-6 md:p-8">
                     <h3 class="text-white text-xl md:text-2xl font-bold mb-3 leading-tight">
-                        CREATmap Creatblue® México
+                        CREATmap Creatblue México
                     </h3>
                     <p class="text-white/90 text-base mb-6">
                         Modelo de entrenamiento industrial para optimizar la productividad.
@@ -215,7 +219,7 @@ get_header();
                 <!-- Contenido abajo -->
                 <div class="p-6 md:p-8">
                     <h3 class="text-white text-xl md:text-2xl font-bold mb-3 leading-tight">
-                        Creatblue Learning Creatblue® México
+                        Creatblue Learning Creatblue México
                     </h3>
                     <p class="text-white/90 text-base mb-6">
                         Desarrollo de video gaming para capacitaciones empresariales.
