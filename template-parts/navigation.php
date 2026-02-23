@@ -40,7 +40,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
-                            <!-- Mega Menu Dropdown - Revisar -->
+                            <!-- Mega Menu Dropdown - Revisar, -->
                             <div class="dropdown-menu mega-menu opacity-0 invisible transition-all duration-300 transform translate-y-2">
                                 <div class="container mx-auto px-6 py-8">
                                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
