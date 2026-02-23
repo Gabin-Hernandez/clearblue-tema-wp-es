@@ -232,6 +232,33 @@
     }
 }
 
+/* Menú Móvil Styles */
+#mobile-menu {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Scroll personalizado para menú móvil */
+#mobile-menu::-webkit-scrollbar {
+    width: 6px;
+}
+
+#mobile-menu::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+#mobile-menu::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+#mobile-menu::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
 /* Mega Menu Styles */
 .mega-menu {
     position: fixed;
