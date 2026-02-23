@@ -21,7 +21,7 @@
             <!-- Menú Central y botón móvil -->
             <div class="flex items-center space-x-8">
                 <!-- Menú Central -->
-                <div class="hidden md:flex items-center space-x-8">
+                <div class="menu-desktop items-center space-x-8">
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'primary',
@@ -147,7 +147,7 @@
             </div>
             
             <!-- Menú móvil toggle  --> 
-            <button id="mobile-menu-toggle" class="md:hidden text-white focus:outline-none">
+            <button id="mobile-menu-toggle" class="menu-mobile text-white focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
@@ -156,7 +156,7 @@
         </div>
         
         <!-- Menú móvil -->
-        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+        <div id="mobile-menu" class="menu-mobile-content mt-4 pb-4 hidden">
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'primary',
@@ -214,6 +214,24 @@
 </header>
 
 <style>
+/* Custom breakpoint 860px para menú */
+.menu-desktop {
+    display: none;
+}
+
+.menu-mobile {
+    display: block;
+}
+
+@media (min-width: 860px) {
+    .menu-desktop {
+        display: flex !important;
+    }
+    .menu-mobile {
+        display: none !important;
+    }
+}
+
 /* Mega Menu Styles */
 .mega-menu {
     position: fixed;
