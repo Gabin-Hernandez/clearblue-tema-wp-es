@@ -175,12 +175,27 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
-                            <div class="mobile-dropdown-menu hidden pl-4 pt-2 space-y-2">
-                                <a href="<?php echo esc_url(home_url('/entrenamiento')); ?>" class="block text-white/80 hover:text-secondary transition py-1">Entrenamiento</a>
-                                <a href="<?php echo esc_url(home_url('/reclutamiento')); ?>" class="block text-white/80 hover:text-secondary transition py-1">Reclutamiento</a>
-                                <a href="<?php echo esc_url(home_url('/capacitacion')); ?>" class="block text-white/80 hover:text-secondary transition py-1">Capacitación</a>
-                                <a href="<?php echo esc_url(home_url('/consultoria')); ?>" class="block text-white/80 hover:text-secondary transition py-1">Consultoría</a>
-                                <a href="<?php echo esc_url(home_url('/originals')); ?>" class="block text-white/80 hover:text-secondary transition py-1">Originals</a>
+                            <div class="mobile-dropdown-menu hidden pt-2 space-y-2">
+                                <a href="<?php echo esc_url(home_url('/entrenamiento')); ?>" class="flex items-center gap-3 text-white/80 hover:text-secondary transition py-2 px-2 rounded hover:bg-white/10">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e6.webp" alt="Entrenamiento" class="w-10 h-10 rounded object-cover">
+                                    <span>Entrenamiento</span>
+                                </a>
+                                <a href="<?php echo esc_url(home_url('/reclutamiento')); ?>" class="flex items-center gap-3 text-white/80 hover:text-secondary transition py-2 px-2 rounded hover:bg-white/10">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima7.jpg" alt="Reclutamiento" class="w-10 h-10 rounded object-cover">
+                                    <span>Reclutamiento</span>
+                                </a>
+                                <a href="<?php echo esc_url(home_url('/capacitacion')); ?>" class="flex items-center gap-3 text-white/80 hover:text-secondary transition py-2 px-2 rounded hover:bg-white/10">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/c1.webp" alt="Capacitación" class="w-10 h-10 rounded object-cover">
+                                    <span>Capacitación</span>
+                                </a>
+                                <a href="<?php echo esc_url(home_url('/consultoria')); ?>" class="flex items-center gap-3 text-white/80 hover:text-secondary transition py-2 px-2 rounded hover:bg-white/10">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ca3.webp" alt="Consultoría" class="w-10 h-10 rounded object-cover">
+                                    <span>Consultoría</span>
+                                </a>
+                                <a href="<?php echo esc_url(home_url('/originals')); ?>" class="flex items-center gap-3 text-white/80 hover:text-secondary transition py-2 px-2 rounded hover:bg-white/10">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/or2.webp" alt="Originals" class="w-10 h-10 rounded object-cover">
+                                    <span>Originals</span>
+                                </a>
                             </div>
                         </div>
                         
@@ -210,11 +225,33 @@
     border-top: 2px solid #f0f0f0;
     max-height: 0;
     overflow: hidden;
+    transition: max-height 0.3s ease;
+    scroll-behavior: smooth;
 }
 
 .mega-menu-container:hover .mega-menu,
 .mega-menu-container .mega-menu.show {
-    max-height: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Estilos para el scroll personalizado */
+.mega-menu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.mega-menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.mega-menu::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.mega-menu::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 /* Responsive adjustments */
@@ -248,7 +285,9 @@
     
     .mega-menu-container:hover .mega-menu,
     .mega-menu-container .mega-menu.show {
-        max-height: 800px;
+        max-height: 70vh;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 }
 
