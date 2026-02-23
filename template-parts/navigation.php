@@ -270,9 +270,9 @@
     }
     
     .mega-menu-image {
-        width: 150px !important;
-        min-width: 150px !important;
-        height: 120px !important;
+        width: 120px !important;
+        min-width: 120px !important;
+        height: 100px !important;
         flex-shrink: 0;
     }
     
