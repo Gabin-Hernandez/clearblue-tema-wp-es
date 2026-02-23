@@ -32,20 +32,101 @@
                         ?>
                         <a href="<?php echo esc_url(home_url('/nosotros')); ?>" class="text-white hover:text-secondary transition">Quiénes somos</a>
                         
-                        <!-- Dropdown: ¿Qué ofrecemos? -->
-                        <div class="relative dropdown-container">
+                        <!-- Mega Menu: ¿Qué ofrecemos? -->
+                        <div class="relative dropdown-container mega-menu-container">
                             <button class="text-white hover:text-secondary transition flex items-center gap-1 dropdown-toggle">
                                 ¿Qué ofrecemos?
                                 <svg class="w-4 h-4 transition-transform dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
-                            <div class="dropdown-menu absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible transition-all duration-200 transform translate-y-2">
-                                <a href="<?php echo esc_url(home_url('/entrenamiento')); ?>" class="block px-4 py-3 text-gray-800 hover:bg-secondary hover:text-white transition rounded-t-lg">Entrenamiento</a>
-                                <a href="<?php echo esc_url(home_url('/reclutamiento')); ?>" class="block px-4 py-3 text-gray-800 hover:bg-secondary hover:text-white transition">Reclutamiento</a>
-                                <a href="<?php echo esc_url(home_url('/capacitacion')); ?>" class="block px-4 py-3 text-gray-800 hover:bg-secondary hover:text-white transition">Capacitación</a>
-                                <a href="<?php echo esc_url(home_url('/consultoria')); ?>" class="block px-4 py-3 text-gray-800 hover:bg-secondary hover:text-white transition">Consultoría</a>
-                                <a href="<?php echo esc_url(home_url('/originals')); ?>" class="block px-4 py-3 text-gray-800 hover:bg-secondary hover:text-white transition rounded-b-lg">Originals</a>
+                            <!-- Mega Menu Dropdown -->
+                            <div class="dropdown-menu mega-menu opacity-0 invisible transition-all duration-300 transform translate-y-2">
+                                <div class="container mx-auto px-6 py-8">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                                        
+                                        <!-- Entrenamiento -->
+                                        <a href="<?php echo esc_url(home_url('/entrenamiento')); ?>" class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                                            <div class="relative h-48 overflow-hidden">
+                                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e6.webp" 
+                                                     alt="Entrenamiento" 
+                                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                                                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+                                                <h3 class="absolute bottom-4 left-4 text-white font-bold text-xl">Entrenamiento</h3>
+                                            </div>
+                                            <div class="p-4">
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    Entrenamiento industrial para <span class="text-secondary font-semibold">AUMENTAR</span> la productividad de tu equipo
+                                                </p>
+                                            </div>
+                                        </a>
+                                        
+                                        <!-- Reclutamiento -->
+                                        <a href="<?php echo esc_url(home_url('/reclutamiento')); ?>" class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                                            <div class="relative h-48 overflow-hidden">
+                                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/r2.webp" 
+                                                     alt="Reclutamiento" 
+                                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                                                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+                                                <h3 class="absolute bottom-4 left-4 text-white font-bold text-xl">Reclutamiento</h3>
+                                            </div>
+                                            <div class="p-4">
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    Estrategias efectivas de reclutamiento y selección de personal para <span class="text-secondary font-semibold">IMPULSAR</span> tu capital humano
+                                                </p>
+                                            </div>
+                                        </a>
+                                        
+                                        <!-- Capacitación -->
+                                        <a href="<?php echo esc_url(home_url('/capacitacion')); ?>" class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                                            <div class="relative h-48 overflow-hidden">
+                                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/c1.webp" 
+                                                     alt="Capacitación" 
+                                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                                                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+                                                <h3 class="absolute bottom-4 left-4 text-white font-bold text-xl">Capacitación</h3>
+                                            </div>
+                                            <div class="p-4">
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    Programas de capacitación empresarial para <span class="text-secondary font-semibold">FORTALECER</span> tu talento humano
+                                                </p>
+                                            </div>
+                                        </a>
+                                        
+                                        <!-- Consultoría -->
+                                        <a href="<?php echo esc_url(home_url('/consultoria')); ?>" class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                                            <div class="relative h-48 overflow-hidden">
+                                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ca3.webp" 
+                                                     alt="Consultoría" 
+                                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                                                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+                                                <h3 class="absolute bottom-4 left-4 text-white font-bold text-xl">Consultoría</h3>
+                                            </div>
+                                            <div class="p-4">
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    Consultoría estratégica para <span class="text-secondary font-semibold">POTENCIAR</span> el desarrollo de tu empresa
+                                                </p>
+                                            </div>
+                                        </a>
+                                        
+                                        <!-- Originals -->
+                                        <a href="<?php echo esc_url(home_url('/originals')); ?>" class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                                            <div class="relative h-48 overflow-hidden">
+                                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/or2.webp" 
+                                                     alt="Originals" 
+                                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                                                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+                                                <h3 class="absolute bottom-4 left-4 text-white font-bold text-xl">Originals</h3>
+                                            </div>
+                                            <div class="p-4">
+                                                <p class="text-gray-600 text-sm leading-relaxed">
+                                                    Soluciones exclusivas que <span class="text-secondary font-semibold">DIFERENCIAN</span> a tu empresa
+                                                </p>
+                                            </div>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         
@@ -112,6 +193,39 @@
     </nav>
 </header>
 
+<style>
+/* Mega Menu Styles */
+.mega-menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid #f0f0f0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.mega-menu-container:hover .mega-menu,
+.mega-menu-container .mega-menu.show {
+    max-height: 600px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .mega-menu .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .mega-menu .grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
 <script>
 // Toggle menú móvil
 document.addEventListener('DOMContentLoaded', function() {
@@ -124,25 +238,42 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Dropdown Desktop
-    const dropdownContainers = document.querySelectorAll('.dropdown-container');
+    // Mega Menu Desktop
+    const megaMenuContainers = document.querySelectorAll('.mega-menu-container');
     
-    dropdownContainers.forEach(container => {
+    megaMenuContainers.forEach(container => {
         const toggle = container.querySelector('.dropdown-toggle');
-        const menu = container.querySelector('.dropdown-menu');
+        const menu = container.querySelector('.mega-menu');
         const arrow = container.querySelector('.dropdown-arrow');
+        let timeout;
         
-        // Hover para mostrar/ocultar
+        // Hover para mostrar/ocultar con delay
         container.addEventListener('mouseenter', function() {
+            clearTimeout(timeout);
             menu.classList.remove('opacity-0', 'invisible', 'translate-y-2');
-            menu.classList.add('opacity-100', 'visible', 'translate-y-0');
+            menu.classList.add('opacity-100', 'visible', 'translate-y-0', 'show');
             arrow.style.transform = 'rotate(180deg)';
         });
         
         container.addEventListener('mouseleave', function() {
-            menu.classList.add('opacity-0', 'invisible', 'translate-y-2');
-            menu.classList.remove('opacity-100', 'visible', 'translate-y-0');
-            arrow.style.transform = 'rotate(0deg)';
+            timeout = setTimeout(() => {
+                menu.classList.add('opacity-0', 'invisible', 'translate-y-2');
+                menu.classList.remove('opacity-100', 'visible', 'translate-y-0', 'show');
+                arrow.style.transform = 'rotate(0deg)';
+            }, 200);
+        });
+        
+        // Mantener abierto cuando el mouse está sobre el mega menú
+        menu.addEventListener('mouseenter', function() {
+            clearTimeout(timeout);
+        });
+        
+        menu.addEventListener('mouseleave', function() {
+            timeout = setTimeout(() => {
+                menu.classList.add('opacity-0', 'invisible', 'translate-y-2');
+                menu.classList.remove('opacity-100', 'visible', 'translate-y-0', 'show');
+                arrow.style.transform = 'rotate(0deg)';
+            }, 200);
         });
         
         // Click también funciona
@@ -152,11 +283,11 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (isVisible) {
                 menu.classList.add('opacity-0', 'invisible', 'translate-y-2');
-                menu.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                menu.classList.remove('opacity-100', 'visible', 'translate-y-0', 'show');
                 arrow.style.transform = 'rotate(0deg)';
             } else {
                 menu.classList.remove('opacity-0', 'invisible', 'translate-y-2');
-                menu.classList.add('opacity-100', 'visible', 'translate-y-0');
+                menu.classList.add('opacity-100', 'visible', 'translate-y-0', 'show');
                 arrow.style.transform = 'rotate(180deg)';
             }
         });
@@ -184,14 +315,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Cerrar dropdown al hacer click fuera
+    // Cerrar mega menu al hacer click fuera
     document.addEventListener('click', function(e) {
-        if (!e.target.closest('.dropdown-container')) {
-            dropdownContainers.forEach(container => {
-                const menu = container.querySelector('.dropdown-menu');
+        if (!e.target.closest('.mega-menu-container')) {
+            megaMenuContainers.forEach(container => {
+                const menu = container.querySelector('.mega-menu');
                 const arrow = container.querySelector('.dropdown-arrow');
                 menu.classList.add('opacity-0', 'invisible', 'translate-y-2');
-                menu.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                menu.classList.remove('opacity-100', 'visible', 'translate-y-0', 'show');
                 arrow.style.transform = 'rotate(0deg)';
             });
         }
