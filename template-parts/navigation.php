@@ -46,15 +46,16 @@
                                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                                         
                                         <!-- Entrenamiento -->
-                                        <a href="<?php echo esc_url(home_url('/entrenamiento')); ?>" class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                                            <div class="relative h-48 overflow-hidden">
+                                        <a href="<?php echo esc_url(home_url('/entrenamiento')); ?>" class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 mega-menu-item">
+                                            <div class="relative h-48 lg:h-48 md:h-32 overflow-hidden mega-menu-image">
                                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/e6.webp" 
                                                      alt="Entrenamiento" 
                                                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                                                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
-                                                <h3 class="absolute bottom-4 left-4 text-white font-bold text-xl">Entrenamiento</h3>
+                                                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent lg:block hidden"></div>
+                                                <h3 class="absolute bottom-4 left-4 text-white font-bold text-xl lg:block hidden">Entrenamiento</h3>
                                             </div>
-                                            <div class="p-4">
+                                            <div class="p-4 mega-menu-content">
+                                                <h3 class="text-primary font-bold text-lg mb-2 lg:hidden">Entrenamiento</h3>
                                                 <p class="text-gray-600 text-sm leading-relaxed">
                                                     Entrenamiento industrial para <span class="text-secondary font-semibold">AUMENTAR</span> la productividad de tu equipo
                                                 </p>
@@ -62,15 +63,16 @@
                                         </a>
                                         
                                         <!-- Reclutamiento -->
-                                        <a href="<?php echo esc_url(home_url('/reclutamiento')); ?>" class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                                            <div class="relative h-48 overflow-hidden">
-                                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/r2.webp" 
+                                        <a href="<?php echo esc_url(home_url('/reclutamiento')); ?>" class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 mega-menu-item">
+                                            <div class="relative h-48 lg:h-48 md:h-32 overflow-hidden mega-menu-image">
+                                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ima7.jpg" 
                                                      alt="Reclutamiento" 
                                                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                                                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
-                                                <h3 class="absolute bottom-4 left-4 text-white font-bold text-xl">Reclutamiento</h3>
+                                                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent lg:block hidden"></div>
+                                                <h3 class="absolute bottom-4 left-4 text-white font-bold text-xl lg:block hidden">Reclutamiento</h3>
                                             </div>
-                                            <div class="p-4">
+                                            <div class="p-4 mega-menu-content">
+                                                <h3 class="text-primary font-bold text-lg mb-2 lg:hidden">Reclutamiento</h3>
                                                 <p class="text-gray-600 text-sm leading-relaxed">
                                                     Estrategias efectivas de reclutamiento y selección de personal para <span class="text-secondary font-semibold">IMPULSAR</span> tu capital humano
                                                 </p>
@@ -78,15 +80,16 @@
                                         </a>
                                         
                                         <!-- Capacitación -->
-                                        <a href="<?php echo esc_url(home_url('/capacitacion')); ?>" class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                                            <div class="relative h-48 overflow-hidden">
+                                        <a href="<?php echo esc_url(home_url('/capacitacion')); ?>" class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 mega-menu-item">
+                                            <div class="relative h-48 lg:h-48 md:h-32 overflow-hidden mega-menu-image">
                                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/c1.webp" 
                                                      alt="Capacitación" 
                                                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                                                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
-                                                <h3 class="absolute bottom-4 left-4 text-white font-bold text-xl">Capacitación</h3>
+                                                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent lg:block hidden"></div>
+                                                <h3 class="absolute bottom-4 left-4 text-white font-bold text-xl lg:block hidden">Capacitación</h3>
                                             </div>
-                                            <div class="p-4">
+                                            <div class="p-4 mega-menu-content">
+                                                <h3 class="text-primary font-bold text-lg mb-2 lg:hidden">Capacitación</h3>
                                                 <p class="text-gray-600 text-sm leading-relaxed">
                                                     Programas de capacitación empresarial para <span class="text-secondary font-semibold">FORTALECER</span> tu talento humano
                                                 </p>
@@ -94,15 +97,16 @@
                                         </a>
                                         
                                         <!-- Consultoría -->
-                                        <a href="<?php echo esc_url(home_url('/consultoria')); ?>" class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                                            <div class="relative h-48 overflow-hidden">
+                                        <a href="<?php echo esc_url(home_url('/consultoria')); ?>" class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 mega-menu-item">
+                                            <div class="relative h-48 lg:h-48 md:h-32 overflow-hidden mega-menu-image">
                                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/ca3.webp" 
                                                      alt="Consultoría" 
                                                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                                                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
-                                                <h3 class="absolute bottom-4 left-4 text-white font-bold text-xl">Consultoría</h3>
+                                                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent lg:block hidden"></div>
+                                                <h3 class="absolute bottom-4 left-4 text-white font-bold text-xl lg:block hidden">Consultoría</h3>
                                             </div>
-                                            <div class="p-4">
+                                            <div class="p-4 mega-menu-content">
+                                                <h3 class="text-primary font-bold text-lg mb-2 lg:hidden">Consultoría</h3>
                                                 <p class="text-gray-600 text-sm leading-relaxed">
                                                     Consultoría estratégica para <span class="text-secondary font-semibold">POTENCIAR</span> el desarrollo de tu empresa
                                                 </p>
@@ -110,15 +114,16 @@
                                         </a>
                                         
                                         <!-- Originals -->
-                                        <a href="<?php echo esc_url(home_url('/originals')); ?>" class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                                            <div class="relative h-48 overflow-hidden">
+                                        <a href="<?php echo esc_url(home_url('/originals')); ?>" class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 mega-menu-item">
+                                            <div class="relative h-48 lg:h-48 md:h-32 overflow-hidden mega-menu-image">
                                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/or2.webp" 
                                                      alt="Originals" 
                                                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                                                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
-                                                <h3 class="absolute bottom-4 left-4 text-white font-bold text-xl">Originals</h3>
+                                                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent lg:block hidden"></div>
+                                                <h3 class="absolute bottom-4 left-4 text-white font-bold text-xl lg:block hidden">Originals</h3>
                                             </div>
-                                            <div class="p-4">
+                                            <div class="p-4 mega-menu-content">
+                                                <h3 class="text-primary font-bold text-lg mb-2 lg:hidden">Originals</h3>
                                                 <p class="text-gray-600 text-sm leading-relaxed">
                                                     Soluciones exclusivas que <span class="text-secondary font-semibold">DIFERENCIAN</span> a tu empresa
                                                 </p>
@@ -213,15 +218,59 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .mega-menu .grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+    
+    /* Layout horizontal en tabletas y móviles */
+    .mega-menu-item {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center;
+        min-height: auto;
+    }
+    
+    .mega-menu-image {
+        width: 150px !important;
+        min-width: 150px !important;
+        height: 120px !important;
+        flex-shrink: 0;
+    }
+    
+    .mega-menu-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .mega-menu-container:hover .mega-menu,
+    .mega-menu-container .mega-menu.show {
+        max-height: 800px;
     }
 }
 
-@media (max-width: 768px) {
-    .mega-menu .grid {
-        grid-template-columns: 1fr;
+@media (max-width: 640px) {
+    .mega-menu-image {
+        width: 120px !important;
+        min-width: 120px !important;
+        height: 100px !important;
+    }
+    
+    .mega-menu-content {
+        padding: 0.75rem !important;
+    }
+    
+    .mega-menu-content h3 {
+        font-size: 1rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .mega-menu-content p {
+        font-size: 0.813rem !important;
+        line-height: 1.4 !important;
     }
 }
 </style>
