@@ -232,7 +232,7 @@
     }
 }
 
-/* Menú Móvil Styles */
+/* Menú Móvil Styles. */
 #mobile-menu {
     max-height: calc(100vh - 100px);
     overflow-y: auto;
