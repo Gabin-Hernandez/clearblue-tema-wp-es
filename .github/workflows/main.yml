@@ -1,4 +1,4 @@
-name: Deploy a Hostinger
+name: Deploy a Cliente MX (SFTP)
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: 🎉 Deploy MX
     runs-on: ubuntu-latest
 
     steps:
@@ -16,10 +16,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 📂 Sincronizar archivos FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: 📂 Sincronizar archivos SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: 195.35.33.109
-          username: u947001429.gaboprueba
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: wp-content/themes/child-theme/
+          server: access-5015726610.ud-webspace.de
+          username: a124214
+          password: (Cr3at3b1u3.MX!!)
+          port: 22
+          # En esta acción, remote_path define dónde se suben los archivos
+          remote_path: /CreatblueDemoMX/wp-content/themes/child-theme/
