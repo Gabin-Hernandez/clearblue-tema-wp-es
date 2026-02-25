@@ -136,7 +136,7 @@
                         </div>
                         
                         <a href="<?php echo esc_url(home_url('/blog')); ?>" class="text-white hover:text-secondary transition">Blog</a>
-                        <a href="<?php echo esc_url(home_url('/contacto')); ?>" class="text-white hover:text-secondary transition">ContactoJUAN</a>
+                        <a href="<?php echo esc_url(home_url('/contacto')); ?>" class="text-white hover:text-secondary transition">Contacto</a>
                         <a href="http://bolsadeempleo.creatblue.com/" target="_blank" class="text-white hover:text-secondary transition">Bolsa de trabajo</a>
                         <?php
                     },
