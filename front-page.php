@@ -211,10 +211,10 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     
     <div class="container mx-auto px-6 py-24 md:py-32 relative z-10">
-        <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="grid md:grid-cols-3 gap-12 lg:gap-16 items-center">
             
             <!-- Lado izquierdo - Texto y logos -->
-            <div class="space-y-8">
+            <div class="md:col-span-1 space-y-8">
                 <p class="text-secondary uppercase tracking-[0.2em] text-lg font-black mb-6 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">Creatblue Originals | <span class="text-white">Soluciones innovadoras para tu negocio.</span></p>
                  <!-- Logo WorkForce -->
                   <div class="opacity-0 translate-x-8 animate-on-scroll" data-delay="400">
@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             
             <!-- Lado derecho - Imagen del trabajador -->
-            <div class="relative h-[400px] md:h-[450px] lg:h-[500px] opacity-0 scale-75 animate-on-scroll" data-delay="800">
+            <div class="md:col-span-2 relative h-[400px] md:h-[450px] lg:h-[500px] opacity-0 scale-75 animate-on-scroll" data-delay="800">
                 <!-- Imagen de fondo -->
                 <div class="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/fdo3.jpg" 
