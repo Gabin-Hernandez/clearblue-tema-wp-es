@@ -24,4 +24,4 @@ jobs:
           password: (Cr3at3b1u3.MX!!)
           port: 22
           # En esta acción, remote_path define dónde se suben los archivos
-          remote_path: /CreatblueDemoMX/wp-content/themes/child-theme/
+          remote_path: CreatblueDemoMX/wp-content/themes/child-theme/
