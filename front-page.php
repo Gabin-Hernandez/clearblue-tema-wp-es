@@ -235,12 +235,18 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             
             <!-- Lado derecho - Imagen del trabajador -->
-            <div class="relative h-[400px] md:h-[400px] lg:h-[400px] opacity-0 scale-75 animate-on-scroll" data-delay="800">
+            <div class="relative h-[400px] md:h-[450px] lg:h-[500px] opacity-0 scale-75 animate-on-scroll" data-delay="800">
+                <!-- Imagen de fondo -->
                 <div class="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl">
-                    <!-- Imagen -->
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/fdo3.jpg" 
                          alt="Trabajador profesional con tablet" 
                          class="w-full h-full object-cover">
+                </div>
+                <!-- Imagen superpuesta -->
+                <div class="absolute -bottom-10 -right-10 md:-bottom-16 md:-right-16 w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[520px] lg:h-[520px]">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/chart_home.webp" 
+                         alt="Resultados Creatblue Training" 
+                         class="w-full h-full object-contain">
                 </div>
             </div>
             
