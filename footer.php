@@ -136,7 +136,7 @@
             </div>
 
             <p class="text-center text-sm text-gray-600 flex flex-wrap justify-center gap-x-4 gap-y-2">
-                <a href="<?php echo esc_url(home_url('/politica-de-cookies')); ?>" class="hover:text-secondary transition">Política de cookies</a>
+                <?php /* <a href="<?php echo esc_url(home_url('/politica-de-cookies')); ?>" class="hover:text-secondary transition">Política de cookies</a> */ ?>
                 <a href="<?php echo esc_url(home_url('/aviso-de-privacidad')); ?>" class="hover:text-secondary transition">Aviso de privacidad</a>
                 <a href="<?php echo esc_url(home_url('/terminos-y-condiciones')); ?>" class="hover:text-secondary transition">Términos y condiciones</a>
             </p>
