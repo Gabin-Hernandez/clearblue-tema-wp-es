@@ -237,13 +237,13 @@ document.addEventListener('DOMContentLoaded', function() {
             <!-- Lado derecho - Imagen del trabajador -->
             <div class="md:col-span-2 relative h-[400px] md:h-[450px] lg:h-[500px] flex items-center justify-center opacity-0 scale-75 animate-on-scroll" data-delay="800">
                 <!-- Imagen de fondo (más pequeña) -->
-                <div class="relative w-4/5 h-4/5">
+                <div class="relative w-3/5 h-3/5">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/fdo3.jpg" 
                          alt="Trabajador profesional con tablet" 
                          class="w-full h-full object-cover rounded-2xl shadow-lg">
                 </div>
                 <!-- Imagen superpuesta (más grande) -->
-                <div class="absolute -bottom-10 -right-10 w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[520px] lg:h-[520px]">
+                <div class="absolute -bottom-12 -right-12 w-[320px] h-[320px] md:w-[480px] md:h-[480px] lg:w-[550px] lg:h-[550px] rounded-2xl">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/chart_home.webp" 
                          alt="Resultados Creatblue Training" 
                          class="w-full h-full object-contain drop-shadow-xl">
