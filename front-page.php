@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function() {
                          class="w-full h-full object-cover rounded-2xl shadow-lg">
                 </div>
                 <!-- Imagen superpuesta (abajo a la derecha) -->
-                <div class="absolute bottom-0 right-0 w-[320px] h-[320px] md:w-[480px] md:h-[480px] lg:w-[550px] lg:h-[550px]">
+                <div class="absolute bottom-0 right-0 w-3/5 h-3/5">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/chart_home.webp" 
                          alt="Resultados Creatblue Training" 
                          class="w-full h-full object-contain drop-shadow-xl">
