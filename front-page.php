@@ -235,18 +235,18 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             
             <!-- Lado derecho - Imagen del trabajador -->
-            <div class="md:col-span-2 relative h-[400px] md:h-[450px] lg:h-[500px] opacity-0 scale-75 animate-on-scroll" data-delay="800">
-                <!-- Imagen de fondo -->
-                <div class="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl">
+            <div class="md:col-span-2 relative h-[400px] md:h-[450px] lg:h-[500px] flex items-center justify-center opacity-0 scale-75 animate-on-scroll" data-delay="800">
+                <!-- Imagen de fondo (más pequeña) -->
+                <div class="relative w-4/5 h-4/5">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/fdo3.jpg" 
                          alt="Trabajador profesional con tablet" 
-                         class="w-full h-full object-cover">
+                         class="w-full h-full object-cover rounded-2xl shadow-lg">
                 </div>
-                <!-- Imagen superpuesta -->
-                <div class="absolute -bottom-10 -right-10 md:-bottom-16 md:-right-16 w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[520px] lg:h-[520px]">
+                <!-- Imagen superpuesta (más grande) -->
+                <div class="absolute -bottom-10 -right-10 w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[520px] lg:h-[520px]">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/chart_home.webp" 
                          alt="Resultados Creatblue Training" 
-                         class="w-full h-full object-contain">
+                         class="w-full h-full object-contain drop-shadow-xl">
                 </div>
             </div>
             
