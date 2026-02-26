@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="w-full md:absolute md:bottom-0 md:right-0 md:max-w-[80%] md:h-auto">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/chart_home.webp" 
                              alt="Resultados Creatblue Training" 
-                             class="w-full h-auto object-contain drop-shadow-xl">
+                             class="w-full h-full object-cover rounded-2xl shadow-lg">
                     </div>
                 </div>
             </div>
