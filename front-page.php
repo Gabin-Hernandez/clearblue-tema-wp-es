@@ -235,18 +235,22 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             
             <!-- Lado derecho - Imagen del trabajador -->
-            <div class="md:col-span-2 relative h-[400px] md:h-[450px] lg:h-[500px] opacity-0 scale-75 animate-on-scroll" data-delay="800">
-                <!-- Imagen de fondo (arriba a la izquierda) -->
-                <div class="absolute top-0 left-0 w-3/5 h-3/5">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/fdo3.jpg" 
-                         alt="Trabajador profesional con tablet" 
-                         class="w-full h-full object-cover rounded-2xl shadow-lg">
-                </div>
-                <!-- Imagen superpuesta (abajo a la derecha) -->
-                <div class="absolute bottom-[-60px] right-0 w-full max-w-[70%] h-auto">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/chart_home.webp" 
-                         alt="Resultados Creatblue Training" 
-                         class="w-full h-full object-cover rounded-2xl shadow-lg">
+                        <!-- Lado derecho - Imagen del trabajador -->
+            <div class="md:col-span-2 relative h-auto md:h-[450px] lg:h-[500px] opacity-0 scale-75 animate-on-scroll" data-delay="800">
+                <!-- Contenedor para las imágenes que cambia de flex a posicionamiento absoluto -->
+                <div class="flex flex-col md:relative md:h-full gap-8">
+                    <!-- Imagen de fondo -->
+                    <div class="w-full md:absolute md:top-0 md:left-0 md:w-3/5 md:h-3/5">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/fdo3.jpg" 
+                             alt="Trabajador profesional con tablet" 
+                             class="w-full h-full object-cover rounded-2xl shadow-lg">
+                    </div>
+                    <!-- Imagen superpuesta -->
+                    <div class="w-full md:absolute md:bottom-0 md:right-0 md:max-w-[80%] md:h-auto">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/chart_home.webp" 
+                             alt="Resultados Creatblue Training" 
+                             class="w-full h-auto object-contain drop-shadow-xl">
+                    </div>
                 </div>
             </div>
             
