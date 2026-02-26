@@ -89,7 +89,7 @@
                     <a href="<?php echo esc_url(home_url('/')); ?>">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/logo_dark.png" 
                              alt="<?php bloginfo('name'); ?>" 
-                             class="h-8" 
+                             class="h-8 mx-auto" 
                              onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
                         <span class="text-gray-800 font-bold text-xl" style="display:none;">
                             <?php bloginfo('name'); ?>
@@ -98,7 +98,7 @@
                 <?php endif; ?>
             </div>
             
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-4 mb-4 md:mb-0">
                 <!-- LinkedIn -->
                 <a href="https://www.linkedin.com/company/creatblue-mx/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-secondary transition" aria-label="LinkedIn">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -133,11 +133,11 @@
                         <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
                     </svg>
                 </a>
-                
+            </div>
+
+            <p class="text-center text-sm text-gray-600 flex flex-wrap justify-center gap-x-4 gap-y-2">
                 <a href="<?php echo esc_url(home_url('/politica-de-cookies')); ?>" class="hover:text-secondary transition">Política de cookies</a>
-                <span class="mx-2">|</span>
                 <a href="<?php echo esc_url(home_url('/aviso-de-privacidad')); ?>" class="hover:text-secondary transition">Aviso de privacidad</a>
-                <span class="mx-2">|</span>
                 <a href="<?php echo esc_url(home_url('/terminos-y-condiciones')); ?>" class="hover:text-secondary transition">Términos y condiciones</a>
             </p>
         </div>
