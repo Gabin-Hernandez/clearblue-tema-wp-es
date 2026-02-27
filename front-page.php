@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <!-- Contenido de texto -->
                 <div class="text-white">
                     <p class="text-md uppercase tracking-widest mb-3 text-secondary font-black">BLOG | NEWSLETTER</p>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/camino_logo.webp" alt="Caminozum talent" class="mb-3 h-16 md:h-24 w-auto">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/camino_logo.webp" alt="Caminozum talent" class="mb-3 h-16 md:h-24 w-auto">
                     <p class="text-gray-200 text-base">
                     La mejor información dentro del sector industrial y corporativo.
                     </p>
