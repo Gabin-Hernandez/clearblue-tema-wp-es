@@ -13,8 +13,8 @@ get_header(); ?>
 <section class="pt-32 pb-16 bg-gradient-to-br from-primary via-primary to-blue-900">
     <div class="container mx-auto px-6">
         <div class="max-w-3xl mx-auto text-center">
-            <h1 class="text-4xl md:text-5xl font-black text-white mb-4">
-                Blog de Creatblue
+            <h1 class="mb-4 flex justify-center">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/camino_logo.webp" alt="Blog de Creatblue" class="h-16 md:h-24 w-auto">
             </h1>
             <p class="text-xl text-white/90">
                 Conocimiento, tendencias y mejores prácticas en Recursos Humanos
