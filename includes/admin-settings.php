@@ -12,12 +12,30 @@ if (!defined('ABSPATH')) {
 add_action('admin_menu', 'creatblue_contacto_settings_menu');
 function creatblue_contacto_settings_menu()
 {
-    add_options_page(
-        'Ajustes de Contacto', // Título de la página
-        'Contacto Creatblue', // Título del menú
-        'manage_options', // Capacidad requerida
-        'creatblue-contacto-settings', // Slug del menú
-        'creatblue_contacto_settings_page' // Función de renderizado
+    add_menu_page(
+        'Contacto Creatblue',
+        'Contacto Creatblue',
+        'manage_options',
+        'creatblue-contactos',
+        'creatblue_contactos_page',
+        'dashicons-email',
+        25
+    );
+    add_submenu_page(
+        'creatblue-contactos',
+        'Registros de Contacto',
+        'Registros',
+        'manage_options',
+        'creatblue-contactos',
+        'creatblue_contactos_page'
+    );
+    add_submenu_page(
+        'creatblue-contactos',
+        'Ajustes de Contacto',
+        'Ajustes',
+        'manage_options',
+        'creatblue-contacto-settings',
+        'creatblue_contacto_settings_page'
     );
 }
 
@@ -68,10 +86,12 @@ function creatblue_contacto_settings_page()
         return;
     }
 ?>
-    <div class="wrap">
-        <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
-        <form action="options.php" method="post">
-            <?php
+<div class="wrap">
+    <h1>
+        <?php echo esc_html(get_admin_page_title()); ?>
+    </h1>
+    <form action="options.php" method="post">
+        <?php
     // Campos de seguridad
     settings_fields('creatblue_contacto_settings_group');
     // Secciones
@@ -79,7 +99,7 @@ function creatblue_contacto_settings_page()
     // Botón de guardar
     submit_button('Guardar Cambios');
 ?>
-        </form>
-    </div>
-    <?php
+    </form>
+</div>
+<?php
 }

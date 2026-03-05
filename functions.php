@@ -340,7 +340,9 @@ function creatblue_whatsapp_button()
 }
 
 // Incluir funcionalidades de contacto
+require_once get_stylesheet_directory() . '/includes/db-setup.php';
 require_once get_stylesheet_directory() . '/includes/admin-settings.php';
+require_once get_stylesheet_directory() . '/includes/admin-contacts.php';
 require_once get_stylesheet_directory() . '/includes/contact-form.php';
 
 ?>

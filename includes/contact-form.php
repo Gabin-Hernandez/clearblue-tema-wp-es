@@ -48,13 +48,36 @@ function creatblue_procesar_contacto()
         wp_send_json_error(array('mensaje' => 'Debes aceptar las políticas y aviso de privacidad para continuar.'));
     }
 
+    // Insertar en la Base de Datos
+    global $wpdb;
+    $table_name = $wpdb->prefix . 'creatblue_contacts';
+
+    $insertado = $wpdb->insert(
+        $table_name,
+        array(
+        'fecha_registro' => current_time('mysql'),
+        'nombre' => $nombre,
+        'apellido' => $apellido,
+        'correo' => $correo,
+        'empresa' => $empresa,
+        'estado' => $estado,
+        'codigo_postal' => $codigo_postal,
+        'telefono' => $telefono,
+        'solucion' => $solucion,
+        'detalles' => $detalles,
+        'consentimiento' => $consentimiento,
+        'marketing' => $marketing
+    )
+    );
+
     // 4. Preparar el correo
     $destinatarios_opcion = get_option('creatblue_email_contacto');
     if (empty($destinatarios_opcion)) {
-        $to = get_option('admin_email');
+        $to_array = array(get_option('admin_email'));
     }
     else {
-        $to = $destinatarios_opcion;
+        // En caso de que haya varios correos separados por coma, separar en un array y limpiar espacios
+        $to_array = array_map('trim', explode(',', $destinatarios_opcion));
     }
 
     $subject = 'Nuevo mensaje de contacto desde Creatblue México: ' . $empresa;
@@ -73,16 +96,46 @@ function creatblue_procesar_contacto()
     $body .= '<p><strong>Consentimiento de Políticas:</strong> ' . $consentimiento . '</p>';
     $body .= '<p><strong>Suscripción a Marketing:</strong> ' . $marketing . '</p>';
 
-    $headers = array('Content-Type: text/html; charset=UTF-8');
-    $headers[] = 'Reply-To: ' . $nombre . ' <' . $correo . '>';
+    // 5. Enviar el correo usando Resend API
+    $api_key = 're_7XJ2un3S_547Kjap8vUEEwvnY2ce1HSvn';
+    $resend_url = 'https://api.resend.com/emails';
 
-    // 5. Enviar el correo
-    $enviado = wp_mail($to, $subject, $body, $headers);
+    $resend_body = array(
+        'from' => 'Creatblue <noreply@email.jhernandez.mx>',
+        'to' => $to_array,
+        'subject' => $subject,
+        'html' => $body,
+        'reply_to' => $correo
+    );
 
-    if ($enviado) {
-        wp_send_json_success(array('mensaje' => '¡Gracias! Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo pronto.'));
+    $args = array(
+        'body' => wp_json_encode($resend_body),
+        'timeout' => '15',
+        'httpversion' => '1.0',
+        'blocking' => true,
+        'headers' => array(
+            'Authorization' => 'Bearer ' . $api_key,
+            'Content-Type' => 'application/json',
+        )
+    );
+
+    $reponse = wp_remote_post($resend_url, $args);
+    $enviado_resend = false;
+
+    if (!is_wp_error($reponse)) {
+        $response_code = wp_remote_retrieve_response_code($reponse);
+        if ($response_code >= 200 && $response_code < 300) {
+            $enviado_resend = true;
+        }
+    }
+
+    if ($enviado_resend && $insertado) {
+        wp_send_json_success(array('mensaje' => '¡Gracias! Tu mensaje ha sido enviado correctamente y guardado. Nos pondremos en contacto contigo pronto.'));
+    }
+    elseif ($insertado) {
+        wp_send_json_success(array('mensaje' => 'Tu mensaje fue guardado pero tuvimos un pequeño problema al notificar por correo. Nos comunicaremos contigo.'));
     }
     else {
-        wp_send_json_error(array('mensaje' => 'Hubo un problema al enviar tu mensaje. Por favor intenta más tarde o contáctanos por WhatsApp.'));
+        wp_send_json_error(array('mensaje' => 'Hubo un problema al procesar tu formulario. Por favor intenta más tarde o contáctanos por WhatsApp.'));
     }
 }
