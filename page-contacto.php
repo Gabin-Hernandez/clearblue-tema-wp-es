@@ -172,8 +172,7 @@ get_header();
                                 class="h-4 w-4 text-secondary border-gray-300 rounded focus:ring-secondary mt-1">
                             <div class="ml-3 text-sm">
                                 <label for="consentimiento" class="text-gray-600">Doy mi consentimiento y acepto <a
-                                        href="#" class="font-bold text-gray-800 hover:underline">POLÍTICAS DE COOKIES,
-                                        AVISO DE PRIVACIDAD, TÉRMINOS Y CONDICIONES</a></label>
+                                        href="<?php echo home_url('/aviso-de-privacidad/'); ?>" target="_blank" rel="noopener noreferrer" class="font-bold text-gray-800 hover:underline">AVISO DE PRIVACIDAD</a></label>
                             </div>
                         </div>
                         <div class="flex items-start">
