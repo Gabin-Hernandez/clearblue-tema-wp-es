@@ -146,6 +146,20 @@ get_header();
     </div>
 </section>
 
+<!-- Mapa de México con presencia -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-primary uppercase tracking-wide text-center mb-12 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
+            Nuestra presencia en México
+        </h2>
+        <div class="max-w-5xl mx-auto opacity-0 scale-95 animate-on-scroll" data-delay="400">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/mapa.webp" 
+                 alt="Mapa de presencia de Creatblue en México" 
+                 class="w-full h-auto rounded-2xl shadow-xl">
+        </div>
+    </div>
+</section>
+
 <!-- Sección CTA Final -->
 <section class="py-20 bg-gray-50">
     <div class="container mx-auto px-6 text-center">

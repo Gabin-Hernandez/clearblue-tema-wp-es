@@ -65,7 +65,7 @@
                                         <!-- Reclutamiento -->
                                         <a href="<?php echo esc_url(home_url('/reclutamiento')); ?>" class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 mega-menu-item">
                                             <div class="relative h-48 lg:h-48 md:h-32 overflow-hidden mega-menu-image">
-                                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/r5.jpg" 
+                                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/r5.webp" 
                                                      alt="Reclutamiento" 
                                                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
                                                 <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent lg:block hidden"></div>
@@ -181,7 +181,7 @@
                                     <span>Entrenamiento</span>
                                 </a>
                                 <a href="<?php echo esc_url(home_url('/reclutamiento')); ?>" class="flex items-center gap-3 text-white/80 hover:text-secondary transition py-2 px-2 rounded hover:bg-white/10">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/r5.jpg" alt="Reclutamiento" class="w-10 h-10 rounded object-cover">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/r5.webp" alt="Reclutamiento" class="w-10 h-10 rounded object-cover">
                                     <span>Reclutamiento</span>
                                 </a>
                                 <a href="<?php echo esc_url(home_url('/capacitacion')); ?>" class="flex items-center gap-3 text-white/80 hover:text-secondary transition py-2 px-2 rounded hover:bg-white/10">
