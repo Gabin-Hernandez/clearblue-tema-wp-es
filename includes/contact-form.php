@@ -36,8 +36,8 @@ function creatblue_procesar_contacto()
     $marketing = isset($_POST['marketing']) ? 'Sí' : 'No';
 
     // 3. Validar campos requeridos mínimos
-    if (empty($nombre) || empty($apellido) || empty($correo)) {
-        wp_send_json_error(array('mensaje' => 'Por favor compense al menos Nombre, Apellido y Correo.'));
+    if (empty($nombre) || empty($apellido) || empty($correo) || empty($empresa) || empty($estado)) {
+        wp_send_json_error(array('mensaje' => 'Por favor completa todos los campos obligatorios: Nombre, Apellido, Correo, Empresa y Estado.'));
     }
 
     if (!is_email($correo)) {

@@ -115,31 +115,31 @@ get_header();
                     <div class="grid sm:grid-cols-2 gap-6">
                         <div>
                             <label for="nombre" class="sr-only">Nombre</label>
-                            <input type="text" name="nombre" id="nombre" placeholder="Nombre"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-secondary focus:border-secondary">
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre *" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-secondary focus:border-secondary transition-colors">
                         </div>
                         <div>
                             <label for="apellido" class="sr-only">Apellido</label>
-                            <input type="text" name="apellido" id="apellido" placeholder="Apellido"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-secondary focus:border-secondary">
+                            <input type="text" name="apellido" id="apellido" placeholder="Apellido *" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-secondary focus:border-secondary transition-colors">
                         </div>
                     </div>
                     <div class="grid sm:grid-cols-2 gap-6">
                         <div>
                             <label for="correo" class="sr-only">Correo empresarial</label>
-                            <input type="email" name="correo" id="correo" placeholder="Correo empresarial"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-secondary focus:border-secondary">
+                            <input type="email" name="correo" id="correo" placeholder="Correo empresarial *" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-secondary focus:border-secondary transition-colors">
                         </div>
                         <div>
                             <label for="empresa" class="sr-only">Empresa</label>
-                            <input type="text" name="empresa" id="empresa" placeholder="Empresa"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-secondary focus:border-secondary">
+                            <input type="text" name="empresa" id="empresa" placeholder="Empresa *" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-secondary focus:border-secondary transition-colors">
                         </div>
                     </div>
                     <div>
                         <label for="estado" class="sr-only">Estado</label>
-                        <input type="text" name="estado" id="estado" placeholder="Estado"
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-secondary focus:border-secondary">
+                        <input type="text" name="estado" id="estado" placeholder="Estado *" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-secondary focus:border-secondary transition-colors">
                     </div>
                     <div class="grid sm:grid-cols-2 gap-6">
                         <div>
@@ -167,12 +167,12 @@ get_header();
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-secondary focus:border-secondary"></textarea>
                     </div>
                     <div class="space-y-4">
-                        <div class="flex items-start">
-                            <input id="consentimiento" name="consentimiento" type="checkbox"
+                        <div class="flex items-start" id="consentimiento-wrapper">
+                            <input id="consentimiento" name="consentimiento" type="checkbox" required
                                 class="h-4 w-4 text-secondary border-gray-300 rounded focus:ring-secondary mt-1">
                             <div class="ml-3 text-sm">
                                 <label for="consentimiento" class="text-gray-600">Doy mi consentimiento y acepto <a
-                                        href="<?php echo home_url('/aviso-de-privacidad/'); ?>" target="_blank" rel="noopener noreferrer" class="font-bold text-gray-800 hover:underline">AVISO DE PRIVACIDAD</a></label>
+                                        href="<?php echo home_url('/aviso-de-privacidad/'); ?>" target="_blank" rel="noopener noreferrer" class="font-bold text-gray-800 hover:underline">AVISO DE PRIVACIDAD</a> *</label>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -207,7 +207,7 @@ get_header();
                     <h3 class="text-2xl font-bold text-gray-900 mb-3">¿Prefieres una conversación directa?</h3>
                     <p class="text-gray-600 mb-6">Nuestro equipo está disponible vía WhatsApp Business para atenderte
                         rápidamente.</p>
-                    <a href="https://wa.me/5669989384" target="_blank"
+                    <a href="https://wa.me/5215669989384" target="_blank"
                         class="inline-block bg-green-500 text-white px-10 py-4 rounded-lg font-bold hover:bg-green-600 transition-colors">
                         Escríbenos por WhatsApp
                     </a>
@@ -250,11 +250,87 @@ get_header();
             el.classList.add('transition-all', 'duration-700', 'ease-out');
             observer.observe(el);
         });
+        // Validación visual de campos obligatorios
+        const camposObligatorios = ['nombre', 'apellido', 'correo', 'empresa', 'estado'];
+        const checkboxConsentimiento = document.getElementById('consentimiento');
+        const consentimientoWrapper = document.getElementById('consentimiento-wrapper');
+
+        // Función para validar campo individual
+        function validarCampo(campo) {
+            const input = document.getElementById(campo);
+            if (input) {
+                if (input.value.trim() === '') {
+                    input.classList.remove('border-gray-300');
+                    input.classList.add('border-red-500', 'border-2');
+                    return false;
+                } else {
+                    input.classList.remove('border-red-500', 'border-2');
+                    input.classList.add('border-gray-300');
+                    return true;
+                }
+            }
+            return true;
+        }
+
+        // Función para validar checkbox
+        function validarConsentimiento() {
+            if (!checkboxConsentimiento.checked) {
+                consentimientoWrapper.classList.add('text-red-600');
+                return false;
+            } else {
+                consentimientoWrapper.classList.remove('text-red-600');
+                return true;
+            }
+        }
+
+        // Agregar event listeners para validación en tiempo real
+        camposObligatorios.forEach(campo => {
+            const input = document.getElementById(campo);
+            if (input) {
+                input.addEventListener('blur', function() {
+                    validarCampo(campo);
+                });
+                input.addEventListener('input', function() {
+                    if (this.value.trim() !== '') {
+                        validarCampo(campo);
+                    }
+                });
+            }
+        });
+
+        // Validar checkbox en tiempo real
+        if (checkboxConsentimiento) {
+            checkboxConsentimiento.addEventListener('change', validarConsentimiento);
+        }
+
         // Script para el formulario de contacto vía AJAX
         const contactoForm = document.getElementById('contacto-form');
         if (contactoForm) {
             contactoForm.addEventListener('submit', function (e) {
                 e.preventDefault();
+
+                // Validar todos los campos antes de enviar
+                let todosValidos = true;
+                camposObligatorios.forEach(campo => {
+                    if (!validarCampo(campo)) {
+                        todosValidos = false;
+                    }
+                });
+
+                if (!validarConsentimiento()) {
+                    todosValidos = false;
+                }
+
+                // Si hay campos inválidos, mostrar mensaje y detener envío
+                if (!todosValidos) {
+                    const mensajeDiv = document.getElementById('mensaje-respuesta');
+                    mensajeDiv.classList.remove('hidden');
+                    mensajeDiv.className = 'mb-6 p-4 rounded-lg font-bold bg-red-100 text-red-800 border-2 border-red-300';
+                    mensajeDiv.innerHTML = 'Por favor completa todos los campos marcados con * (asterisco).';
+                    // Scroll hacia el mensaje
+                    mensajeDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    return;
+                }
 
                 const btnSubmit = document.getElementById('btn-submit');
                 const btnText = document.getElementById('btn-text');
