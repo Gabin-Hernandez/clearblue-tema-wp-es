@@ -13,6 +13,8 @@ if (!defined('ABSPATH')) {
 function plg_get_base_url()
 {
     $plugin_dir = wp_normalize_path(WP_PLUGIN_DIR);
+    $stylesheet_dir = wp_normalize_path(get_stylesheet_directory());
+    $template_dir = wp_normalize_path(get_template_directory());
     $file_dir = wp_normalize_path(dirname(__FILE__));
 
     // Si el archivo vive dentro de wp-content/plugins, usar URL de plugin.
@@ -20,7 +22,19 @@ function plg_get_base_url()
         return plugin_dir_url(__FILE__);
     }
 
-    // Fallback: cargado desde el tema.
+    // Si vive en el tema activo (child), construir URL relativa correcta.
+    if (strpos($file_dir, $stylesheet_dir) === 0) {
+        $relative = ltrim(str_replace($stylesheet_dir, '', $file_dir), '/');
+        return trailingslashit(get_stylesheet_directory_uri()) . ($relative ? trailingslashit($relative) : '');
+    }
+
+    // Si vive en el tema padre, construir URL relativa correcta.
+    if (strpos($file_dir, $template_dir) === 0) {
+        $relative = ltrim(str_replace($template_dir, '', $file_dir), '/');
+        return trailingslashit(get_template_directory_uri()) . ($relative ? trailingslashit($relative) : '');
+    }
+
+    // Ultimo recurso.
     return trailingslashit(get_stylesheet_directory_uri()) . 'pdf-leads-gate/';
 }
 
@@ -64,25 +78,31 @@ function plg_enqueue_assets()
     }
 
     $base_url = plg_get_base_url();
+    $base_path = trailingslashit(dirname(__FILE__));
+    $css_file = $base_path . 'assets/css/pdf-leads-gate.css';
+    $js_file = $base_path . 'assets/js/pdf-leads-gate.js';
+    $css_ver = file_exists($css_file) ? (string) filemtime($css_file) : '1.0.0';
+    $js_ver = file_exists($js_file) ? (string) filemtime($js_file) : '1.0.0';
 
     wp_enqueue_style(
         'plg-pdf-leads-gate',
         $base_url . 'assets/css/pdf-leads-gate.css',
         array(),
-        '1.0.0'
+        $css_ver
     );
 
     wp_enqueue_script(
         'plg-pdf-leads-gate',
         $base_url . 'assets/js/pdf-leads-gate.js',
         array(),
-        '1.0.0',
+        $js_ver,
         true
     );
 
     wp_localize_script('plg-pdf-leads-gate', 'PLG_PDF_LEADS', array(
         'ajax_url' => admin_url('admin-ajax.php'),
         'nonce' => wp_create_nonce('plg_pdf_leads_nonce'),
+        'debug' => true,
         'messages' => array(
             'required' => 'Este campo es obligatorio.',
             'phone' => 'El telefono debe contener exactamente 10 digitos numericos.',
