@@ -470,7 +470,7 @@ get_header();
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                     </svg>
-                    Descargar catálogo
+                    Descargar catálog
                 </a>
             </div>
             
@@ -564,7 +564,298 @@ document.addEventListener('DOMContentLoaded', function() {
     transition: transform 0.1s ease-out;
     will-change: transform;
 }
+
+/* Fallback visual para modal de descarga */
+.plg-pdf-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 99999;
+}
+
+.plg-pdf-modal.is-open {
+    display: block;
+}
+
+.plg-pdf-modal__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.plg-pdf-modal__dialog {
+    position: relative;
+    z-index: 2;
+    width: min(92%, 460px);
+    margin: 7vh auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    padding: 24px;
+}
+
+.plg-pdf-modal__close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    border: 0;
+    background: transparent;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.plg-pdf-field {
+    margin-bottom: 12px;
+}
+
+.plg-pdf-field label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+
+.plg-pdf-field input {
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+}
+
+.plg-pdf-error {
+    display: block;
+    min-height: 16px;
+    margin-top: 4px;
+    color: #dc2626;
+    font-size: 12px;
+}
+
+.plg-pdf-submit {
+    width: 100%;
+    padding: 12px;
+    border: 0;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.plg-pdf-submit:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.plg-modal-open {
+    overflow: hidden;
+}
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    if (window.__PLG_PDF_GATE_INITIALIZED__) {
+        console.log('[PLG FALLBACK PAGE] skipped because plugin script is active');
+        return;
+    }
+
+    if (window.__PLG_PDF_PAGE_FALLBACK__) {
+        return;
+    }
+    window.__PLG_PDF_PAGE_FALLBACK__ = true;
+
+    console.log('[PLG FALLBACK PAGE] init on entrenamiento');
+
+    var ajaxUrl = '<?php echo esc_url(admin_url('admin-ajax.php')); ?>';
+    var nonce = '<?php echo esc_js(wp_create_nonce('plg_pdf_leads_nonce')); ?>';
+
+    function ensureModal() {
+        if (document.getElementById('plg-pdf-modal')) {
+            return;
+        }
+
+        var wrapper = document.createElement('div');
+        wrapper.innerHTML = '' +
+            '<div id="plg-pdf-modal" class="plg-pdf-modal" aria-hidden="true">' +
+                '<div class="plg-pdf-modal__overlay" data-close="true"></div>' +
+                '<div class="plg-pdf-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="plg-pdf-modal-title">' +
+                    '<button type="button" class="plg-pdf-modal__close" id="plg-pdf-close" aria-label="Cerrar">&times;</button>' +
+                    '<h3 id="plg-pdf-modal-title">Descargar PDF</h3>' +
+                    '<p>Completa tus datos para continuar.</p>' +
+                    '<form id="plg-pdf-form" novalidate>' +
+                        '<div class="plg-pdf-field">' +
+                            '<label for="plg_nombre">Nombre</label>' +
+                            '<input type="text" id="plg_nombre" required>' +
+                            '<small class="plg-pdf-error" data-error-for="nombre"></small>' +
+                        '</div>' +
+                        '<div class="plg-pdf-field">' +
+                            '<label for="plg_telefono">Telefono</label>' +
+                            '<input type="tel" id="plg_telefono" maxlength="10" inputmode="numeric" required>' +
+                            '<small class="plg-pdf-error" data-error-for="telefono"></small>' +
+                        '</div>' +
+                        '<div class="plg-pdf-field">' +
+                            '<label for="plg_correo">Email</label>' +
+                            '<input type="email" id="plg_correo" required>' +
+                            '<small class="plg-pdf-error" data-error-for="correo"></small>' +
+                        '</div>' +
+                        '<input type="hidden" id="plg_pdf_url">' +
+                        '<button type="submit" id="plg-submit" class="plg-pdf-submit" disabled>Descargar PDF</button>' +
+                        '<p id="plg-form-status" style="margin-top:10px;min-height:16px;"></p>' +
+                    '</form>' +
+                '</div>' +
+            '</div>';
+
+        document.body.appendChild(wrapper.firstChild);
+    }
+
+    ensureModal();
+
+    var modal = document.getElementById('plg-pdf-modal');
+    var closeBtn = document.getElementById('plg-pdf-close');
+    var form = document.getElementById('plg-pdf-form');
+    var submitBtn = document.getElementById('plg-submit');
+    var statusEl = document.getElementById('plg-form-status');
+    var nombreInput = document.getElementById('plg_nombre');
+    var telefonoInput = document.getElementById('plg_telefono');
+    var correoInput = document.getElementById('plg_correo');
+    var pdfUrlInput = document.getElementById('plg_pdf_url');
+
+    var phoneRegex = /^\d{10}$/;
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    function setError(name, msg) {
+        var el = form.querySelector('[data-error-for="' + name + '"]');
+        if (el) {
+            el.textContent = msg || '';
+        }
+    }
+
+    function validNombre() {
+        var ok = !!nombreInput.value.trim();
+        setError('nombre', ok ? '' : 'Nombre requerido.');
+        return ok;
+    }
+
+    function validTelefono() {
+        var value = telefonoInput.value.trim();
+        var ok = phoneRegex.test(value);
+        setError('telefono', ok ? '' : 'Telefono con 10 digitos.');
+        return ok;
+    }
+
+    function validCorreo() {
+        var value = correoInput.value.trim();
+        var ok = emailRegex.test(value);
+        setError('correo', ok ? '' : 'Correo invalido.');
+        return ok;
+    }
+
+    function validateForm() {
+        var ok = validNombre() && validTelefono() && validCorreo();
+        submitBtn.disabled = !ok;
+        return ok;
+    }
+
+    function openModal(url) {
+        console.log('[PLG FALLBACK PAGE] opening modal', url);
+        pdfUrlInput.value = url || '';
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('plg-modal-open');
+        validateForm();
+    }
+
+    function closeModal() {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('plg-modal-open');
+    }
+
+    document.addEventListener('click', function (event) {
+        var trigger = event.target.closest('.btn-descargar-pdf');
+        if (!trigger) {
+            return;
+        }
+        event.preventDefault();
+        var url = trigger.getAttribute('data-pdf-url') || trigger.getAttribute('href') || '';
+        console.log('[PLG FALLBACK PAGE] button click intercepted', { url: url });
+        openModal(url);
+    });
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+    }
+
+    if (modal) {
+        modal.addEventListener('click', function (event) {
+            if (event.target && event.target.getAttribute('data-close') === 'true') {
+                closeModal();
+            }
+        });
+    }
+
+    [nombreInput, telefonoInput, correoInput].forEach(function (input) {
+        input.addEventListener('input', validateForm);
+        input.addEventListener('blur', validateForm);
+    });
+
+    telefonoInput.addEventListener('input', function () {
+        this.value = this.value.replace(/\D/g, '').slice(0, 10);
+    });
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (!validateForm()) {
+            return;
+        }
+
+        statusEl.textContent = 'Guardando...';
+        submitBtn.disabled = true;
+
+        var formData = new FormData();
+        formData.append('action', 'plg_save_lead');
+        formData.append('nonce', nonce);
+        formData.append('nombre', nombreInput.value.trim());
+        formData.append('telefono', telefonoInput.value.trim());
+        formData.append('correo', correoInput.value.trim());
+        formData.append('pdf_url', pdfUrlInput.value.trim());
+
+        fetch(ajaxUrl, {
+            method: 'POST',
+            credentials: 'same-origin',
+            body: formData
+        })
+            .then(function (res) { return res.json(); })
+            .then(function (data) {
+                console.log('[PLG FALLBACK PAGE] ajax result', data);
+                if (!data || !data.success) {
+                    throw new Error((data && data.data && data.data.message) ? data.data.message : 'Error al guardar');
+                }
+
+                statusEl.textContent = 'Listo, iniciando descarga...';
+                var url = (data.data && data.data.pdf_url) ? data.data.pdf_url : pdfUrlInput.value.trim();
+                if (url) {
+                    var link = document.createElement('a');
+                    link.href = url;
+                    link.setAttribute('download', '');
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }
+
+                closeModal();
+                form.reset();
+                validateForm();
+            })
+            .catch(function (error) {
+                statusEl.textContent = error.message || 'Error al guardar';
+                submitBtn.disabled = false;
+                console.error('[PLG FALLBACK PAGE] ajax error', error);
+            });
+    });
+});
+</script>
 
 <?php
 get_footer();
