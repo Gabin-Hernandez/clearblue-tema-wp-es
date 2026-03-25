@@ -460,7 +460,7 @@ get_header();
             <!-- Elemento 2: Catálogo de equipo móvil industrial y operativo -->
             <div class="bg-white p-8 rounded-2xl shadow-lg opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
                 <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                      de equipo móvil industrial y operativo
+                      sde equipo móvil industrial y operativo
                 </h3>
                 <p class="text-gray-700 leading-relaxed">
                     Contamos con equipos móviles especializados para entrenamiento operativo adaptado a cada industria y giro empresarial
