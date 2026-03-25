@@ -10,6 +10,20 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+function plg_get_base_url()
+{
+    $plugin_dir = wp_normalize_path(WP_PLUGIN_DIR);
+    $file_dir = wp_normalize_path(dirname(__FILE__));
+
+    // Si el archivo vive dentro de wp-content/plugins, usar URL de plugin.
+    if (strpos($file_dir, $plugin_dir) === 0) {
+        return plugin_dir_url(__FILE__);
+    }
+
+    // Fallback: cargado desde el tema.
+    return trailingslashit(get_stylesheet_directory_uri()) . 'pdf-leads-gate/';
+}
+
 function plg_create_leads_table()
 {
     global $wpdb;
@@ -49,16 +63,18 @@ function plg_enqueue_assets()
         return;
     }
 
+    $base_url = plg_get_base_url();
+
     wp_enqueue_style(
         'plg-pdf-leads-gate',
-        plugin_dir_url(__FILE__) . 'assets/css/pdf-leads-gate.css',
+        $base_url . 'assets/css/pdf-leads-gate.css',
         array(),
         '1.0.0'
     );
 
     wp_enqueue_script(
         'plg-pdf-leads-gate',
-        plugin_dir_url(__FILE__) . 'assets/js/pdf-leads-gate.js',
+        $base_url . 'assets/js/pdf-leads-gate.js',
         array(),
         '1.0.0',
         true
