@@ -31,6 +31,18 @@ function plg_create_leads_table()
 }
 register_activation_hook(__FILE__, 'plg_create_leads_table');
 
+function plg_maybe_create_leads_table()
+{
+    global $wpdb;
+    $table_name = $wpdb->prefix . 'leads_pdf';
+
+    $table_exists = $wpdb->get_var($wpdb->prepare('SHOW TABLES LIKE %s', $table_name));
+    if ($table_exists !== $table_name) {
+        plg_create_leads_table();
+    }
+}
+add_action('init', 'plg_maybe_create_leads_table');
+
 function plg_enqueue_assets()
 {
     if (is_admin()) {

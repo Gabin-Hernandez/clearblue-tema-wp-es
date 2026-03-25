@@ -345,4 +345,10 @@ require_once get_stylesheet_directory() . '/includes/admin-settings.php';
 require_once get_stylesheet_directory() . '/includes/admin-contacts.php';
 require_once get_stylesheet_directory() . '/includes/contact-form.php';
 
+// Cargar el gate de PDF desde el tema como fallback local.
+$plg_pdf_gate_file = get_stylesheet_directory() . '/pdf-leads-gate/pdf-leads-gate.php';
+if (file_exists($plg_pdf_gate_file) && !function_exists('plg_enqueue_assets')) {
+    require_once $plg_pdf_gate_file;
+}
+
 ?>
