@@ -1,4 +1,10 @@
 (function () {
+    if (window.__PLG_PDF_GATE_INITIALIZED__) {
+        console.log('[PLG PDF DEBUG]', 'already_initialized_skip');
+        return;
+    }
+    window.__PLG_PDF_GATE_INITIALIZED__ = true;
+
     var config = window.PLG_PDF_LEADS || {
         ajax_url: '/wp-admin/admin-ajax.php',
         nonce: '',
