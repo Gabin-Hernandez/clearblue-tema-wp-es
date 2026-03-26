@@ -86,6 +86,40 @@
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     var activePdfUrl = '';
     var isSubmitting = false;
+    var hasDownloaded = false;
+
+    function buildLeadLockKey() {
+        return 'cb_pdf_lock_' + [
+            nombreInput.value.trim().toLowerCase(),
+            telefonoInput.value.trim(),
+            correoInput.value.trim().toLowerCase(),
+            (pdfUrlInput.value || '').trim()
+        ].join('|');
+    }
+
+    function hasRecentLock(key) {
+        try {
+            var raw = window.sessionStorage.getItem(key);
+            if (!raw) {
+                return false;
+            }
+            var ts = parseInt(raw, 10);
+            if (!ts) {
+                return false;
+            }
+            return (Date.now() - ts) < 8000;
+        } catch (e) {
+            return false;
+        }
+    }
+
+    function setRecentLock(key) {
+        try {
+            window.sessionStorage.setItem(key, String(Date.now()));
+        } catch (e) {
+            // no-op
+        }
+    }
 
     function getErrorEl(name) {
         return form.querySelector('[data-error-for="' + name + '"]');
@@ -146,6 +180,7 @@
 
     function openModal(pdfUrl) {
         activePdfUrl = pdfUrl || '';
+        hasDownloaded = false;
         pdfUrlInput.value = activePdfUrl;
         statusEl.textContent = '';
         modal.classList.add('is-open');
@@ -163,9 +198,10 @@
     }
 
     function triggerDownload(url) {
-        if (!url) {
+        if (!url || hasDownloaded) {
             return;
         }
+        hasDownloaded = true;
         var link = document.createElement('a');
         link.href = url;
         link.setAttribute('download', '');
@@ -233,6 +269,13 @@
             return;
         }
 
+        var lockKey = buildLeadLockKey();
+        if (hasRecentLock(lockKey)) {
+            statusEl.textContent = 'Procesando solicitud, espera unos segundos...';
+            return;
+        }
+        setRecentLock(lockKey);
+
         isSubmitting = true;
         submitBtn.disabled = true;
         statusEl.textContent = 'Guardando...';
@@ -257,6 +300,11 @@
                 if (!data || !data.success) {
                     var message = (data && data.data && data.data.message) ? data.data.message : config.messages.submitError;
                     throw new Error(message);
+                }
+
+                if (data.data && data.data.duplicate && hasDownloaded) {
+                    statusEl.textContent = 'Tu descarga ya fue iniciada.';
+                    return;
                 }
 
                 statusEl.textContent = 'Listo. Tu descarga comenzara en un momento...';
