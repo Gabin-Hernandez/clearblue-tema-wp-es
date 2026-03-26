@@ -157,12 +157,23 @@ function cb_pdf_leads_ajax_save()
         wp_send_json_error(array('message' => 'URL de PDF invalida.'), 400);
     }
 
+    $lock_name = 'cb_pdf_' . md5(strtolower($nombre . '|' . $telefono . '|' . $correo));
+    $lock_acquired = (int) $wpdb->get_var($wpdb->prepare('SELECT GET_LOCK(%s, 3)', $lock_name));
+
+    if (1 !== $lock_acquired) {
+        wp_send_json_success(array(
+            'message' => 'Lead procesado anteriormente.',
+            'pdf_url' => $pdf_url,
+            'duplicate' => true,
+        ));
+    }
+
     // Evita duplicados por doble submit casi simultaneo.
     $duplicate_id = $wpdb->get_var(
         $wpdb->prepare(
             "SELECT id FROM " . cb_pdf_leads_table_name() . "
              WHERE nombre = %s AND telefono = %s AND correo = %s
-             AND fecha >= (NOW() - INTERVAL 20 SECOND)
+             AND fecha >= (NOW() - INTERVAL 120 SECOND)
              ORDER BY id DESC
              LIMIT 1",
             $nombre,
@@ -172,6 +183,7 @@ function cb_pdf_leads_ajax_save()
     );
 
     if (!empty($duplicate_id)) {
+        $wpdb->get_var($wpdb->prepare('SELECT RELEASE_LOCK(%s)', $lock_name));
         wp_send_json_success(array(
             'message' => 'Lead procesado anteriormente.',
             'pdf_url' => $pdf_url,
@@ -190,8 +202,11 @@ function cb_pdf_leads_ajax_save()
     );
 
     if (false === $inserted) {
+        $wpdb->get_var($wpdb->prepare('SELECT RELEASE_LOCK(%s)', $lock_name));
         wp_send_json_error(array('message' => 'No fue posible guardar el lead.'), 500);
     }
+
+    $wpdb->get_var($wpdb->prepare('SELECT RELEASE_LOCK(%s)', $lock_name));
 
     wp_send_json_success(array(
         'message' => 'Lead guardado correctamente.',
@@ -224,6 +239,31 @@ function cb_pdf_leads_admin_page()
     global $wpdb;
 
     $table_name = cb_pdf_leads_table_name();
+
+    if ('POST' === $_SERVER['REQUEST_METHOD']) {
+        $action = isset($_POST['cb_pdf_action']) ? sanitize_text_field(wp_unslash($_POST['cb_pdf_action'])) : '';
+        $nonce = isset($_POST['cb_pdf_nonce']) ? sanitize_text_field(wp_unslash($_POST['cb_pdf_nonce'])) : '';
+
+        if (!wp_verify_nonce($nonce, 'cb_pdf_admin_actions')) {
+            wp_die('Nonce invalido.');
+        }
+
+        if ('delete_one' === $action) {
+            $delete_id = isset($_POST['lead_id']) ? absint($_POST['lead_id']) : 0;
+            if ($delete_id > 0) {
+                $wpdb->delete($table_name, array('id' => $delete_id), array('%d'));
+            }
+            wp_safe_redirect(add_query_arg(array('page' => 'cb-pdf-leads', 'cb_msg' => 'deleted_one'), admin_url('admin.php')));
+            exit;
+        }
+
+        if ('delete_all' === $action) {
+            $wpdb->query("TRUNCATE TABLE {$table_name}");
+            wp_safe_redirect(add_query_arg(array('page' => 'cb-pdf-leads', 'cb_msg' => 'deleted_all'), admin_url('admin.php')));
+            exit;
+        }
+    }
+
     $per_page = 20;
     $paged = isset($_GET['paged']) ? max(1, absint($_GET['paged'])) : 1;
     $offset = ($paged - 1) * $per_page;
@@ -250,10 +290,27 @@ function cb_pdf_leads_admin_page()
     ?>
     <div class="wrap">
         <h1>Leads PDF</h1>
+
+        <?php if (isset($_GET['cb_msg']) && 'deleted_one' === $_GET['cb_msg']) : ?>
+            <div class="notice notice-success is-dismissible"><p>Lead eliminado correctamente.</p></div>
+        <?php endif; ?>
+
+        <?php if (isset($_GET['cb_msg']) && 'deleted_all' === $_GET['cb_msg']) : ?>
+            <div class="notice notice-success is-dismissible"><p>Todos los leads fueron eliminados.</p></div>
+        <?php endif; ?>
+
         <form method="get" style="margin-bottom: 16px;">
             <input type="hidden" name="page" value="cb-pdf-leads">
             <input type="search" name="s" value="<?php echo esc_attr($search); ?>" placeholder="Buscar por nombre, telefono o correo">
             <button type="submit" class="button">Buscar</button>
+        </form>
+
+        <form method="post" style="margin-bottom: 16px;">
+            <input type="hidden" name="cb_pdf_action" value="delete_all">
+            <input type="hidden" name="cb_pdf_nonce" value="<?php echo esc_attr(wp_create_nonce('cb_pdf_admin_actions')); ?>">
+            <button type="submit" class="button button-secondary" onclick="return confirm('Se eliminaran todos los leads. ¿Continuar?');">
+                Borrar Todos Los Leads
+            </button>
         </form>
 
         <table class="widefat striped">
@@ -264,12 +321,13 @@ function cb_pdf_leads_admin_page()
                     <th>Telefono</th>
                     <th>Correo</th>
                     <th style="width: 180px;">Fecha</th>
+                    <th style="width: 120px;">Acciones</th>
                 </tr>
             </thead>
             <tbody>
                 <?php if (empty($rows)) : ?>
                     <tr>
-                        <td colspan="5">No hay registros.</td>
+                        <td colspan="6">No hay registros.</td>
                     </tr>
                 <?php else : ?>
                     <?php foreach ($rows as $row) : ?>
@@ -279,6 +337,16 @@ function cb_pdf_leads_admin_page()
                             <td><?php echo esc_html($row['telefono']); ?></td>
                             <td><?php echo esc_html($row['correo']); ?></td>
                             <td><?php echo esc_html($row['fecha']); ?></td>
+                            <td>
+                                <form method="post" style="margin:0;">
+                                    <input type="hidden" name="cb_pdf_action" value="delete_one">
+                                    <input type="hidden" name="lead_id" value="<?php echo (int) $row['id']; ?>">
+                                    <input type="hidden" name="cb_pdf_nonce" value="<?php echo esc_attr(wp_create_nonce('cb_pdf_admin_actions')); ?>">
+                                    <button type="submit" class="button button-small" onclick="return confirm('¿Eliminar este lead?');">
+                                        Borrar
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 <?php endif; ?>
