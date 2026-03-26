@@ -440,7 +440,7 @@ get_header();
         <!-- Título principal -->
         <div class="mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-             Materiales sss y Equipos de Entrenamiento Industrial
+             Materiales y Equipos de Entrenamiento Industrial
             </h2>
         </div>
         
@@ -460,7 +460,7 @@ get_header();
             <!-- Elemento 2: Catálogo de equipo móvil industrial y operativo -->
             <div class="bg-white p-8 rounded-2xl shadow-lg opacity-0 translate-y-8 animate-on-scroll" data-delay="600">
                 <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">
-                      sde equipo móvil industrial y operativo
+                      Catálogo de equipo móvil industrial y operativo
                 </h3>
                 <p class="text-gray-700 leading-relaxed">
                     Contamos con equipos móviles especializados para entrenamiento operativo adaptado a cada industria y giro empresarial
@@ -470,7 +470,7 @@ get_header();
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                     </svg>
-                    Descargar catálog
+                    Descargar catálogo
                 </a>
             </div>
             
