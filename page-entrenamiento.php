@@ -440,7 +440,7 @@ get_header();
         <!-- Título principal -->
         <div class="mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
-             y Equipos de Entrenamiento Industrial
+             Materiales sss y Equipos de Entrenamiento Industrial
             </h2>
         </div>
         
