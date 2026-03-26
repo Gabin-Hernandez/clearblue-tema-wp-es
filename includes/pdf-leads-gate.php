@@ -3,6 +3,11 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+function cb_pdf_leads_is_legacy_plugin_active()
+{
+    return function_exists('plg_enqueue_assets') || function_exists('plg_save_lead_and_download');
+}
+
 function cb_pdf_leads_table_name()
 {
     global $wpdb;
@@ -85,7 +90,9 @@ function cb_pdf_leads_enqueue_assets()
         ));
     }
 }
-add_action('wp_enqueue_scripts', 'cb_pdf_leads_enqueue_assets');
+if (!cb_pdf_leads_is_legacy_plugin_active()) {
+    add_action('wp_enqueue_scripts', 'cb_pdf_leads_enqueue_assets');
+}
 
 function cb_pdf_leads_render_modal()
 {
@@ -128,7 +135,9 @@ function cb_pdf_leads_render_modal()
     </div>
     <?php
 }
-add_action('wp_footer', 'cb_pdf_leads_render_modal', 30);
+if (!cb_pdf_leads_is_legacy_plugin_active()) {
+    add_action('wp_footer', 'cb_pdf_leads_render_modal', 30);
+}
 
 function cb_pdf_leads_ajax_save()
 {
@@ -213,8 +222,10 @@ function cb_pdf_leads_ajax_save()
         'pdf_url' => $pdf_url,
     ));
 }
-add_action('wp_ajax_plg_save_lead', 'cb_pdf_leads_ajax_save');
-add_action('wp_ajax_nopriv_plg_save_lead', 'cb_pdf_leads_ajax_save');
+if (!cb_pdf_leads_is_legacy_plugin_active()) {
+    add_action('wp_ajax_plg_save_lead', 'cb_pdf_leads_ajax_save');
+    add_action('wp_ajax_nopriv_plg_save_lead', 'cb_pdf_leads_ajax_save');
+}
 
 function cb_pdf_leads_admin_menu()
 {
