@@ -14,7 +14,7 @@
             
             <!-- Columna 2 -->
             <div>
-                <h4 class="font-black text-secondary mb-4">Creatblue HR</h4>
+                <h4 class="font-black text-secondary mb-4">Creatblue HR.</h4>
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'footer',
