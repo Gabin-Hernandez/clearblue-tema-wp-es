@@ -1,0 +1,127 @@
+.plg-modal-open {
+    overflow: hidden;
+}
+
+.plg-pdf-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 99999;
+}
+
+.plg-pdf-modal.is-open {
+    display: block;
+}
+
+.plg-pdf-modal__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.plg-pdf-modal__dialog {
+    position: relative;
+    z-index: 2;
+    width: min(92%, 460px);
+    margin: 7vh auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    padding: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.plg-pdf-modal__close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    border: 0;
+    background: transparent;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    color: #333;
+}
+
+#plg-pdf-modal-title {
+    margin: 0 0 6px;
+    font-size: 24px;
+    color: #1f2937;
+}
+
+.plg-pdf-modal__subtitle {
+    margin: 0 0 18px;
+    color: #4b5563;
+    font-size: 14px;
+}
+
+.plg-pdf-field {
+    margin-bottom: 14px;
+}
+
+.plg-pdf-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.plg-pdf-field input {
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.plg-pdf-field input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.plg-pdf-error {
+    display: block;
+    min-height: 18px;
+    margin-top: 4px;
+    color: #dc2626;
+    font-size: 12px;
+}
+
+.plg-pdf-submit {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 0;
+    background: #2563eb;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.plg-pdf-submit:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.plg-form-status {
+    margin: 12px 0 0;
+    min-height: 18px;
+    font-size: 13px;
+    color: #111827;
+}
+
+@media (max-width: 480px) {
+    .plg-pdf-modal__dialog {
+        margin: 5vh auto;
+        padding: 18px;
+    }
+
+    #plg-pdf-modal-title {
+        font-size: 21px;
+    }
+}
