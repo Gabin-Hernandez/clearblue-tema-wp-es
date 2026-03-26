@@ -157,6 +157,28 @@ function cb_pdf_leads_ajax_save()
         wp_send_json_error(array('message' => 'URL de PDF invalida.'), 400);
     }
 
+    // Evita duplicados por doble submit casi simultaneo.
+    $duplicate_id = $wpdb->get_var(
+        $wpdb->prepare(
+            "SELECT id FROM " . cb_pdf_leads_table_name() . "
+             WHERE nombre = %s AND telefono = %s AND correo = %s
+             AND fecha >= (NOW() - INTERVAL 20 SECOND)
+             ORDER BY id DESC
+             LIMIT 1",
+            $nombre,
+            $telefono,
+            $correo
+        )
+    );
+
+    if (!empty($duplicate_id)) {
+        wp_send_json_success(array(
+            'message' => 'Lead procesado anteriormente.',
+            'pdf_url' => $pdf_url,
+            'duplicate' => true,
+        ));
+    }
+
     $inserted = $wpdb->insert(
         cb_pdf_leads_table_name(),
         array(

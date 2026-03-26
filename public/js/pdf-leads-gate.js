@@ -85,6 +85,7 @@
     var phoneRegex = /^\d{10}$/;
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     var activePdfUrl = '';
+    var isSubmitting = false;
 
     function getErrorEl(name) {
         return form.querySelector('[data-error-for="' + name + '"]');
@@ -218,6 +219,10 @@
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
+        if (isSubmitting) {
+            return;
+        }
+
         if (!isFormValid()) {
             updateSubmitState();
             return;
@@ -228,6 +233,7 @@
             return;
         }
 
+        isSubmitting = true;
         submitBtn.disabled = true;
         statusEl.textContent = 'Guardando...';
 
@@ -263,6 +269,7 @@
                 statusEl.textContent = error.message || config.messages.submitError;
             })
             .finally(function () {
+                isSubmitting = false;
                 updateSubmitState();
             });
     });
