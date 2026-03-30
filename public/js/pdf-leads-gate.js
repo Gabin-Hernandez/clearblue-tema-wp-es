@@ -38,8 +38,8 @@
                 '<div class="plg-pdf-modal__overlay" data-close="true"></div>' +
                 '<div class="plg-pdf-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="plg-pdf-modal-title">' +
                     '<button type="button" class="plg-pdf-modal__close" id="plg-pdf-close" aria-label="Cerrar modal">&times;</button>' +
-                    '<h3 id="plg-pdf-modal-title">Descargar PDF</h3>' +
-                    '<p class="plg-pdf-modal__subtitle">Completa tus datos para continuar con la descarga.</p>' +
+                    '<h3 id="plg-pdf-modal-title">Invierte en talento, asegura resultados</h3>' +
+                    '<p class="plg-pdf-modal__subtitle">Completa tus datos y continúa con la descarga.</p>' +
                     '<form id="plg-pdf-form" novalidate>' +
                         '<div class="plg-pdf-field">' +
                             '<label for="plg_nombre">Nombre</label>' +
