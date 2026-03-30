@@ -83,7 +83,7 @@ function cb_pdf_leads_enqueue_assets()
             'debug' => (defined('WP_DEBUG') && WP_DEBUG),
             'messages' => array(
                 'required' => 'Este campo es obligatorio.',
-                'phone' => 'El telefono debe contener exactamente 10 digitos numericos.',
+                'phone' => 'El teléfono debe contener exactamente 10 dígitos numéricos.',
                 'email' => 'Ingresa un correo valido.',
                 'submitError' => 'No se pudo guardar tu informacion. Intenta nuevamente.',
             ),
@@ -116,13 +116,13 @@ function cb_pdf_leads_render_modal()
                 </div>
 
                 <div class="plg-pdf-field">
-                    <label for="plg_telefono">Telefono</label>
+                    <label for="plg_telefono">Teléfono</label>
                     <input type="tel" id="plg_telefono" name="telefono" inputmode="numeric" maxlength="10" autocomplete="tel" required>
                     <small class="plg-pdf-error" data-error-for="telefono"></small>
                 </div>
 
                 <div class="plg-pdf-field">
-                    <label for="plg_correo">Email</label>
+                    <label for="plg_correo">Correo Electrónico</label>
                     <input type="email" id="plg_correo" name="correo" autocomplete="email" required>
                     <small class="plg-pdf-error" data-error-for="correo"></small>
                 </div>
