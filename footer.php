@@ -71,7 +71,14 @@
                 </ul>
                 
                 <div class="mt-6">
-                    <p class="font-bold text-gray-800 mb-2">Oficinas Centrales Creatblue® Group</p>
+                    <p class="font-bold text-gray-800 mb-2">Oficina Central </p>
+                    <ul class="space-y-1 text-sm text-gray-600">
+                        <li>- Alemania, Wolfsburg</li>
+                    </ul>
+                </div>
+
+                <div class="mt-6">
+                    <p class="font-bold text-gray-800 mb-2">Oficinas Regionales  </p>
                     <ul class="space-y-1 text-sm text-gray-600">
                         <li>- México, Puebla</li>
                         <li>- USA, Tennessee</li>
