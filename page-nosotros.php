@@ -157,6 +157,87 @@ get_header();
                  alt="Mapa de presencia de Creatblue en México" 
                  class="w-full h-auto rounded-2xl shadow-xl">
         </div>
+
+        <div class="max-w-6xl mx-auto mt-14 md:mt-20">
+            <h3 class="text-xl md:text-2xl font-bold text-primary text-center mb-10 opacity-0 translate-y-8 animate-on-scroll" data-delay="200">
+                Direcciones Creatblue México
+            </h3>
+            <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
+                <?php
+                $cb_locations = array(
+                    array(
+                        'title'       => 'Corporativo Creatblue México',
+                        'address'     => 'Avenida JINT, #300 Parque Industrial JINT, Puebla, Pue. 72710, MX',
+                        'phone_label' => '800 112 1050',
+                        'phone_href'  => 'tel:+528001121050',
+                        'accent'      => 'corporate',
+                    ),
+                    array(
+                        'title'       => 'Creatblue Sucursal EDOMEX',
+                        'address'     => 'Plaza Sentura, Perif. Blvd. Manuel Ávila Camacho 2610, Torre B Piso 10 int. 1035, Tlalnepantla, Estado de México 54040, MX',
+                        'phone_label' => '55 6529 5626',
+                        'phone_href'  => 'tel:+525565295626',
+                        'accent'      => 'branch',
+                    ),
+                    array(
+                        'title'       => 'Creatblue Sucursal Guanajuato',
+                        'address'     => 'Terraza Jerez, De Las Rosas 409, Local 10-A, León de los Aldama, Guanajuato 37530, MX',
+                        'phone_label' => '55 4449 5506',
+                        'phone_href'  => 'tel:+525544495506',
+                        'accent'      => 'branch',
+                    ),
+                    array(
+                        'title'       => 'Creatblue Sucursal Monterrey',
+                        'address'     => 'Jose Ma Pino Suarez 750, piso 8 oficina 801 K, Monterrey, Nuevo León 64000, MX',
+                        'phone_label' => '(811) 278 3619',
+                        'phone_href'  => 'tel:+528112783619',
+                        'accent'      => 'branch',
+                    ),
+                    array(
+                        'title'       => 'Creatblue Sucursal Guadalajara',
+                        'address'     => 'Calle Jose Maria Morelos 1734, Piso 4, Oficina F4 Ladron de Guevara, Lafayette',
+                        'phone_label' => '(331) 764 8631',
+                        'phone_href'  => 'tel:+523317648631',
+                        'accent'      => 'branch',
+                    ),
+                    array(
+                        'title'       => 'Creatblue Sucursal Mérida',
+                        'address'     => 'Calle 20 #106 entre 25 y 27 Col. México. Mérida, Yucatán. CP 97125',
+                        'phone_label' => '(999) 224 2884',
+                        'phone_href'  => 'tel:+529992242884',
+                        'accent'      => 'branch',
+                    ),
+                );
+                $loc_delay = 300;
+                foreach ( $cb_locations as $loc ) :
+                    $is_corporate = ( isset( $loc['accent'] ) && 'corporate' === $loc['accent'] );
+                    ?>
+                <article class="group relative bg-white rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:border-secondary/30 transition-all duration-300 p-6 flex flex-col h-full opacity-0 translate-y-8 animate-on-scroll" data-delay="<?php echo esc_attr( (string) $loc_delay ); ?>">
+                    <?php if ( $is_corporate ) : ?>
+                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wider text-secondary bg-secondary/10 px-2 py-1 rounded-md">Corporativo</span>
+                    <?php endif; ?>
+                    <div class="flex items-center gap-3 mb-4 <?php echo $is_corporate ? 'pr-16' : ''; ?>">
+                        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors duration-300 text-2xl leading-none" aria-hidden="true">
+                            <i class="ti ti-map-pin"></i>
+                        </span>
+                        <h4 class="text-lg font-bold text-primary leading-snug"><?php echo esc_html( $loc['title'] ); ?></h4>
+                    </div>
+                    <p class="text-sm text-gray-600 leading-relaxed flex-grow pl-[3.75rem] -mt-1">
+                        <?php echo esc_html( $loc['address'] ); ?>
+                    </p>
+                    <a href="<?php echo esc_url( $loc['phone_href'] ); ?>" class="mt-5 inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-primary transition-colors pl-[3.75rem]">
+                        <span class="flex-shrink-0 w-9 h-9 rounded-lg bg-gray-50 flex items-center justify-center text-secondary group-hover:bg-secondary/10 text-base leading-none" aria-hidden="true">
+                            <i class="ti ti-phone"></i>
+                        </span>
+                        <?php echo esc_html( $loc['phone_label'] ); ?>
+                    </a>
+                </article>
+                    <?php
+                    $loc_delay += 80;
+                endforeach;
+                ?>
+            </div>
+        </div>
     </div>
 </section>
 
