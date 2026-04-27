@@ -212,15 +212,17 @@ get_header();
                 foreach ( $cb_locations as $loc ) :
                     $is_corporate = ( isset( $loc['accent'] ) && 'corporate' === $loc['accent'] );
                     ?>
-                <article class="group relative bg-white rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:border-secondary/30 transition-all duration-300 p-6 flex flex-col h-full opacity-0 translate-y-8 animate-on-scroll" data-delay="<?php echo esc_attr( (string) $loc_delay ); ?>">
-                    <?php if ( $is_corporate ) : ?>
-                    <span class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wider text-secondary bg-secondary/10 px-2 py-1 rounded-md">Corporativo</span>
-                    <?php endif; ?>
-                    <div class="flex items-center gap-3 mb-4 <?php echo $is_corporate ? 'pr-16' : ''; ?>">
+                <article class="group bg-white rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:border-secondary/30 transition-all duration-300 p-6 flex flex-col h-full opacity-0 translate-y-8 animate-on-scroll" data-delay="<?php echo esc_attr( (string) $loc_delay ); ?>">
+                    <div class="flex items-start gap-3 mb-4">
                         <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors duration-300 text-2xl leading-none" aria-hidden="true">
                             <i class="ti ti-map-pin"></i>
                         </span>
-                        <h4 class="text-lg font-bold text-primary leading-snug"><?php echo esc_html( $loc['title'] ); ?></h4>
+                        <div class="min-w-0 flex-1">
+                            <h4 class="text-lg font-bold text-primary leading-snug"><?php echo esc_html( $loc['title'] ); ?></h4>
+                            <?php if ( $is_corporate ) : ?>
+                            <span class="mt-2 inline-flex text-[10px] font-bold uppercase tracking-wider bg-primary text-white px-2.5 py-1 rounded-md">Corporativo</span>
+                            <?php endif; ?>
+                        </div>
                     </div>
                     <p class="text-sm text-gray-600 leading-relaxed flex-grow pl-[3.75rem] -mt-1">
                         <?php echo esc_html( $loc['address'] ); ?>
